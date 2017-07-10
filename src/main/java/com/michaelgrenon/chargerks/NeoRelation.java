@@ -12,6 +12,6 @@ public class NeoRelation {
     }
     
     public String toCypher() {
-        return String.format("(%s)-[:MATCHES*0..1]-()-[:%s]-(%s)", concept1.variable, label, concept2.variable);
+        return String.format("(%s)-[:MATCHES*0..1]-()-[:%s]-(%s)", concept1.getVariable(), label, concept2.getVariable());
     }
 }

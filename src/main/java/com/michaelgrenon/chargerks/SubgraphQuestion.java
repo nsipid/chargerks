@@ -54,7 +54,7 @@ public class SubgraphQuestion implements Question {
         //WITH [var1, var2, ...] AS varSet
         cypherBuilder.append("WITH [");
         String allVariables = idToConcept.values().stream()
-                .map(val -> val.variable)
+                .map(val -> val.getVariable())
                 .collect(Collectors.joining(", "));
         cypherBuilder.append(allVariables);
         cypherBuilder.append("] AS varSet");

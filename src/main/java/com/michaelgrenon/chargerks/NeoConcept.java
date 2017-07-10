@@ -1,10 +1,42 @@
 package com.michaelgrenon.chargerks;
 
 public class NeoConcept {
-    public String variable;
-    public String type;
-    public String referent;
-    public String catalog;
+
+    public String getVariable() {
+        return variable;
+    }
+
+    public void setVariable(String variable) {
+        this.variable = variable;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getReferent() {
+        return referent;
+    }
+
+    public void setReferent(String referent) {
+        this.referent = referent;
+    }
+
+    public String getCatalog() {
+        return catalog;
+    }
+
+    public void setCatalog(String catalog) {
+        this.catalog = catalog;
+    }
+    private String variable;
+    private String type;
+    private String referent;
+    private String catalog;
     
     public NeoConcept(String variable, String type, String referent, String catalog) {
         this.variable = variable;
