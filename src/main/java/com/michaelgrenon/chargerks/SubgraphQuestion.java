@@ -92,7 +92,7 @@ public class SubgraphQuestion implements Question {
                         c -> new NeoConcept(namer.generateName(),
                                 c.getTypeLabel(),
                                 c.getReferent(),
-                                catalog)));
+                                new ContextInfo(ContextType.INTENT, catalog))));
     }
     
     private static Stream<NeoRelation> relateNeoConcepts(Graph graph, 

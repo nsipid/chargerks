@@ -6,6 +6,8 @@
 package com.michaelgrenon.chargerks.dataspace;
 
 import cgif.generate.NameGenerator;
+import com.michaelgrenon.chargerks.ContextInfo;
+import com.michaelgrenon.chargerks.ContextType;
 import com.michaelgrenon.chargerks.NeoConcept;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
@@ -42,10 +44,10 @@ public class BorderedTableMetadataExtractor implements MetadataExtractor {
         FixedWidthHeader header = new FixedWidthHeader(lines.toArray(new String[0]));
         NameGenerator namer = new NameGenerator();
         List<NeoConcept> concepts = header.getColumnNames().stream()
-                .map(s -> new NeoConcept(namer.generateName(), s, null, catalogName))
+                .map(s -> new NeoConcept(namer.generateName(), s, null, new ContextInfo(ContextType.INTENT, catalogName)))
                 .collect(Collectors.toList());
         
-        NeoConcept tableConcept = new NeoConcept(namer.generateName(), "Table", "Course", catalogName);
+        NeoConcept tableConcept = new NeoConcept(namer.generateName(), "Table", "Course", new ContextInfo(ContextType.INTENT, catalogName));
         
         List<NeoRelation> relations = concepts.stream()
                 .map(c -> new NeoRelation(c, tableConcept, "SCHEMA_DECLARES"))
