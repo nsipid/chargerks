@@ -74,7 +74,8 @@ public class NeoGraph {
             NeoConcept conceptB = neoIdToConcept.get(idb);
             
             Value typeValue = r.get("type(r)");
-            NeoRelation relation = new NeoRelation(conceptA, conceptB, typeValue.asString());
+            ContextInfo relationContext = conceptA.getContext() == conceptB.getContext() ? conceptA.getContext() : ContextInfo.UNIVERSE;
+            NeoRelation relation = new NeoRelation(conceptA, conceptB, relationContext, typeValue.asString());
             neoRelations.add(relation);
         }
         

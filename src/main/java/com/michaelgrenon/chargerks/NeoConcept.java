@@ -1,5 +1,7 @@
 package com.michaelgrenon.chargerks;
 
+import java.util.Optional;
+
 public class NeoConcept {
 
     public String getVariable() {
@@ -10,8 +12,8 @@ public class NeoConcept {
         return type;
     }
 
-    public String getReferent() {
-        return referent;
+    public Optional<String> getReferent() {
+        return Optional.ofNullable(referent).filter(ref -> !ref.isEmpty());
     }
     
     public ContextInfo getContext() {

@@ -32,6 +32,8 @@ public class BorderedTableMetadataExtractor implements MetadataExtractor {
     }
     
     public NeoGraph generateCatalog(String catalogName) throws IOException {
+        ContextInfo contextOfIntent = new ContextInfo(ContextType.INTENT, catalogName);
+                
         BufferedReader reader = new BufferedReader(new StringReader(this.table));
         ArrayList<String> lines = new ArrayList<String>();
         for (String line = reader.readLine(); line != null; line = reader.readLine()) {
@@ -44,13 +46,13 @@ public class BorderedTableMetadataExtractor implements MetadataExtractor {
         FixedWidthHeader header = new FixedWidthHeader(lines.toArray(new String[0]));
         NameGenerator namer = new NameGenerator();
         List<NeoConcept> concepts = header.getColumnNames().stream()
-                .map(s -> new NeoConcept(namer.generateName(), s, null, new ContextInfo(ContextType.INTENT, catalogName)))
+                .map(s -> new NeoConcept(namer.generateName(), s, null, contextOfIntent))
                 .collect(Collectors.toList());
         
         NeoConcept tableConcept = new NeoConcept(namer.generateName(), "Table", "Course", new ContextInfo(ContextType.INTENT, catalogName));
         
         List<NeoRelation> relations = concepts.stream()
-                .map(c -> new NeoRelation(c, tableConcept, "SCHEMA_DECLARES"))
+                .map(c -> new NeoRelation(c, tableConcept, contextOfIntent, "SCHEMA_DECLARES"))
                 .collect(Collectors.toList());
         
         concepts.add(tableConcept);

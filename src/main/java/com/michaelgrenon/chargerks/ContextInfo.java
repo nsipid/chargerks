@@ -12,6 +12,9 @@ import java.util.Objects;
  * @author GrenonMP
  */
 public class ContextInfo {
+    public static ContextInfo UNIVERSE = new ContextInfo(ContextType.UNIVERSE, 
+            "Sheet of Assertion");
+    
     private ContextType type;
 
     public ContextType getType() {

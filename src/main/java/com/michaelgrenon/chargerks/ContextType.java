@@ -10,6 +10,18 @@ package com.michaelgrenon.chargerks;
  * @author GrenonMP
  */
 public enum ContextType {
-    INTENT,
-    USE,
+    UNIVERSE(0),
+    STORE(1),
+    INTENT(2),
+    USE(3);
+    
+    private int layer;
+
+    public int getLayer() {
+        return layer;
+    }
+    
+    ContextType(int layer) {
+        this.layer = layer;
+    }
 }
