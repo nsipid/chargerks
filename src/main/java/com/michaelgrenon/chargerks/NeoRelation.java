@@ -10,7 +10,7 @@ public class NeoRelation {
     }
     private String label;
     
-    public NeoRelation(NeoConcept concept1, NeoConcept concept2, ContextInfo contextInfo, String label) {
+    public NeoRelation(NeoConcept concept1, NeoConcept concept2, ContextInfo context, String label) {
         this.concept1 = concept1;
         this.concept2 = concept2;
         this.context = context;

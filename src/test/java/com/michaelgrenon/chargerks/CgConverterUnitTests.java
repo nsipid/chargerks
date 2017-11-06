@@ -5,6 +5,11 @@
  */
 package com.michaelgrenon.chargerks;
 
+import charger.IOManager;
+import charger.exception.CGFileException;
+import charger.obj.Graph;
+import chargerlib.FileFormat;
+import java.io.File;
 import java.util.ArrayList;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -20,6 +25,7 @@ public class CgConverterUnitTests {
     
     @BeforeClass
     public static void setUpClass() {
+        charger.Global.setup( null, new ArrayList<String>(), false );
     }
     
     @AfterClass
@@ -38,33 +44,29 @@ public class CgConverterUnitTests {
      * Test of generateCatalog method, of class UahClassListMetadataExtractor.
      */
     @org.junit.Test
-    public void testNeoToCharger() throws Exception {
-    
+    public void testNeoToCharger() throws Exception, CGFileException {
+        Graph chargerGraph = CgConverter.neoToCharger(getExampleNeoGraph());
+        IOManager.saveGraphAsTextFormat(chargerGraph, FileFormat.CHARGER4, new File("C:\\Users\\GrenonMP\\test.cgx"));
     }
     
-    public void getExampleNeoGraph() {
-        ArrayList<?> concepts = new ArrayList<NeoConcept>();
+    public NeoGraph getExampleNeoGraph() {
+        ArrayList<NeoConcept> concepts = new ArrayList<NeoConcept>();
+        ArrayList<NeoRelation> relations = new ArrayList<NeoRelation>();
+        
         ContextInfo catA = new ContextInfo(ContextType.INTENT, "catA");
         NeoConcept studentCatA = new NeoConcept("student", "Student", "", catA);
-        NeoConcept tableStudentCatA = new NeoConcept("tableStudent", "Table", "Student", catA);
-        NeoConcept studentIdCatA = new NeoConcept("studentId", "StudentId", "", catA);
-        NeoConcept nameCatA = new NeoConcept("name", "Name", "", catA);
-        NeoConcept majorCatA = new NeoConcept("major", "Major","",catA);
-        NeoConcept freshmanCatA = new NeoConcept("freshman", "Freshman", "", catA);
-        NeoConcept eng1CatA = new NeoConcept("eng1", "English", "Student who is...", catA);
-        NeoConcept eng2CatA = new NeoConcept("eng2", "English", "1st year student...", catA);
-        NeoConcept eng3CatA = new NeoConcept("eng3", "English", "Unique id...", catA);
-        NeoConcept eng4CatA = new NeoConcept("eng4", "English", "Full name...", catA);
-        NeoConcept eng5CatA = new NeoConcept("eng5", "English", "Undergraduate degree...", catA);
-        NeoRelation rel1CatA = new NeoRelation(tableStudentCatA, studentIdCatA, catA, "SCHEMA_DECLARES");
-        NeoRelation rel2CatA = new NeoRelation(tableStudentCatA, nameCatA, catA, "SCHEMA_DECLARES");
-        NeoRelation rel3CatA = new NeoRelation(tableStudentCatA, majorCatA, catA, "SCHEMA_DECLARES");
-        NeoRelation rel4CatA = new NeoRelation(studentCatA, eng1CatA, catA, "DESCRIBED_AS");
-        NeoRelation rel5CatA = new NeoRelation(freshmanCatA, eng2CatA, catA, "DESCRIBED_AS");
-        NeoRelation rel6CatA = new NeoRelation(studentIdCatA, eng3CatA, catA, "DESCRIBED_AS");
-        NeoRelation rel7CatA = new NeoRelation(nameCatA, eng4CatA, catA, "DESCRIBED_AS");
-        NeoRelation rel8CatA = new NeoRelation(majorCatA, eng5CatA, catA, "DESCRIBED_AS");
-  
+          
+        ContextInfo catB = new ContextInfo(ContextType.INTENT, "catB");
+        NeoConcept studentCatB = new NeoConcept("student", "Student", "", catB);
         
+        ContextInfo relA = new ContextInfo(ContextType.USE, "relA");
+        NeoRelation relAMatches = new NeoRelation(studentCatA, studentCatB, relA, "MATCHES");
+        
+        concepts.add(studentCatA);
+        concepts.add(studentCatB);
+        
+        relations.add(relAMatches);
+        
+        return new NeoGraph(concepts, relations);
     }
 }

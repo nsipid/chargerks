@@ -45,7 +45,7 @@ public class SubgraphQuestion implements Question {
         
         //WHERE rel1 AND rel2 AND, ...
         cypherBuilder.append("WHERE ");
-        String allRelations = relateNeoConcepts(graph, idToConcept)
+        String allRelations = relateNeoConcepts(graph, idToConcept, catalog)
                 .map(NeoRelation::toCypher)
                 .collect(Collectors.joining(" AND "));
         cypherBuilder.append(allRelations);
@@ -96,7 +96,7 @@ public class SubgraphQuestion implements Question {
     }
     
     private static Stream<NeoRelation> relateNeoConcepts(Graph graph, 
-            Map<GraphObjectID, NeoConcept> concepts) {
+            Map<GraphObjectID, NeoConcept> concepts, String catalog) {
         
         return graph.getGraphObjects().stream()
                 .filter(obj -> obj instanceof Relation)
@@ -108,7 +108,8 @@ public class SubgraphQuestion implements Question {
                     
                     return new NeoRelation(
                             concepts.get(tos.get(0).objectID), 
-                            concepts.get(froms.get(0).objectID), 
+                            concepts.get(froms.get(0).objectID),
+                            new ContextInfo(ContextType.INTENT, catalog),
                             rel.getTextLabel());
                 });
     }

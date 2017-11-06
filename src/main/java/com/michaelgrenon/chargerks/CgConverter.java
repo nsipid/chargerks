@@ -66,14 +66,24 @@ public class CgConverter {
         HashSet<ContextCrossReference> crossReferences = new HashSet<>();
         
         for (NeoRelation neo : neoRelations) {
+            // contexts without any concepts (only relations) have not been captured
+            // until this point
+            Graph relCtxGraph;
+            ContextInfo ctxRel = neo.getContext();
+            if (!chargerContexts.containsKey(ctxRel)) {
+                relCtxGraph = createChargerContextFromConcepts(ctxRel, new ArrayList<NeoConcept>(), conceptLookup);
+                chargerContexts.put(ctxRel, relCtxGraph);
+                universe.insertObject(relCtxGraph);
+            } else {
+                relCtxGraph = chargerContexts.get(neo.getContext());
+            }
+            
             Concept conceptA = conceptLookup.get(neo.getConcept1());
             Concept conceptB = conceptLookup.get(neo.getConcept2());
 
             ContextInfo ctxA = neo.getConcept1().getContext();
             ContextInfo ctxB = neo.getConcept2().getContext();
-            ContextInfo ctxRel = neo.getContext();
             
-            Graph relCtxGraph = chargerContexts.get(neo.getContext());
             Graph ctxAGraph = chargerContexts.get(ctxA);
             Graph ctxBGraph = chargerContexts.get(ctxA);
             
@@ -120,7 +130,7 @@ public class CgConverter {
     private static ContextCrossReference getOrAddCrossReference(Graph universe, 
             Set<ContextCrossReference> crossReferences, 
             Map<ContextInfo, Graph> chargerContexts, 
-            ContextInfo to, ContextInfo from, Graph fromGraph, Graph toGraph) {
+            ContextInfo from, ContextInfo to, Graph fromGraph, Graph toGraph) {
         
         ContextCrossReference crossRef = new ContextCrossReference(from, to, fromGraph, toGraph);
         if (!crossReferences.contains(crossRef)) {
@@ -148,8 +158,8 @@ public class CgConverter {
             Map<NeoConcept, Concept> conceptLookup) {
         
         Graph context = new Graph();
-        context.setTextLabel(contextInfo.getName());
-        context.setReferent(contextInfo.getType().toString());
+        context.setTextLabel(contextInfo.getType().toString());
+        //context.setReferent(contextInfo.getName());
         neoConcepts.stream().map(n -> conceptLookup.get(n))
                 .forEach(c -> context.insertObject(c));
         return context;
