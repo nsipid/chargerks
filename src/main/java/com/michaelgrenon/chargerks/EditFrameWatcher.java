@@ -1,6 +1,6 @@
 package com.michaelgrenon.chargerks;
 
-import charger.EditFrame;
+ import charger.EditFrame;
 import chargerlib.WindowManager;
 import java.awt.Container;
 import java.awt.Window;

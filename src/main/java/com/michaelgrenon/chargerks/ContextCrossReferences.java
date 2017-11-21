@@ -31,9 +31,11 @@ import java.util.stream.Collectors;
 public class ContextCrossReferences {
     Graph universe;
     HashSet<ContextCrossReference> crossReferences = new HashSet<>();
+    HashSet<String> insertedObjectIds = new HashSet<>();
     
     public ContextCrossReferences(Graph universe) {
         this.universe = universe;
+        extractCrossReferences();
     }
     
     public ContextCrossReference getOrAddCrossReference(
@@ -42,41 +44,24 @@ public class ContextCrossReferences {
         ContextCrossReference crossRef = new ContextCrossReference(from, to, fromGraph, toGraph);
         if (!crossReferences.contains(crossRef)) {
             crossReferences.add(crossRef);
-            Graph chargerContext = crossRef.getFromGraph();
-            
-            crossRef.getCorefConcept().setCenter(fromGraph.getCenter());
-            chargerContext.insertObject(crossRef.getCorefConcept());
-            Coref coref = new Coref(crossRef.getCorefConcept(), crossRef.getToGraph());
-            universe.insertObject(coref);
+            crossRef.insertCoref();
         }
         
         return crossRef;
+    }
+    
+    public Set<String> getAllIds() {
+        return crossReferences.stream()
+                .flatMap(c -> c.getAllIds().stream())
+                .collect(Collectors.toCollection(HashSet::new));
     }
     
     private void extractCrossReferences() {
         GraphObjectIterator corefItr = new ShallowIterator(universe, new Coref());
         while(corefItr.hasNext()) {
             Coref coref = (Coref) corefItr.next();
-            
-            Concept corefConcept = (Concept) coref.fromObj;
-            Graph toGraph = (Graph) coref.toObj;
-            Graph fromGraph = corefConcept.ownerGraph;
-            ContextInfo to = new ContextInfo(ContextType.valueOf(toGraph.getTypeLabel().toUpperCase(Locale.US)), toGraph.getReferent());
-            ContextInfo from = new ContextInfo(ContextType.valueOf(fromGraph.getTypeLabel().toUpperCase(Locale.US)), fromGraph.getReferent());
-            
-            ArrayList<GNode> linkedNodes = corefConcept.getLinkedNodes(Direction.FROM);
-            
-            List<Concept> crossReferenceConcepts = linkedNodes.stream()
-                    .filter(Relation.class::isInstance)
-                    .filter(r -> r.getTextLabel().toUpperCase() == "IN")
-                    .flatMap(node -> node.getLinkedNodes(Direction.FROM).stream())
-                    .filter(Concept.class::isInstance)
-                    .map(Concept.class::cast)
-                    .collect(Collectors::toList);
-            
-            ContextCrossReference crossReference = new ContextCrossReference(from, to, fromGraph, toGraph, crossReferenceConcepts);
+            ContextCrossReference crossReference = new ContextCrossReference(coref);
             crossReferences.add(crossReference);
-            
         }
     }
 }

@@ -96,13 +96,13 @@ public class CgConverter {
             }  else if (ctxRel.equals(ctxA) && !ctxA.equals(ctxB)) {
                 //else if relation and concept 1 in same context but not concept 2
                 ContextCrossReference relToB = crossReferences.getOrAddCrossReference(ctxRel, ctxB, relCtxGraph, ctxBGraph);
-                Concept cloneB = relToB.getOrAddReferencedConcept(conceptB);
+                Concept cloneB = relToB.referenceConcept(conceptB);
                 
                 addRelationToGraph(conceptA, cloneB, neo.getLabel(), relCtxGraph);
             } else if (ctxRel.equals(ctxB) && !ctxB.equals(ctxA)) {
                 //else if relation and concept 2 in same context but not concept 1
                 ContextCrossReference relToA = crossReferences.getOrAddCrossReference(ctxRel, ctxA, relCtxGraph, ctxAGraph);
-                Concept cloneA = relToA.getOrAddReferencedConcept(conceptA);
+                Concept cloneA = relToA.referenceConcept(conceptA);
                 addRelationToGraph(cloneA, conceptB, neo.getLabel(), relCtxGraph);
             } else {
                 //else if relation and concepts all in different contexts
@@ -110,8 +110,8 @@ public class CgConverter {
                 ContextCrossReference relToA = crossReferences.getOrAddCrossReference(ctxRel, ctxA, relCtxGraph, ctxAGraph);
                 ContextCrossReference relToB = crossReferences.getOrAddCrossReference(ctxRel, ctxB, relCtxGraph, ctxBGraph);
                 
-                Concept cloneA = relToA.getOrAddReferencedConcept(conceptA);
-                Concept cloneB = relToB.getOrAddReferencedConcept(conceptB);
+                Concept cloneA = relToA.referenceConcept(conceptA);
+                Concept cloneB = relToB.referenceConcept(conceptB);
                 
                 addRelationToGraph(cloneA, cloneB, neo.getLabel(), relCtxGraph);
             }
