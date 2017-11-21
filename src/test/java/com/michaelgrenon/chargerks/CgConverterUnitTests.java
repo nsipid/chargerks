@@ -7,12 +7,21 @@ package com.michaelgrenon.chargerks;
 
 import charger.IOManager;
 import charger.exception.CGFileException;
+import charger.obj.Coref;
+import charger.obj.DeepIterator;
 import charger.obj.Graph;
+import charger.obj.GraphObject;
+import charger.obj.GraphObjectIterator;
+import charger.obj.ShallowIterator;
 import chargerlib.FileFormat;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import org.junit.After;
 import org.junit.AfterClass;
+import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.BeforeClass;
 
@@ -40,13 +49,24 @@ public class CgConverterUnitTests {
     public void tearDown() {
     }
 
-    /**
-     * Test of generateCatalog method, of class UahClassListMetadataExtractor.
-     */
     @org.junit.Test
     public void testNeoToCharger() throws Exception, CGFileException {
         Graph chargerGraph = CgConverter.neoToCharger(getExampleNeoGraph());
-        IOManager.saveGraphAsTextFormat(chargerGraph, FileFormat.CHARGER4, new File("C:\\Users\\GrenonMP\\test.cgx"));
+        List<Graph> contexts = chargerGraph.getGraphObjects().stream().filter(Graph.class::isInstance).map(Graph.class::cast).collect(Collectors.toList());
+        assertEquals(3, contexts.size());
+        assertEquals(true, contexts.stream().anyMatch(g -> g.getTypeLabel().equals(ContextType.INTENT.toString()) && g.getReferent().equals("catA")));
+        assertEquals(true, contexts.stream().anyMatch(g -> g.getTypeLabel().equals(ContextType.INTENT.toString()) && g.getReferent().equals("catB")));
+        assertEquals(true, contexts.stream().anyMatch(g -> g.getTypeLabel().equals(ContextType.USE.toString()) && g.getReferent().equals("relA")));
+        //IOManager.saveGraphAsTextFormat(chargerGraph, FileFormat.CHARGER4, new File("C:\\Users\\GrenonMP\\test.cgx"));
+    }
+    
+    @org.junit.Test
+    public void testIterator() {
+        Graph chargerGraph = CgConverter.neoToCharger(getExampleNeoGraph());
+        GraphObjectIterator corefItr = new ShallowIterator(chargerGraph, new Coref());
+        assertEquals(corefItr.next() != null, true);
+        assertEquals(corefItr.next() != null, true);
+        assertEquals(corefItr.hasNext(), false);
     }
     
     public NeoGraph getExampleNeoGraph() {

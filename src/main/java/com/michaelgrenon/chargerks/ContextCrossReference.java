@@ -12,6 +12,7 @@ import charger.obj.Graph;
 import charger.obj.Relation;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
@@ -52,6 +53,11 @@ public class ContextCrossReference {
             relation.setTextLabel("in");
             GEdge edge1 = new Arrow(clone, relation);
             GEdge edge2 = new Arrow(relation, corefConcept);
+            
+            clone.setCenter(fromGraph.getCenter());
+            relation.setCenter(fromGraph.getCenter());
+            edge1.setCenter(fromGraph.getCenter());
+            edge2.setCenter(fromGraph.getCenter());
             
             fromGraph.insertObject(clone);
             fromGraph.insertObject(relation);
@@ -108,9 +114,15 @@ public class ContextCrossReference {
         this.toGraph = toGraph;
         
         this.corefConcept = new Concept();
-        corefConcept = new Concept();
-        corefConcept.setReferent(this.to.getName());
-        corefConcept.setTypeLabel(this.to.getType().toString());
+        this.corefConcept = new Concept();
+        this.corefConcept.setReferent(this.to.getName());
+        this.corefConcept.setTypeLabel(this.to.getType().toString());
+    }
+    
+    public ContextCrossReference(ContextInfo from, ContextInfo to, Graph fromGraph, Graph toGraph, List<Concept> existingCrossReferenceConcepts) {
+        this(from, to, fromGraph, toGraph);
+        
+        this.crossReferenceConcepts = new ArrayList<Concept>(existingCrossReferenceConcepts);
     }
     
 }

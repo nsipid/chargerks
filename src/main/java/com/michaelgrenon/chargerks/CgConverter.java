@@ -12,6 +12,7 @@ import charger.obj.GEdge;
 import charger.obj.Graph;
 import charger.obj.GraphObject;
 import charger.obj.Relation;
+import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -34,6 +35,7 @@ public class CgConverter {
     
     public static Graph neoToCharger(NeoGraph neo) {
        Graph universeGraph = new Graph();
+       universeGraph.setDim(3000,3000);
        Map<NeoConcept, Concept> conceptLookup = 
                neo.getConcepts().stream()
                        .collect(Collectors.toMap(n -> n, CgConverter::neoConceptToCharger));
@@ -63,7 +65,7 @@ public class CgConverter {
             Graph universe, Map<ContextInfo, Graph> chargerContexts,
             Map<NeoConcept, Concept> conceptLookup) {
         
-        HashSet<ContextCrossReference> crossReferences = new HashSet<>();
+        ContextCrossReferences crossReferences = new ContextCrossReferences(universe);
         
         for (NeoRelation neo : neoRelations) {
             // contexts without any concepts (only relations) have not been captured
@@ -71,7 +73,8 @@ public class CgConverter {
             Graph relCtxGraph;
             ContextInfo ctxRel = neo.getContext();
             if (!chargerContexts.containsKey(ctxRel)) {
-                relCtxGraph = createChargerContextFromConcepts(ctxRel, new ArrayList<NeoConcept>(), conceptLookup);
+                relCtxGraph = createChargerContextFromConcepts(ctxRel, 
+                        new ArrayList<NeoConcept>(), conceptLookup);
                 chargerContexts.put(ctxRel, relCtxGraph);
                 universe.insertObject(relCtxGraph);
             } else {
@@ -92,20 +95,20 @@ public class CgConverter {
                 addRelationToGraph(conceptA, conceptB, neo.getLabel(), relCtxGraph);
             }  else if (ctxRel.equals(ctxA) && !ctxA.equals(ctxB)) {
                 //else if relation and concept 1 in same context but not concept 2
-                ContextCrossReference relToB = getOrAddCrossReference(universe, crossReferences, chargerContexts, ctxRel, ctxB, relCtxGraph, ctxBGraph);
+                ContextCrossReference relToB = crossReferences.getOrAddCrossReference(ctxRel, ctxB, relCtxGraph, ctxBGraph);
                 Concept cloneB = relToB.getOrAddReferencedConcept(conceptB);
                 
                 addRelationToGraph(conceptA, cloneB, neo.getLabel(), relCtxGraph);
             } else if (ctxRel.equals(ctxB) && !ctxB.equals(ctxA)) {
                 //else if relation and concept 2 in same context but not concept 1
-                ContextCrossReference relToA = getOrAddCrossReference(universe, crossReferences, chargerContexts, ctxRel, ctxA, relCtxGraph, ctxAGraph);
+                ContextCrossReference relToA = crossReferences.getOrAddCrossReference(ctxRel, ctxA, relCtxGraph, ctxAGraph);
                 Concept cloneA = relToA.getOrAddReferencedConcept(conceptA);
                 addRelationToGraph(cloneA, conceptB, neo.getLabel(), relCtxGraph);
             } else {
                 //else if relation and concepts all in different contexts
                 //else if concept 1 and 2 in the same context but not with the relation
-                ContextCrossReference relToA = getOrAddCrossReference(universe, crossReferences, chargerContexts, ctxRel, ctxA, relCtxGraph, ctxAGraph);
-                ContextCrossReference relToB = getOrAddCrossReference(universe, crossReferences, chargerContexts, ctxRel, ctxB, relCtxGraph, ctxBGraph);
+                ContextCrossReference relToA = crossReferences.getOrAddCrossReference(ctxRel, ctxA, relCtxGraph, ctxAGraph);
+                ContextCrossReference relToB = crossReferences.getOrAddCrossReference(ctxRel, ctxB, relCtxGraph, ctxBGraph);
                 
                 Concept cloneA = relToA.getOrAddReferencedConcept(conceptA);
                 Concept cloneB = relToB.getOrAddReferencedConcept(conceptB);
@@ -115,35 +118,23 @@ public class CgConverter {
         }
     }
     
-    private static void addRelationToGraph(Concept conceptA, Concept conceptB, String relationLabel, Graph graph) {
+    private static void addRelationToGraph(Concept conceptA, Concept conceptB, 
+            String relationLabel, Graph graph) {
         Relation relation = new Relation();
         relation.setTextLabel(relationLabel);
 
         GEdge edge1 = new Arrow(conceptA, relation);
         GEdge edge2 = new Arrow(relation, conceptB);
-
+        
+        relation.setCenter(graph.getCenter());
+        edge1.setCenter(graph.getCenter());
+        edge2.setCenter(graph.getCenter());
+        
         graph.insertObject(relation);
         graph.insertObject(edge1);
         graph.insertObject(edge2);
     }
     
-    private static ContextCrossReference getOrAddCrossReference(Graph universe, 
-            Set<ContextCrossReference> crossReferences, 
-            Map<ContextInfo, Graph> chargerContexts, 
-            ContextInfo from, ContextInfo to, Graph fromGraph, Graph toGraph) {
-        
-        ContextCrossReference crossRef = new ContextCrossReference(from, to, fromGraph, toGraph);
-        if (!crossReferences.contains(crossRef)) {
-            crossReferences.add(crossRef);
-            Graph chargerContext = chargerContexts.get(crossRef.getFrom());
-            
-            chargerContext.insertObject(crossRef.getCorefConcept());
-            Coref coref = new Coref(crossRef.getCorefConcept(), chargerContexts.get(crossRef.getTo()));
-            universe.insertObject(coref);
-        }
-        
-        return crossRef;
-    }
     
     private static Map<ContextInfo, Graph> neoContextsToCharger(
             Map<ContextInfo, List<NeoConcept>> conceptMap, 
@@ -158,10 +149,20 @@ public class CgConverter {
             Map<NeoConcept, Concept> conceptLookup) {
         
         Graph context = new Graph();
-        context.setTextLabel(contextInfo.getType().toString());
-        //context.setReferent(contextInfo.getName());
+        context.moveGraph(new Point2D.Double(640,480));
+        context.setDim(640,480);
+        
+        context.setTypeLabel(contextInfo.getType().toString());
+        context.setReferent(contextInfo.getName());
         neoConcepts.stream().map(n -> conceptLookup.get(n))
-                .forEach(c -> context.insertObject(c));
+                .forEach(c -> {
+                    c.setCenter(context.getCenter());
+                    context.insertObject(c);
+                    
+                        });
+        
+        context.resizeForContents(null);
+
         return context;
     }
     
