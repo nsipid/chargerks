@@ -5,12 +5,15 @@
  */
 package com.michaelgrenon.chargerks;
 
+import cgif.generate.NameGenerator;
 import charger.obj.Arrow;
 import charger.obj.Concept;
 import charger.obj.Coref;
+import charger.obj.DeepIterator;
 import charger.obj.GEdge;
 import charger.obj.Graph;
 import charger.obj.GraphObject;
+import charger.obj.GraphObject.Kind;
 import charger.obj.Relation;
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
@@ -19,9 +22,11 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
@@ -30,7 +35,55 @@ import java.util.stream.Collectors;
  */
 public class CgConverter {
     public static NeoGraph chargerToNeo(Graph charger) {
-        return null;
+        ContextCrossReferences crossReferences = new ContextCrossReferences(charger);
+        Set<String> ignoredIds = crossReferences.getAllIds();
+        HashMap<String, NeoConcept> concepts = new HashMap<String, NeoConcept>();
+        HashMap<String, NeoRelation> relations = new HashMap<String, NeoRelation>();
+        
+        Predicate<GraphObject> newConcept = obj -> obj instanceof Concept && 
+                !(obj instanceof Graph) && 
+                !concepts.containsKey(obj.objectID.toString()) && 
+                !ignoredIds.contains(obj.objectID.toString());
+        
+        Predicate<GraphObject> newRelation = obj -> obj instanceof Relation &&
+                !relations.containsKey(obj.objectID.toString()) && 
+                !ignoredIds.contains(obj.objectID.toString());
+                
+        
+        NameGenerator generator = new NameGenerator();
+        DeepIterator itr = new DeepIterator(charger, Kind.GNODE);
+        while (itr.hasNext()) {
+            GraphObject next = itr.next();
+            String id = next.objectID.toString();
+            
+            if (newConcept.test(next)) {
+                Concept concept = (Concept) next;
+                concepts.put(id, chargerConceptToNeo(concept, generator.generateName()));              
+            } else if (newRelation.test(next)) {
+                Relation relation = (Relation) next;
+                
+                List<Concept> linkedConcepts = relation.getLinkedNodes().stream()
+                        .map(Concept.class::cast)
+                        .limit(2)
+                        .collect(Collectors.toList());
+                
+                Concept concept1 = linkedConcepts.size() > 0 ? linkedConcepts.get(0) : null;
+                String concept1Id = concept1.objectID.toString();
+                if (newConcept.test(concept1)) {
+                    concepts.put(concept1Id, chargerConceptToNeo(concept1, generator.generateName()));              
+                }
+                
+                Concept concept2 = linkedConcepts.size() > 1 ? linkedConcepts.get(1) : null;
+                String concept2Id = concept2.objectID.toString();
+                if (newConcept.test(concept2)) {
+                    concepts.put(concept2Id, chargerConceptToNeo(concept2, generator.generateName()));              
+                }
+                
+                relations.put(id, chargerRelationToNeo(relation, concepts.get(concept1Id), concepts.get(concept2Id), generator.generateName()));
+            }
+        }
+        
+        return new NeoGraph(concepts.values(), relations.values());
     }
     
     public static Graph neoToCharger(NeoGraph neo) {
@@ -51,6 +104,20 @@ public class CgConverter {
        addNeoRelationsToCharger(neo.getRelations(), universeGraph, chargerContexts, conceptLookup);
        
        return universeGraph;
+    }
+    
+    private static NeoConcept chargerConceptToNeo(Concept concept, String variable) {
+        Graph owner = concept.getOwnerGraph();
+        ContextInfo info = new ContextInfo(ContextType.valueOf(owner.getTypeLabel().toUpperCase(Locale.US)), owner.getReferent());
+        NeoConcept neoConcept = new NeoConcept(variable, concept.getTypeLabel(), concept.getReferent(), info);
+        return neoConcept;
+    }
+    
+    private static NeoRelation chargerRelationToNeo(Relation relation, NeoConcept concept1, NeoConcept concept2, String variable) {
+        Graph owner = relation.getOwnerGraph();
+        ContextInfo info = new ContextInfo(ContextType.valueOf(owner.getTypeLabel().toUpperCase(Locale.US)), owner.getReferent());
+        NeoRelation neoRelation = new NeoRelation(concept1, concept2, info, relation.getTextLabel());
+        return neoRelation;
     }
     
     private static Concept neoConceptToCharger(NeoConcept neo) {
@@ -88,7 +155,7 @@ public class CgConverter {
             ContextInfo ctxB = neo.getConcept2().getContext();
             
             Graph ctxAGraph = chargerContexts.get(ctxA);
-            Graph ctxBGraph = chargerContexts.get(ctxA);
+            Graph ctxBGraph = chargerContexts.get(ctxB);
             
             if (ctxA.equals(ctxB) && ctxB.equals(ctxRel)) {
                 //if relation and concepts all in the same context

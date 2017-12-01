@@ -155,7 +155,7 @@ public class ContextCrossReference {
     }
     
     public ContextCrossReference(Coref existingCoref) {
-        this.coref = coref;
+        this.coref = existingCoref;
         corefConcept = (Concept) coref.fromObj;
         toGraph = (Graph) coref.toObj;
         fromGraph = corefConcept.ownerGraph;
@@ -167,7 +167,7 @@ public class ContextCrossReference {
 
         List<Relation> relations = linkedNodes.stream()
                 .filter(Relation.class::isInstance)
-                .filter(rel -> rel.getTextLabel().toUpperCase(Locale.US) == "IN")
+                .filter(rel -> "IN".equals(rel.getTextLabel().toUpperCase(Locale.US)))
                 .map(Relation.class::cast)
                 .collect(Collectors.toList());
         

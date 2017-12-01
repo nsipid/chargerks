@@ -61,12 +61,12 @@ public class CgConverterUnitTests {
     }
     
     @org.junit.Test
-    public void testIterator() {
+    public void testChargerToNeo() throws Exception, CGFileException {
         Graph chargerGraph = CgConverter.neoToCharger(getExampleNeoGraph());
-        GraphObjectIterator corefItr = new ShallowIterator(chargerGraph, new Coref());
-        assertEquals(corefItr.next() != null, true);
-        assertEquals(corefItr.next() != null, true);
-        assertEquals(corefItr.hasNext(), false);
+        NeoGraph neoGraph = CgConverter.chargerToNeo(chargerGraph);
+        chargerGraph = CgConverter.neoToCharger(neoGraph);
+  
+        IOManager.saveGraphAsTextFormat(chargerGraph, FileFormat.CHARGER4, new File("C:\\Users\\GrenonMP\\test.cgx"));
     }
     
     public NeoGraph getExampleNeoGraph() {
