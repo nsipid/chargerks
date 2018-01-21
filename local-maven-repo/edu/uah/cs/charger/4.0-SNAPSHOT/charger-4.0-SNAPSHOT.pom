@@ -4,5 +4,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>edu.uah.cs</groupId>
   <artifactId>charger</artifactId>
-  <version>4.0</version>
+  <version>4.0-SNAPSHOT</version>
+  <description>POM was created from install:install-file</description>
 </project>

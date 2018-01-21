@@ -1,5 +1,6 @@
 package com.michaelgrenon.chargerks;
 
+import java.util.Objects;
 import java.util.Optional;
 
 public class NeoConcept {
@@ -21,6 +22,39 @@ public class NeoConcept {
     }
 
     private String variable;
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 89 * hash + Objects.hashCode(this.type);
+        hash = 89 * hash + Objects.hashCode(this.referent);
+        hash = 89 * hash + Objects.hashCode(this.context);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final NeoConcept other = (NeoConcept) obj;
+        if (!Objects.equals(this.type, other.type)) {
+            return false;
+        }
+        if (!Objects.equals(this.referent, other.referent)) {
+            return false;
+        }
+        if (!Objects.equals(this.context, other.context)) {
+            return false;
+        }
+        return true;
+    }
     private String type;
     private String referent;
     private ContextInfo context;
@@ -38,4 +72,5 @@ public class NeoConcept {
         String contextPart = (context.getType().equals(ContextType.INTENT) ? "catalog: " : "context: ") + String.format("'%s'", context.getName());
         return String.format("(%s:%s {%scatalog: '%s'})", variable, type, referentPart, contextPart);
     }
+    
 }

@@ -5,13 +5,16 @@
  */
 package com.michaelgrenon.chargerks;
 
+import cgif.generate.NameGenerator;
 import charger.obj.Arrow;
 import charger.obj.Concept;
 import charger.obj.Coref;
+import charger.obj.DeepIterator;
 import charger.obj.GEdge;
 import charger.obj.GNode;
 import charger.obj.Graph;
 import charger.obj.GraphObject;
+import charger.obj.GraphObject.Kind;
 import charger.obj.Relation;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -52,20 +55,27 @@ public class ContextCrossReference {
     public Concept getCorefConcept() {
         return corefConcept;
     }
-    private ArrayList<Concept> referencedConcepts = new ArrayList<Concept>();
+
+    public Map<String, Concept> getCloneMap() {
+        return cloneIdsToOrig;
+    }
+
+    private HashMap<String, Concept> origIdsToClones = new HashMap<String, Concept>();
+    private HashMap<String, Concept> cloneIdsToOrig = new HashMap<String, Concept>();
+
     private HashSet<String> insertedIds = new HashSet<String>();
-    
+
     public Concept referenceConcept(Concept conceptToClone) {
-        Optional<Concept> match = referencedConcepts.stream()
-                .filter(c -> c.getReferent() == conceptToClone.getReferent() && c.getTypeLabel() == c.getTypeLabel()).findAny();
-        if (!match.isPresent()) {
+        if (!origIdsToClones.containsKey(conceptToClone.objectID.toString()))  {
             Concept clone = new Concept();
-            clone.setReferent(conceptToClone.getReferent());
+            clone.setReferent(conceptToClone.getReferent());          
             clone.setTypeLabel(conceptToClone.getTypeLabel());
+
             Relation relation = new Relation();
             relation.setTextLabel("in");
             
-            referencedConcepts.add(clone);
+            origIdsToClones.put(conceptToClone.objectID.toString(), clone);
+            cloneIdsToOrig.put(clone.objectID.toString(), conceptToClone);
             
             GEdge edge1 = new Arrow(clone, relation);
             GEdge edge2 = new Arrow(relation, corefConcept);
@@ -82,7 +92,7 @@ public class ContextCrossReference {
             
             return clone;
         } else {
-            return match.get();
+            return origIdsToClones.get(conceptToClone.objectID.toString());
         }
     }
     
@@ -102,33 +112,6 @@ public class ContextCrossReference {
             insertedIds.add(id);
             graph.insertObject(obj);
         }
-    }
-    
-    @Override
-    public int hashCode() {
-        int hash = 5;
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final ContextCrossReference other = (ContextCrossReference) obj;
-        if (!Objects.equals(this.from, other.from)) {
-            return false;
-        }
-        if (!Objects.equals(this.to, other.to)) {
-            return false;
-        }
-        return true;
     }
 
     public ContextInfo getFrom() {
@@ -154,10 +137,17 @@ public class ContextCrossReference {
         this.coref = new Coref(this.corefConcept, toGraph);
     }
     
-    public ContextCrossReference(Coref existingCoref) {
+    public ContextCrossReference(Coref existingCoref, NameGenerator nameGenerator) {
         this.coref = existingCoref;
-        corefConcept = (Concept) coref.fromObj;
-        toGraph = (Graph) coref.toObj;
+        
+        if (coref.toObj.myKind == Kind.GRAPH) {
+            corefConcept = (Concept) coref.fromObj;
+            toGraph = (Graph) coref.toObj;
+        } else {
+            corefConcept = (Concept) coref.toObj;
+            toGraph = (Graph) coref.fromObj;           
+        }
+        
         fromGraph = corefConcept.ownerGraph;
         to = new ContextInfo(ContextType.valueOf(toGraph.getTypeLabel().toUpperCase(Locale.US)), toGraph.getReferent());
         from = new ContextInfo(ContextType.valueOf(fromGraph.getTypeLabel().toUpperCase(Locale.US)), fromGraph.getReferent());
@@ -176,9 +166,23 @@ public class ContextCrossReference {
  
             for (Object node : inRel.getLinkedNodes(GEdge.Direction.FROM)) {
                 if (node instanceof Concept) {
-                    Concept concept = (Concept) node;
-                    insertedIds.add(concept.objectID.toString());
-                    referencedConcepts.add(concept);
+                    Concept clone = (Concept) node;
+                    Concept orig = null;
+                    DeepIterator itr = new DeepIterator(toGraph, Kind.GNODE);
+                    while (itr.hasNext() && orig == null) {
+                        GraphObject next = itr.next();
+                        String id = next.objectID.toString();
+                        if (next instanceof Concept) {
+                            Concept concept = (Concept) next;
+                            if (Objects.equals(concept.getReferent(), clone.getReferent()) && Objects.equals(concept.getTypeLabel(), clone.getTypeLabel())) {
+                                orig = concept;
+                            }
+                        }
+                    }
+
+                    insertedIds.add(clone.objectID.toString());
+                    origIdsToClones.put(orig.objectID.toString(), clone);
+                    cloneIdsToOrig.put(clone.objectID.toString(), orig);
                 }
             }
         }

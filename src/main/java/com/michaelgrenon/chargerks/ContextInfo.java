@@ -12,6 +12,14 @@ import java.util.Objects;
  * @author GrenonMP
  */
 public class ContextInfo {
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 97 * hash + Objects.hashCode(this.type);
+        hash = 97 * hash + Objects.hashCode(this.name);
+        return hash;
+    }
     public static ContextInfo UNIVERSE = new ContextInfo(ContextType.UNIVERSE, 
             "Sheet of Assertion");
     
@@ -25,12 +33,6 @@ public class ContextInfo {
         return name;
     }
     private String name;
-
-    @Override
-    public int hashCode() {
-        int hash = 7;
-        return hash;
-    }
 
     @Override
     public boolean equals(Object obj) {

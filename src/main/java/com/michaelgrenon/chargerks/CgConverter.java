@@ -35,8 +35,10 @@ import java.util.stream.Collectors;
  */
 public class CgConverter {
     public static NeoGraph chargerToNeo(Graph charger) {
-        ContextCrossReferences crossReferences = new ContextCrossReferences(charger);
+        NameGenerator generator = new NameGenerator();
+        ContextCrossReferences crossReferences = new ContextCrossReferences(charger, generator);
         Set<String> ignoredIds = crossReferences.getAllIds();
+        Map<String, Concept> cloneMap = crossReferences.getCloneMap();
         HashMap<String, NeoConcept> concepts = new HashMap<String, NeoConcept>();
         HashMap<String, NeoRelation> relations = new HashMap<String, NeoRelation>();
         
@@ -45,12 +47,15 @@ public class CgConverter {
                 !concepts.containsKey(obj.objectID.toString()) && 
                 !ignoredIds.contains(obj.objectID.toString());
         
+        Predicate<GraphObject> clonedConcept = obj -> obj instanceof Concept && 
+                !(obj instanceof Graph) && 
+                cloneMap.containsKey(obj.objectID.toString());
+        
         Predicate<GraphObject> newRelation = obj -> obj instanceof Relation &&
                 !relations.containsKey(obj.objectID.toString()) && 
                 !ignoredIds.contains(obj.objectID.toString());
                 
         
-        NameGenerator generator = new NameGenerator();
         DeepIterator itr = new DeepIterator(charger, Kind.GNODE);
         while (itr.hasNext()) {
             GraphObject next = itr.next();
@@ -69,12 +74,20 @@ public class CgConverter {
                 
                 Concept concept1 = linkedConcepts.size() > 0 ? linkedConcepts.get(0) : null;
                 String concept1Id = concept1.objectID.toString();
+                if (clonedConcept.test(concept1)) {
+                    concept1 = cloneMap.get(concept1Id);
+                    concept1Id = concept1.objectID.toString();
+                }
                 if (newConcept.test(concept1)) {
                     concepts.put(concept1Id, chargerConceptToNeo(concept1, generator.generateName()));              
                 }
                 
                 Concept concept2 = linkedConcepts.size() > 1 ? linkedConcepts.get(1) : null;
                 String concept2Id = concept2.objectID.toString();
+                if (clonedConcept.test(concept2)) {
+                    concept2 = cloneMap.get(concept2Id);
+                    concept2Id = concept2.objectID.toString();
+                }
                 if (newConcept.test(concept2)) {
                     concepts.put(concept2Id, chargerConceptToNeo(concept2, generator.generateName()));              
                 }
@@ -91,7 +104,7 @@ public class CgConverter {
        universeGraph.setDim(3000,3000);
        Map<NeoConcept, Concept> conceptLookup = 
                neo.getConcepts().stream()
-                       .collect(Collectors.toMap(n -> n, CgConverter::neoConceptToCharger));
+                       .collect(Collectors.toMap(n -> n, CgConverter::neoConceptToCharger, (c1, c2) -> c1));
        
        Map<ContextInfo, Graph> chargerContexts = 
                neo.getConcepts().stream().collect(
