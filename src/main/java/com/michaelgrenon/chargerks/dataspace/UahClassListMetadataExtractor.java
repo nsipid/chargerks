@@ -27,7 +27,7 @@ public class UahClassListMetadataExtractor implements MetadataExtractor {
     public NeoGraph generateCatalog(String catalogName) throws IOException {
         Document doc = Jsoup.connect(url).get();
         Element pre = doc.select("pre").first();
-        BorderedTableMetadataExtractor tableExtractor = new BorderedTableMetadataExtractor(pre.text(), '-');
+        BorderedTableMetadataExtractor tableExtractor = new BorderedTableMetadataExtractor(new BorderedTable(pre.text(), '-'));
         return tableExtractor.generateCatalog(catalogName);
     }
 }

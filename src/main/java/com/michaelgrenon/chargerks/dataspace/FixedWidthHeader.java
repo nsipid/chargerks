@@ -25,6 +25,10 @@ public class FixedWidthHeader {
     public List<String> getColumnNames() {
         return Arrays.asList(this.columnNames);
     }
+
+    public String[] parseLine(String line) {
+        return columns.stream().map(c -> c.getColumnData(line)).toArray(String[]::new);
+    }
     
     public void initHeadingsFromLinesAboveBorder(String[] lines) {
         this.columnNames = this.columns.stream()

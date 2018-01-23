@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.michaelgrenon.chargerks.dataspace;
 
 import cgif.generate.NameGenerator;
@@ -11,41 +6,21 @@ import com.michaelgrenon.chargerks.ContextType;
 import com.michaelgrenon.chargerks.NeoConcept;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.StringReader;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- *
- * @author GrenonMP
- */
+
 public class BorderedTableMetadataExtractor implements MetadataExtractor {
-    String table;
-    char borderSymbol;
+    private BorderedTable table;
     
-    public BorderedTableMetadataExtractor(String table, char borderSymbol) {
+	public BorderedTableMetadataExtractor(BorderedTable table) {
         this.table = table;
-        this.borderSymbol = borderSymbol;
     }
-    
-    public NeoGraph generateCatalog(String catalogName) throws IOException {
+    public NeoGraph generateCatalog(String catalogName) {
         ContextInfo contextOfIntent = new ContextInfo(ContextType.INTENT, catalogName);
                 
-        BufferedReader reader = new BufferedReader(new StringReader(this.table));
-        ArrayList<String> lines = new ArrayList<String>();
-        for (String line = reader.readLine(); line != null; line = reader.readLine()) {
-            lines.add(line);
-            if (line.matches("^[\\s" + borderSymbol + "]+$"))
-                break;
-        }
-        reader.close();
-        
-        FixedWidthHeader header = new FixedWidthHeader(lines.toArray(new String[0]));
         NameGenerator namer = new NameGenerator();
-        List<NeoConcept> concepts = header.getColumnNames().stream()
+        List<NeoConcept> concepts = table.getHeader().getColumnNames().stream()
                 .map(s -> new NeoConcept(namer.generateName(), s, null, contextOfIntent))
                 .collect(Collectors.toList());
         

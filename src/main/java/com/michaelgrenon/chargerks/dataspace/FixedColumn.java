@@ -27,6 +27,7 @@ public class FixedColumn {
     public int getEndPosition() {
         return endPosition;
     }
+
     private int startPosition;
     private int endPosition;
 }
