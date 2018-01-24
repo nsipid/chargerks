@@ -14,3 +14,7 @@ hs_err_pid*
 nbactions.xml
 /target/*
 /nbproject/
+.classpath
+.project
+.settings/
+.vscode/

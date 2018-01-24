@@ -8,6 +8,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import java.io.IOException;
 import java.text.MessageFormat;
+import org.jsoup.Connection;
 
 public class UahClassIterable implements Iterable<String[]> {
     private String semester;
@@ -67,7 +68,9 @@ public class UahClassIterable implements Iterable<String[]> {
             if (this.index == null) {
                 String url = MessageFormat.format("{3}/cgi-bin/schedule.pl?file={0}.html&dir={2}&segment={1}",
                     new Object[]{semester, "NDX", dir, baseUrl});
-                this.index = Jsoup.connect(url).get();
+                Connection connection = Jsoup.connect(url);
+                connection.timeout(5000);
+                this.index = connection.get();
 
                 this.links = index.select("a[href]").eachAttr("href").iterator();
             }

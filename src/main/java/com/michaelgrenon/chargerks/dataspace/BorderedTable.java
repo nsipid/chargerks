@@ -45,8 +45,12 @@ public class BorderedTable {
 
             lines.clear();
             for (String line = reader.readLine(); line != null; line = reader.readLine()) {
+                if (line.trim().isEmpty()) {
+                    break;
+                }
                 lines.add(line);
             }
+            
             reader.close();  
         } catch (IOException e) {
             
