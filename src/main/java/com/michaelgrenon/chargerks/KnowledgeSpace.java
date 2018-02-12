@@ -43,4 +43,11 @@ public class KnowledgeSpace {
             return question.getAnswer().fromResult(result);
         }
     }
+    
+    public void Execute(Command command) {
+        try (Session session = driver.session()) {
+            String cypher = command.toCypher();
+            session.run(cypher);
+        }
+    }
 }

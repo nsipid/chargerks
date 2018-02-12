@@ -21,16 +21,16 @@ public class BorderedTableMetadataExtractor implements MetadataExtractor {
                 
         NameGenerator namer = new NameGenerator();
         List<NeoConcept> concepts = table.getHeader().getColumnNames().stream()
-                .map(s -> new NeoConcept(namer.generateName(), s, null, contextOfIntent))
+                .map(s -> new NeoConcept(namer.generateName(), "Value", s, contextOfIntent))
                 .collect(Collectors.toList());
         
-        NeoConcept tableConcept = new NeoConcept(namer.generateName(), "Table", "Course", new ContextInfo(ContextType.INTENT, catalogName));
+        NeoConcept recordConcept = new NeoConcept(namer.generateName(), "Record", catalogName, new ContextInfo(ContextType.INTENT, catalogName));
         
         List<NeoRelation> relations = concepts.stream()
-                .map(c -> new NeoRelation(c, tableConcept, contextOfIntent, "SCHEMA_DECLARES"))
+                .map(c -> new NeoRelation(c, recordConcept, contextOfIntent, c.getReferent().orElse("Value")))
                 .collect(Collectors.toList());
         
-        concepts.add(tableConcept);
+        concepts.add(recordConcept);
         return new NeoGraph(concepts, relations);
     }
 }

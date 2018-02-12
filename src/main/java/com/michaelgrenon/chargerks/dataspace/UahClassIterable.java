@@ -24,7 +24,7 @@ public class UahClassIterable implements Iterable<String[]> {
         private String semester;
         private String dir;
 
-        Document index;
+        Document index; 
         Iterator<String> links = Collections.emptyIterator();
         Iterator<String[]> records = Collections.emptyIterator();
 
@@ -32,7 +32,7 @@ public class UahClassIterable implements Iterable<String[]> {
             this.semester = semester;
             this.dir = dir;
         }
-
+ 
         @Override
         public boolean hasNext() {
             try

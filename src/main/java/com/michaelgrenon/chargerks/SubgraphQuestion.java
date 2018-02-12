@@ -46,7 +46,7 @@ public class SubgraphQuestion implements Question {
         //WHERE rel1 AND rel2 AND, ...
         cypherBuilder.append("WHERE ");
         String allRelations = relateNeoConcepts(graph, idToConcept, catalog)
-                .map(NeoRelation::toCypher)
+                .map(NeoRelation::toCypherImplicit)
                 .collect(Collectors.joining(" AND "));
         cypherBuilder.append(allRelations);
         cypherBuilder.append(NEW_LINE);
