@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.michaelgrenon.chargerks;
+package com.michaelgrenon.chargerks.cli;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -14,14 +14,16 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import java.util.function.Supplier;
 
+import com.michaelgrenon.chargerks.KnowledgeSpace;
+
 /**
  *
  * @author Michael Grenon <grenonm@uah.edu>
  */
-public class Cli {
+public class MainCli {
     public static final void main(final String[] args) {
         Option input = Option.builder("i").argName("input")
-                .desc("input cgx graph or database")
+                .desc("input cgx graph file or database uri")
                 .required()
                 .longOpt("input")
                 .build();
@@ -50,14 +52,26 @@ public class Cli {
                 .desc("name of the context of use/intent of the query/command")
                 .longOpt("contextName")
                 .build();
+
+        Option contextType = Option.builder("t").argName("context type")
+                .desc("type of context: use, intent")
+                .longOpt("contextType")
+                .build();
+
+        Option format = Option.builder("f").argName("data format")
+                .desc("input database format: csv, json, distance-matrix, uah-classes")
+                .longOpt("format")
+                .build();
         
         Options options = new Options();
         options.addOption(input);
         options.addOption(output);
         options.addOption(contextName);
+        options.addOption(contextType);
         options.addOption(uri);
         options.addOption(username);
         options.addOption(password);
+        options.addOption(format);
         
         CommandLineParser parser = new DefaultParser();
         
@@ -90,18 +104,18 @@ public class Cli {
                 helpRunner.run();
             }
             
-            String filename = remainingArgs[0]; 
+            String commandString = remainingArgs[0].toLowerCase(); 
             
             KnowledgeSpace ks = new KnowledgeSpace(uriArg, userArg, passArg);
             ks.open();
-            switch (remainingArgs[0].toLowerCase()) {
+            switch (commandString) {
                 case "merge":
                     break;
                 case "extract-metadata":
                     break;
                 case "load-data":
                     break;
-                case "set":
+                case "delete":
                     break;
                 case "ask":
                     break;

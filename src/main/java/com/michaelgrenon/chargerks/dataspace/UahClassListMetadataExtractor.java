@@ -19,6 +19,10 @@ import org.jsoup.nodes.Element;
 public class UahClassListMetadataExtractor implements MetadataExtractor {
     private String url;
     
+    public UahClassListMetadataExtractor(String uri) {
+        this.url = uri;
+    }
+
     public UahClassListMetadataExtractor(String semester, String segment, String dir) {
         this.url = MessageFormat.format("http://www.uah.edu/cgi-bin/schedule.pl?file={0}.html&dir={2}&segment={1}",
                 new Object[]{semester, segment, dir});
