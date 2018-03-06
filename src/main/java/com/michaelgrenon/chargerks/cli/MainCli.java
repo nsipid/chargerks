@@ -24,43 +24,51 @@ public class MainCli {
     public static final void main(final String[] args) {
         Option input = Option.builder("i").argName("input")
                 .desc("input cgx graph file or database uri")
-                .required()
+                .required(true)
+                .hasArg(true)
                 .longOpt("input")
                 .build();
         
         Option output = Option.builder("o").argName("file")
                 .desc("output cgx graph")
-                .required()
+                .hasArg(true)
                 .longOpt("output")
                 .build();
         
         Option uri = Option.builder().argName("uri")
                 .desc("bolt uri to the neo4j instance")
+                .hasArg(true)
                 .longOpt("uri")
                 .build();
         
         Option username = Option.builder().argName("user")
                 .desc("neo4j user name")
+                .hasArg(true)
                 .longOpt("user")
                 .build();
         
         Option password = Option.builder().argName("password")
                 .desc("neo4j password")
+                .hasArg(true)
+                .longOpt("password")
                 .build();
         
         Option contextName = Option.builder("c").argName("context name")
                 .desc("name of the context of use/intent of the query/command")
+                .hasArg(true)
                 .longOpt("contextName")
                 .build();
 
         Option contextType = Option.builder("t").argName("context type")
                 .desc("type of context: use, intent")
+                .hasArg(true)
                 .longOpt("contextType")
                 .build();
 
         Option format = Option.builder("f").argName("data format")
                 .desc("input database format: csv, json, distance-matrix, uah-classes")
                 .longOpt("format")
+                .hasArg(true)
                 .build();
         
         Options options = new Options();
@@ -100,6 +108,31 @@ public class MainCli {
                 passArg = cmdLine.getParsedOptionValue("password").toString();
             }
             
+            String inputArg = null;
+            if (cmdLine.hasOption("input")) {
+                inputArg = cmdLine.getParsedOptionValue("input").toString();
+            }
+
+            String outputArg = null;
+            if (cmdLine.hasOption("output")) {
+                outputArg = cmdLine.getParsedOptionValue("output").toString();
+            }
+
+            String contextNameArg = null;
+            if (cmdLine.hasOption("contextName")) {
+                contextNameArg = cmdLine.getParsedOptionValue("contextName").toString();
+            }
+
+            String contextTypeArg = null;
+            if (cmdLine.hasOption("contextType")) {
+                contextTypeArg = cmdLine.getParsedOptionValue("contextType").toString();
+            }
+
+            String formatArg = null;
+            if (cmdLine.hasOption("format")) {
+                formatArg = cmdLine.getParsedOptionValue("format").toString();
+            }
+
             if (remainingArgs.length != 1) {
                 helpRunner.run();
             }
@@ -108,10 +141,15 @@ public class MainCli {
             
             KnowledgeSpace ks = new KnowledgeSpace(uriArg, userArg, passArg);
             ks.open();
-            switch (commandString) {
+            Runnable cmd;
+            switch (commandString) {                
                 case "merge":
+                    cmd = new MergeCli(ks, inputArg);
+                    cmd.run();
                     break;
                 case "extract-metadata":
+                    cmd = new ExtractMetadataCli(contextNameArg, formatArg, inputArg, outputArg);
+                    cmd.run();
                     break;
                 case "load-data":
                     break;
@@ -125,6 +163,8 @@ public class MainCli {
             
         } catch (ParseException e) {
             helpRunner.run();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
     }  
 }
