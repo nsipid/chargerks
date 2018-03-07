@@ -16,6 +16,8 @@ public class BorderedTableMetadataExtractor implements MetadataExtractor {
 	public BorderedTableMetadataExtractor(BorderedTable table) {
         this.table = table;
     }
+
+    @Override
     public NeoGraph generateCatalog(String catalogName) {
         ContextInfo contextOfIntent = new ContextInfo(ContextType.INTENT, catalogName);
                 
@@ -32,5 +34,10 @@ public class BorderedTableMetadataExtractor implements MetadataExtractor {
         
         concepts.add(recordConcept);
         return new NeoGraph(concepts, relations);
+    }
+
+    @Override
+    public List<String> generateCsvHeader() {
+        return table.getHeader().getColumnNames();
     }
 }

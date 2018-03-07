@@ -27,9 +27,16 @@ import org.apache.commons.csv.CSVRecord;
 public class CsvMetadataExtractor implements MetadataExtractor {
 
     CSVParser parser;
+    boolean hasHeader;
     
-    public CsvMetadataExtractor(Reader reader) throws IOException {
-        parser = new CSVParser(reader, CSVFormat.DEFAULT);
+    public CsvMetadataExtractor(Reader reader, boolean hasHeader) throws IOException {
+        this.hasHeader = hasHeader;
+
+        if (hasHeader) {
+            parser = new CSVParser(reader, CSVFormat.DEFAULT.withFirstRecordAsHeader());
+        } else {
+            parser = new CSVParser(reader, CSVFormat.DEFAULT);
+        }
     }
     
     @Override
@@ -39,9 +46,16 @@ public class CsvMetadataExtractor implements MetadataExtractor {
         int size = record.size();
         NameGenerator namer = new NameGenerator();
         
-        List<NeoConcept> concepts = IntStream.range(1,size)
+        List<NeoConcept> concepts = null;
+        if (hasHeader) {
+            concepts = parser.getHeaderMap().keySet().stream()
+                .map(s -> new NeoConcept(namer.generateName(), "Value", s, contextOfIntent))
+                .collect(Collectors.toList());
+        } else {
+            concepts = IntStream.range(1,size)
                 .mapToObj(s -> new NeoConcept(namer.generateName(), "Value", "Value"+s, contextOfIntent))
                 .collect(Collectors.toList());
+        }
         
         NeoConcept recordConcept = new NeoConcept(namer.generateName(), "Record", catalogName, new ContextInfo(ContextType.INTENT, catalogName));
         
@@ -51,6 +65,17 @@ public class CsvMetadataExtractor implements MetadataExtractor {
         
         concepts.add(recordConcept);
         return new NeoGraph(concepts, relations);
+    }
+
+    @Override
+    public List<String> generateCsvHeader() {
+        if (hasHeader) {
+            return parser.getHeaderMap().keySet().stream().collect(Collectors.toList());
+        } else {
+            CSVRecord record = parser.iterator().next();
+            int size = record.size();
+            return IntStream.range(1,size).mapToObj(s -> "Value"+s).collect(Collectors.toList());
+        }
     }
     
 }

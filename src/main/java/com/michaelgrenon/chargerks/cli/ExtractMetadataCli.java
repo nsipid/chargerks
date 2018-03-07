@@ -38,9 +38,14 @@ public class ExtractMetadataCli implements Runnable {
             NeoGraph metaGraph = null;
             switch (format.toLowerCase()) {
                 case "csv":
-                    Reader reader = new FileReader(inputUri);
-                    CsvMetadataExtractor csvExtractor = new CsvMetadataExtractor(reader);
+                    Reader csvReader = new FileReader(inputUri);
+                    CsvMetadataExtractor csvExtractor = new CsvMetadataExtractor(csvReader, false);
                     metaGraph = csvExtractor.generateCatalog(contextName);
+                    break;
+                case "csv-header":
+                    Reader csvHeaderReader = new FileReader(inputUri);
+                    CsvMetadataExtractor csvHeaderExtractor = new CsvMetadataExtractor(csvHeaderReader, true);
+                    metaGraph = csvHeaderExtractor.generateCatalog(contextName);
                     break;
                 case "uah-classes":
                     UahClassListMetadataExtractor uahClassExtractor = new UahClassListMetadataExtractor(inputUri);

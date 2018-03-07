@@ -8,6 +8,7 @@ package com.michaelgrenon.chargerks.dataspace;
 import com.michaelgrenon.chargerks.NeoGraph;
 import java.io.IOException;
 import java.text.MessageFormat;
+import java.util.List;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -28,10 +29,19 @@ public class UahClassListMetadataExtractor implements MetadataExtractor {
                 new Object[]{semester, segment, dir});
     }
     
+    @Override
     public NeoGraph generateCatalog(String catalogName) throws IOException {
         Document doc = Jsoup.connect(url).get();
         Element pre = doc.select("pre").first();
         BorderedTableMetadataExtractor tableExtractor = new BorderedTableMetadataExtractor(new BorderedTable(pre.text(), '-'));
         return tableExtractor.generateCatalog(catalogName);
+    }
+
+    @Override
+    public List<String> generateCsvHeader() throws IOException {
+        Document doc = Jsoup.connect(url).get();
+        Element pre = doc.select("pre").first();
+        BorderedTableMetadataExtractor tableExtractor = new BorderedTableMetadataExtractor(new BorderedTable(pre.text(), '-'));
+        return tableExtractor.generateCsvHeader();
     }
 }

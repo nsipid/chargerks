@@ -66,7 +66,7 @@ public class MainCli {
                 .build();
 
         Option format = Option.builder("f").argName("data format")
-                .desc("input database format: csv, json, distance-matrix, uah-classes")
+                .desc("input database format: csv, csv-header, json, distance-matrix, uah-classes")
                 .longOpt("format")
                 .hasArg(true)
                 .build();

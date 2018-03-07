@@ -7,6 +7,7 @@ package com.michaelgrenon.chargerks.dataspace;
 
 import com.michaelgrenon.chargerks.NeoGraph;
 import java.io.IOException;
+import java.util.List;
 
 /**
  *
@@ -14,4 +15,5 @@ import java.io.IOException;
  */
 public interface MetadataExtractor {
     NeoGraph generateCatalog(String catalogName) throws IOException;
+    List<String> generateCsvHeader() throws IOException;
 }
