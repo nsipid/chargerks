@@ -26,7 +26,7 @@ public class BorderedTableMetadataExtractor implements MetadataExtractor {
                 .map(s -> new NeoConcept(namer.generateName(), "Value", s, contextOfIntent))
                 .collect(Collectors.toList());
         
-        NeoConcept recordConcept = new NeoConcept(namer.generateName(), "Record", catalogName, new ContextInfo(ContextType.INTENT, catalogName));
+        NeoConcept recordConcept = new NeoConcept(namer.generateName(), "Record", "count", new ContextInfo(ContextType.INTENT, catalogName));
         
         List<NeoRelation> relations = concepts.stream()
                 .map(c -> new NeoRelation(recordConcept, c, contextOfIntent, c.getReferent().orElse("Value")))

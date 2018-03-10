@@ -9,76 +9,79 @@ import cgif.generate.NameGenerator;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
-import org.neo4j.driver.v1.Record;
-import org.neo4j.driver.v1.StatementResult;
+import java.util.stream.Collectors;
 import org.neo4j.driver.v1.Value;
+import org.neo4j.driver.v1.types.Node;
+import org.neo4j.driver.v1.types.Relationship;
 
 /**
  *
  * @author GrenonMP
  */
 public class NeoGraph {
-    private ArrayList<NeoConcept> concepts;
-    private ArrayList<NeoRelation> relations;
+    private Collection<NeoConcept> concepts;
+    private Collection<NeoRelation> relations;
     
     public NeoGraph(Collection<NeoConcept> concepts, Collection<NeoRelation> relations) {
         this.concepts = new ArrayList<NeoConcept>(concepts);
         this.relations = new ArrayList<NeoRelation>(relations);
     }
+
+    public NeoGraph(List<Node> nodes, List<Relationship> relationships) {
+        HashMap<Long, NeoConcept> neoConcepts = new HashMap<Long, NeoConcept>();
+        HashMap<Long, NeoRelation> neoRelations = new HashMap<Long, NeoRelation>();
+        NameGenerator generator = new NameGenerator();
+
+        for (Node node : nodes) {
+            Long id = node.id();
+            if (!neoConcepts.containsKey(id)) {
+                Value referentValue = node.get("properties").get("referent");
+                Value contextTypeValue = node.get("properties").get("contextType");
+                Value contextNameValue = node.get("properties").get("contextName");
+                
+                String type = "T";
+                Iterator<String> itr = node.labels().iterator();
+                if (itr.hasNext()) {
+                    type = itr.next();
+                }
+
+                String referent = referentValue.isNull() ? "" : referentValue.asString();
+                ContextType contextType = contextTypeValue.isNull() ? ContextType.UNIVERSE : ContextType.valueOf(contextTypeValue.asString());
+                String contextName = contextNameValue.isNull() ? "" : contextNameValue.asString();
+
+                NeoConcept neoConcept = new NeoConcept(generator.generateName(), type, referent, new ContextInfo(contextType, contextName));
+                neoConcepts.put(id, neoConcept);
+            }
+        }
+
+        for (Relationship relationship : relationships) {
+            Long id = relationship.id();
+            if (!neoRelations.containsKey(id)) {
+                Value contextTypeValue = relationship.get("properties").get("contextType");
+                Value contextNameValue = relationship.get("properties").get("contextName");
+
+                ContextType contextType = contextTypeValue.isNull() ? ContextType.UNIVERSE : ContextType.valueOf(contextTypeValue.asString());
+                String contextName = contextNameValue.isNull() ? "" : contextNameValue.asString();
+
+                NeoConcept startNode = neoConcepts.get(relationship.startNodeId());
+                NeoConcept endNode = neoConcepts.get(relationship.endNodeId());
+
+                NeoRelation neoRelation = new NeoRelation(startNode, endNode, new ContextInfo(contextType, contextName), relationship.type());
+                neoRelations.put(id, neoRelation);
+            }
+        }
+
+        this.concepts = neoConcepts.values();
+        this.relations = neoRelations.values();
+    }
     
     public List<NeoConcept> getConcepts() {
-        return (List<NeoConcept>) concepts.clone();
+        return concepts.stream().collect(Collectors.toList());
     }
     
     public List<NeoRelation> getRelations() {
-        return (List<NeoRelation>) relations.clone();
-    }
-    
-    public static NeoGraph fromResult(StatementResult result) {
-        HashMap<Number, NeoConcept> neoIdToConcept = new HashMap<Number, NeoConcept>();
-        ArrayList<NeoRelation> neoRelations = new ArrayList<NeoRelation>();
-        NameGenerator generator = new NameGenerator();
-        while(result.hasNext()) {
-            Record r = result.next();
-            
-            Number ida = r.get("id(a)").asNumber();
-            if (!neoIdToConcept.containsKey(ida)) {
-                Value referentValue = r.get("a.referent");
-                Value typeValue = r.get("labels(a)");
-                Value context = r.get("a.context");
-                Value catalog = r.get("a.catalog");
-                ContextType contextType = context.isNull() ? ContextType.INTENT : ContextType.USE;
-                String contextName = context.isNull() ? catalog.asString() : context.asString();
-                String referent = referentValue.isNull() ? "" : referentValue.asString();
-                String type = typeValue.asList().get(0).toString();
-                NeoConcept concept = new NeoConcept(generator.generateName(), type, referent, new ContextInfo(contextType, contextName));
-
-                neoIdToConcept.put(ida, concept);
-            }
-            NeoConcept conceptA = neoIdToConcept.get(ida);
-            
-            Number idb = r.get("id(b)").asNumber();
-            if (!neoIdToConcept.containsKey(idb)) {
-                Value referentValue = r.get("b.referent");
-                Value typeValue = r.get("labels(b)");
-                Value context = r.get("b.context");
-                Value catalog = r.get("b.catalog");
-                ContextType contextType = context.isNull() ? ContextType.INTENT : ContextType.USE;
-                String contextName = context.isNull() ? catalog.asString() : context.asString();
-                String referent = referentValue.isNull() ? "" : referentValue.asString();
-                String type = typeValue.asList().get(0).toString();
-                NeoConcept concept = new NeoConcept(generator.generateName(), type, referent, new ContextInfo(contextType, contextName));
-                neoIdToConcept.put(idb, concept);
-            }
-            NeoConcept conceptB = neoIdToConcept.get(idb);
-            
-            Value typeValue = r.get("type(r)");
-            ContextInfo relationContext = conceptA.getContext() == conceptB.getContext() ? conceptA.getContext() : ContextInfo.UNIVERSE;
-            NeoRelation relation = new NeoRelation(conceptA, conceptB, relationContext, typeValue.asString());
-            neoRelations.add(relation);
-        }
-        
-        return new NeoGraph(neoIdToConcept.values(), neoRelations);
+        return relations.stream().collect(Collectors.toList());
     }
 }

@@ -69,7 +69,7 @@ public class NeoConcept {
     public String toCypher() {
         boolean nullOrEmpty = referent != null && !referent.isEmpty();
         String referentPart =  nullOrEmpty ? String.format("referent: '%s', ", referent) : "";
-        String contextTypePart = String.format("contextType: %d, ", context.getType().ordinal());
+        String contextTypePart = String.format("contextType: %d, ", context.getType().name());
         String contextNamePart = String.format("contextName: '%s'", context.getName());
         return String.format("(%s:`%s` {%s%s%s})", variable, type, referentPart, contextTypePart, contextNamePart);
     }

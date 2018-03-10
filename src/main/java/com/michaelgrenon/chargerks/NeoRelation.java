@@ -61,7 +61,8 @@ public class NeoRelation {
     }
     
     public String toCypherExplicit() {
-        return String.format("(%s)-[:`%s` {contextType: %d, contextName: '%s'}]-(%s)", concept1.getVariable(), label, context.getType().ordinal(), context.getName(), concept2.getVariable());
+        return String.format("(%s)-[:`%s` {contextType: %d, contextName: '%s'}]-(%s)", 
+            concept1.getVariable(), label, context.getType().name(), context.getName(), concept2.getVariable());
     }
 
     public NeoConcept getConcept1() {

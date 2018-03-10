@@ -1,6 +1,5 @@
 package com.michaelgrenon.chargerks;
 
-public interface Question {
-    public String toCypher();
+public interface Question extends Command {
     public Answer getAnswer();
 }
