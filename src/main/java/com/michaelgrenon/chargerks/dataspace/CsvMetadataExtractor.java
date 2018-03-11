@@ -57,7 +57,7 @@ public class CsvMetadataExtractor implements MetadataExtractor {
                 .collect(Collectors.toList());
         }
         
-        NeoConcept recordConcept = new NeoConcept(namer.generateName(), "Record", "count", new ContextInfo(ContextType.INTENT, catalogName));
+        NeoConcept recordConcept = new NeoConcept(namer.generateName(), "Record", null, new ContextInfo(ContextType.INTENT, catalogName));
         
         List<NeoRelation> relations = concepts.stream()
                 .map(c -> new NeoRelation(c, recordConcept, contextOfIntent, c.getReferent().orElse("Value")))

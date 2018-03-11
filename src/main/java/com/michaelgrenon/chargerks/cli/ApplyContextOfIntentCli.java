@@ -5,6 +5,7 @@ import com.michaelgrenon.chargerks.Command;
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextQuestion;
 import com.michaelgrenon.chargerks.ContextType;
+import com.michaelgrenon.chargerks.IndexIntentCommand;
 import com.michaelgrenon.chargerks.KnowledgeSpace;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.Question;
@@ -39,6 +40,9 @@ public class ApplyContextOfIntentCli implements Runnable {
             throw new IllegalArgumentException("Bad format");
         }
 
+        IndexIntentCommand indexing = new IndexIntentCommand(contextGraph);
+        ks.Execute(indexing);
+        
         return new ApplyContextOfIntentCommand(contextGraph, importDataUri);
     }
     

@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 11, 2018 3:58:55 PM" modified="Mar 11, 2018 4:01:47 PM" user="grenon" wrapLabels="false" wrapColumns="30">
+<graph id="2f41bda3:16216dbed0a:-7fd9" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="0.00" y="0.00" width="3000.00" height="3000.00" depth="1.00"/>
+        <color foreground="0,94,192" background="0,94,192"/>
+        <font name="SansSerif" style="1" size="12" />
+    </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+    <graph id="2f41bda3:16216dbed0a:-7fc8" owner="2f41bda3:16216dbed0a:-7fd9">
+        <type>
+            <label>INTENT</label>
+        </type>
+        <referent>
+            <label>scheduleSpring2016</label>
+        </referent>
+        <layout>
+            <rectangle x="40.00" y="39.00" width="767.51" height="596.62" depth="1.00"/>
+            <color foreground="0,94,192" background="0,94,192"/>
+            <font name="SansSerif" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        <relation id="2f41bda3:16216dbed0a:-7fb7" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Max Enrl</label>
+            </type>
+            <layout>
+                <rectangle x="505.19" y="220.10" width="57.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="2f41bda3:16216dbed0a:-7f54" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Course</label>
+            </type>
+            <referent>
+                <label>CRN</label>
+            </referent>
+            <layout>
+                <rectangle x="480.50" y="553.00" width="79.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 11, 2018 4:00:39 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 11, 2018 4:00:51 PM" type="USER">
+        <description>User modified object. Label Course: CRN</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </concept>
+        <relation id="2f41bda3:16216dbed0a:-7fab" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Days</label>
+            </type>
+            <layout>
+                <rectangle x="295.12" y="390.37" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="2f41bda3:16216dbed0a:-7f56" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>matches</label>
+            </type>
+            <layout>
+                <rectangle x="447.00" y="487.00" width="58.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 11, 2018 4:00:20 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 11, 2018 4:00:31 PM" type="USER">
+        <description>User modified object. Label matches</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </relation>
+        <relation id="2f41bda3:16216dbed0a:-7fae" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Wait List</label>
+            </type>
+            <layout>
+                <rectangle x="546.57" y="329.27" width="58.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="2f41bda3:16216dbed0a:-7fc3" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>CRN</label>
+            </type>
+            <layout>
+                <rectangle x="388.57" y="457.32" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="2f41bda3:16216dbed0a:-7fc0" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Course</label>
+            </type>
+            <layout>
+                <rectangle x="534.87" y="467.48" width="49.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="2f41bda3:16216dbed0a:-7fa8" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Start</label>
+            </type>
+            <layout>
+                <rectangle x="501.03" y="388.47" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="2f41bda3:16216dbed0a:-7fa5" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>End</label>
+            </type>
+            <layout>
+                <rectangle x="250.72" y="242.81" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="2f41bda3:16216dbed0a:-7fb1" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Avail</label>
+            </type>
+            <layout>
+                <rectangle x="605.74" y="266.24" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="2f41bda3:16216dbed0a:-7fb4" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Enrl</label>
+            </type>
+            <layout>
+                <rectangle x="321.19" y="480.56" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="2f41bda3:16216dbed0a:-7fd8" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Sec Type</label>
+            </referent>
+            <layout>
+                <rectangle x="152.33" y="554.68" width="98.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="2f41bda3:16216dbed0a:-7fd7" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>CRN</label>
+            </referent>
+            <layout>
+                <rectangle x="372.29" y="559.62" width="70.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="2f41bda3:16216dbed0a:-7fcc" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Bldg</label>
+            </referent>
+            <layout>
+                <rectangle x="113.47" y="104.88" width="71.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="2f41bda3:16216dbed0a:-7fcb" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Room</label>
+            </referent>
+            <layout>
+                <rectangle x="68.26" y="310.12" width="79.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="2f41bda3:16216dbed0a:-7fce" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Start</label>
+            </referent>
+            <layout>
+                <rectangle x="629.96" y="410.91" width="74.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="2f41bda3:16216dbed0a:-7fcd" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>End</label>
+            </referent>
+            <layout>
+                <rectangle x="70.72" y="194.67" width="67.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="2f41bda3:16216dbed0a:-7fca" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Instructor</label>
+            </referent>
+            <layout>
+                <rectangle x="72.00" y="393.15" width="102.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="2f41bda3:16216dbed0a:-7fcf" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Days</label>
+            </referent>
+            <layout>
+                <rectangle x="96.86" y="480.23" width="74.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="2f41bda3:16216dbed0a:-7fa2" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Bldg</label>
+            </type>
+            <layout>
+                <rectangle x="212.85" y="159.91" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="2f41bda3:16216dbed0a:-7fc6" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Sec Type</label>
+            </type>
+            <layout>
+                <rectangle x="250.74" y="470.26" width="60.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="2f41bda3:16216dbed0a:-7fc9" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Record</label>
+            </type>
+            <layout>
+                <rectangle x="390.30" y="332.30" width="49.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="2f41bda3:16216dbed0a:-7fba" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Credit</label>
+            </type>
+            <layout>
+                <rectangle x="387.23" y="232.83" width="42.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="2f41bda3:16216dbed0a:-7fbd" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Title</label>
+            </type>
+            <layout>
+                <rectangle x="302.57" y="183.09" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="2f41bda3:16216dbed0a:-7f9c" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Instructor</label>
+            </type>
+            <layout>
+                <rectangle x="189.98" y="390.64" width="64.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="2f41bda3:16216dbed0a:-7fd4" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Credit</label>
+            </referent>
+            <layout>
+                <rectangle x="352.02" y="115.81" width="80.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="2f41bda3:16216dbed0a:-7fd3" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Max Enrl</label>
+            </referent>
+            <layout>
+                <rectangle x="595.68" y="136.89" width="95.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="2f41bda3:16216dbed0a:-7fd6" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Course</label>
+            </referent>
+            <layout>
+                <rectangle x="645.74" y="534.14" width="87.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="2f41bda3:16216dbed0a:-7fd5" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Title</label>
+            </referent>
+            <layout>
+                <rectangle x="249.91" y="88.00" width="70.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="2f41bda3:16216dbed0a:-7fd0" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Wait List</label>
+            </referent>
+            <layout>
+                <rectangle x="698.51" y="333.28" width="96.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="2f41bda3:16216dbed0a:-7fd2" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Enrl</label>
+            </referent>
+            <layout>
+                <rectangle x="277.33" y="577.62" width="68.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="2f41bda3:16216dbed0a:-7fd1" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Avail</label>
+            </referent>
+            <layout>
+                <rectangle x="719.98" y="218.09" width="73.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="2f41bda3:16216dbed0a:-7f9f" owner="2f41bda3:16216dbed0a:-7fc8">
+            <type>
+                <label>Room</label>
+            </type>
+            <layout>
+                <rectangle x="217.98" y="334.47" width="41.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </relation>
+        <arrow id="2f41bda3:16216dbed0a:-7fb9" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7fba">
+            <layout>
+                <rectangle x="407.31" y="288.82" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fb6" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7fb7">
+            <layout>
+                <rectangle x="473.75" y="282.30" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fb5" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fb7" to="2f41bda3:16216dbed0a:-7fd3">
+            <layout>
+                <rectangle x="579.08" y="191.92" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fb8" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fba" to="2f41bda3:16216dbed0a:-7fd4">
+            <layout>
+                <rectangle x="396.56" y="186.83" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7faa" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7fab">
+            <layout>
+                <rectangle x="354.36" y="374.48" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7f55" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7f56">
+            <layout>
+                <rectangle x="442.74" y="422.47" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fac" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fae" to="2f41bda3:16216dbed0a:-7fd0">
+            <layout>
+                <rectangle x="645.98" y="340.32" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7f53" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7f56" to="2f41bda3:16216dbed0a:-7f54">
+            <layout>
+                <rectangle x="491.88" y="526.18" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fad" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7fae">
+            <layout>
+                <rectangle x="490.74" y="340.30" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7faf" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fb1" to="2f41bda3:16216dbed0a:-7fd1">
+            <layout>
+                <rectangle x="675.79" y="255.57" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fc2" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7fc3">
+            <layout>
+                <rectangle x="407.53" y="407.36" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fc5" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7fc6">
+            <layout>
+                <rectangle x="340.34" y="414.23" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fc4" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc6" to="2f41bda3:16216dbed0a:-7fd8">
+            <layout>
+                <rectangle x="240.16" y="518.53" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fc1" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc3" to="2f41bda3:16216dbed0a:-7fd7">
+            <layout>
+                <rectangle x="403.97" y="514.89" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fa9" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fab" to="2f41bda3:16216dbed0a:-7fcf">
+            <layout>
+                <rectangle x="230.76" y="439.54" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fa4" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7fa5">
+            <layout>
+                <rectangle x="332.08" y="292.76" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fa7" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7fa8">
+            <layout>
+                <rectangle x="470.03" y="372.95" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fa6" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fa8" to="2f41bda3:16216dbed0a:-7fce">
+            <layout>
+                <rectangle x="579.44" y="407.35" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fb2" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fb4" to="2f41bda3:16216dbed0a:-7fd2">
+            <layout>
+                <rectangle x="323.15" y="535.60" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fb3" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7fb4">
+            <layout>
+                <rectangle x="372.47" y="418.94" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fb0" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7fb1">
+            <layout>
+                <rectangle x="521.21" y="307.15" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fa1" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7fa2">
+            <layout>
+                <rectangle x="315.56" y="251.49" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fa0" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fa2" to="2f41bda3:16216dbed0a:-7fcc">
+            <layout>
+                <rectangle x="194.62" y="146.67" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fa3" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fa5" to="2f41bda3:16216dbed0a:-7fcd">
+            <layout>
+                <rectangle x="192.22" y="230.61" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fbb" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fbd" to="2f41bda3:16216dbed0a:-7fd5">
+            <layout>
+                <rectangle x="301.02" y="148.18" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fbc" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7fbd">
+            <layout>
+                <rectangle x="362.68" y="263.89" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7f9a" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7f9c" to="2f41bda3:16216dbed0a:-7fca">
+            <layout>
+                <rectangle x="179.89" y="400.76" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7f9b" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7f9c">
+            <layout>
+                <rectangle x="313.20" y="371.31" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fbf" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7fc0">
+            <layout>
+                <rectangle x="487.27" y="413.22" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7fbe" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc0" to="2f41bda3:16216dbed0a:-7fd6">
+            <layout>
+                <rectangle x="611.68" y="505.69" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7f9e" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7fc9" to="2f41bda3:16216dbed0a:-7f9f">
+            <layout>
+                <rectangle x="318.97" y="342.87" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2f41bda3:16216dbed0a:-7f9d" owner="2f41bda3:16216dbed0a:-7fc8" label="-" from="2f41bda3:16216dbed0a:-7f9f" to="2f41bda3:16216dbed0a:-7fcb">
+            <layout>
+                <rectangle x="180.41" y="333.64" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 11, 2018 3:59:16 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\uahClassMetadata.cgx</file>
+    </event>
+</history>
+        </arrow>
+    </graph>
+</graph>
+
+</conceptualgraph>
+
