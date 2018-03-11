@@ -6,10 +6,11 @@ import java.io.IOException;
 import org.apache.commons.csv.*;
 
 public class UahClassListTransformer {
-    
-    public static void toCsv(String fileName) throws IOException {
-        UahClassIterable iterable = new UahClassIterable("sprg2016", "archived");
-        UahClassListMetadataExtractor metadataExtractor = new UahClassListMetadataExtractor("sprg2016", "CS", "archived");
+    public static void toCsv(String indexUrl, String fileName) throws IOException {
+        //example https://www.uah.edu/cgi-bin/schedule.pl?file=sprg2016.html&segment=NDX&dir=archived
+
+        UahClassIterable iterable = new UahClassIterable(indexUrl);
+        UahClassListMetadataExtractor metadataExtractor = new UahClassListMetadataExtractor(indexUrl);
         String[] header = metadataExtractor.generateCsvHeader().stream().toArray(String[]::new);
         CSVFormat format = CSVFormat.DEFAULT.withHeader(header);
         

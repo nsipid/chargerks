@@ -11,26 +11,28 @@ import java.text.MessageFormat;
 import org.jsoup.Connection;
 
 public class UahClassIterable implements Iterable<String[]> {
-    private String semester;
-    private String dir;
+    private String baseUrl = "http://www.uah.edu";
+    private String indexUrl;
 
     public UahClassIterable(String semester, String dir) {
-        this.semester = semester;
-        this.dir = dir;
+        this.indexUrl = MessageFormat.format("{3}/cgi-bin/schedule.pl?file={0}.html&dir={2}&segment={1}",
+                new Object[]{semester, "NDX", dir, baseUrl});
+    }
+
+    public UahClassIterable(String indexUrl) {
+        this.indexUrl = indexUrl;
     }
 
     private class UahClassListIterator implements Iterator<String[]> {
-        String baseUrl = "http://www.uah.edu";
-        private String semester;
-        private String dir;
+        
+        String indexUrl;
 
         Document index; 
         Iterator<String> links = Collections.emptyIterator();
         Iterator<String[]> records = Collections.emptyIterator();
 
-        public UahClassListIterator(String semester, String dir) {
-            this.semester = semester;
-            this.dir = dir;
+        public UahClassListIterator(String indexUrl) {
+            this.indexUrl = indexUrl;
         }
  
         @Override
@@ -66,9 +68,7 @@ public class UahClassIterable implements Iterable<String[]> {
 
         private void initIndex() throws IOException {
             if (this.index == null) {
-                String url = MessageFormat.format("{3}/cgi-bin/schedule.pl?file={0}.html&dir={2}&segment={1}",
-                    new Object[]{semester, "NDX", dir, baseUrl});
-                Connection connection = Jsoup.connect(url);
+                Connection connection = Jsoup.connect(this.indexUrl);
                 connection.timeout(5000);
                 this.index = connection.get();
 
@@ -79,6 +79,6 @@ public class UahClassIterable implements Iterable<String[]> {
 
 	@Override
 	public Iterator<String[]> iterator() {
-		return new UahClassListIterator(semester, dir);
+		return new UahClassListIterator(indexUrl);
 	}
 }

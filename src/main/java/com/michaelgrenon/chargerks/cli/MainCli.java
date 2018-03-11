@@ -143,19 +143,25 @@ public class MainCli {
             ks.open();
             Runnable cmd;
             switch (commandString) {                
-                case "merge":
-                    cmd = new MergeCli(ks, inputArg);
+                case "merge-metadata":
+                    cmd = new MergeMetadataCli(ks, inputArg);
                     cmd.run();
                     break;
                 case "extract-metadata":
                     cmd = new ExtractMetadataCli(contextNameArg, formatArg, inputArg, outputArg);
                     cmd.run();
                     break;
-                case "load-data":
+                case "apply-intent":
+                    cmd = new ApplyContextOfIntentCli(ks, contextNameArg, formatArg, inputArg);
                     break;
-                case "delete":
+                case "apply-use":
+                    cmd = new ApplyContextOfUseCli(ks, contextNameArg);
                     break;
-                case "ask":
+                case "delete-context":
+                    break;
+                case "ask-metadata":
+                    break;
+                case "ask-data":
                     break;
                 default:
                     helpRunner.run();

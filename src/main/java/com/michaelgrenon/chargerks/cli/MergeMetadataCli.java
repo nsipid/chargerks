@@ -21,13 +21,13 @@ import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.dataspace.CsvMetadataExtractor;
 import com.michaelgrenon.chargerks.dataspace.UahClassListMetadataExtractor;
 
-public class MergeCli implements Runnable {
+public class MergeMetadataCli implements Runnable {
 	private String inputFile;
 	private Command command;
 	private KnowledgeSpace ks;
 
 
-	public MergeCli(KnowledgeSpace ks, String inputFile) throws FileNotFoundException, IOException {
+	public MergeMetadataCli(KnowledgeSpace ks, String inputFile) throws FileNotFoundException, IOException {
         this.inputFile = inputFile;
         this.ks = ks;
         this.command = buildCommand();

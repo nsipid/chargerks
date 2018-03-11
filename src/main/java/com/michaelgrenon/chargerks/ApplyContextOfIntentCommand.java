@@ -6,13 +6,13 @@ import com.michaelgrenon.chargerks.NeoConcept;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
 
-public class MergeDataGraphCommand implements Command {
+public class ApplyContextOfIntentCommand implements Command {
     private static final String NEW_LINE = System.getProperty("line.separator");
 	private NeoGraph contextOfUse;
 	private String csvPath;
 
-    public MergeDataGraphCommand(NeoGraph contextOfUse, String csvPath) {
-        this.contextOfUse = contextOfUse;
+    public ApplyContextOfIntentCommand(NeoGraph contextOfIntent, String csvPath) {
+        this.contextOfUse = contextOfIntent;
         this.csvPath = csvPath;
     }
 

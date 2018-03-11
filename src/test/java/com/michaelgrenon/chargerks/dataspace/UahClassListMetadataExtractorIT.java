@@ -47,7 +47,7 @@ public class UahClassListMetadataExtractorIT {
     @org.junit.Test
     public void testGenerateCatalog() throws Exception {
         String catalogName = "CourseListing";
-        UahClassListMetadataExtractor instance = new UahClassListMetadataExtractor("fall2015", "CS", "archived");
+        UahClassListMetadataExtractor instance = new UahClassListMetadataExtractor("https://www.uah.edu/cgi-bin/schedule.pl?file=sprg2016.html&segment=NDX&dir=archived");
         NeoGraph result = instance.generateCatalog(catalogName);
         List<NeoConcept> concepts = result.getConcepts();
         assertContainsConceptOfType(concepts, "Sec Type");

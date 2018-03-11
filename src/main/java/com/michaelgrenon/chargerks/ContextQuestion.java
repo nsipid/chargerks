@@ -12,11 +12,7 @@ public class ContextQuestion implements Question {
     @Override
     public String toCypher() {
         StringBuilder builder = new StringBuilder();
-        builder.append("MATCH (node {contextType: ");
-        builder.append(info.getType().ordinal());
-        builder.append(", contextName: `");
-        builder.append(info.getName());
-        builder.append("`}), (a)-[r {contextType: ");
+        builder.append("MATCH (a)-[r {contextType: ");
         builder.append(info.getType().ordinal());
         builder.append(", contextName: `");
         builder.append(info.getName());
