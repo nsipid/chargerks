@@ -21,6 +21,11 @@ public class MergeCommand implements Command {
     public String toCypher() {
         StringBuilder builder = new StringBuilder();
         for (NeoConcept concept : graph.getConcepts()) {
+            builder.append("CREATE INDEX ON :");
+            builder.append(concept.getType());
+            builder.append("(referent)");
+            builder.append(NEW_LINE);
+            
             builder.append("MERGE ");
             builder.append(concept.toCypher());
             builder.append(NEW_LINE);
