@@ -40,8 +40,8 @@ public class NeoRelation {
         }
         return true;
     }
-    private NeoConcept concept1;
-    private NeoConcept concept2;
+    private NeoConceptBinding concept1;
+    private NeoConceptBinding concept2;
     private ContextInfo context;
 
     public ContextInfo getContext() {
@@ -49,7 +49,7 @@ public class NeoRelation {
     }
     private String label;
     
-    public NeoRelation(NeoConcept concept1, NeoConcept concept2, ContextInfo context, String label) {
+    public NeoRelation(NeoConceptBinding concept1, NeoConceptBinding concept2, ContextInfo context, String label) {
         this.concept1 = concept1;
         this.concept2 = concept2;
         this.context = context;
@@ -65,11 +65,11 @@ public class NeoRelation {
             concept1.getVariable(), label, context.getType().name(), context.getName(), concept2.getVariable());
     }
 
-    public NeoConcept getConcept1() {
+    public NeoConceptBinding getConcept1() {
         return concept1;
     }
 
-    public NeoConcept getConcept2() {
+    public NeoConceptBinding getConcept2() {
         return concept2;
     }
 

@@ -21,16 +21,16 @@ import org.neo4j.driver.v1.types.Relationship;
  * @author GrenonMP
  */
 public class NeoGraph {
-    private Collection<NeoConcept> concepts;
+    private Collection<NeoConceptBinding> concepts;
     private Collection<NeoRelation> relations;
     
-    public NeoGraph(Collection<NeoConcept> concepts, Collection<NeoRelation> relations) {
-        this.concepts = new ArrayList<NeoConcept>(concepts);
+    public NeoGraph(Collection<NeoConceptBinding> concepts, Collection<NeoRelation> relations) {
+        this.concepts = new ArrayList<NeoConceptBinding>(concepts);
         this.relations = new ArrayList<NeoRelation>(relations);
     }
 
     public NeoGraph(List<Node> nodes, List<Relationship> relationships) {
-        HashMap<Long, NeoConcept> neoConcepts = new HashMap<Long, NeoConcept>();
+        HashMap<Long, NeoConceptBinding> neoConcepts = new HashMap<Long, NeoConceptBinding>();
         HashMap<Long, NeoRelation> neoRelations = new HashMap<Long, NeoRelation>();
         NameGenerator generator = new NameGenerator();
 
@@ -51,7 +51,7 @@ public class NeoGraph {
                 ContextType contextType = contextTypeValue.isNull() ? ContextType.UNIVERSE : ContextType.valueOf(contextTypeValue.asString());
                 String contextName = contextNameValue.isNull() ? "" : contextNameValue.asString();
 
-                NeoConcept neoConcept = new NeoConcept(generator.generateName(), type, referent, new ContextInfo(contextType, contextName));
+                NeoConceptBinding neoConcept = new NeoConceptBinding(generator.generateName(), new NeoConcept(type, referent, new ContextInfo(contextType, contextName)));
                 neoConcepts.put(id, neoConcept);
             }
         }
@@ -65,8 +65,8 @@ public class NeoGraph {
                 ContextType contextType = contextTypeValue.isNull() ? ContextType.UNIVERSE : ContextType.valueOf(contextTypeValue.asString());
                 String contextName = contextNameValue.isNull() ? "" : contextNameValue.asString();
 
-                NeoConcept startNode = neoConcepts.get(relationship.startNodeId());
-                NeoConcept endNode = neoConcepts.get(relationship.endNodeId());
+                NeoConceptBinding startNode = neoConcepts.get(relationship.startNodeId());
+                NeoConceptBinding endNode = neoConcepts.get(relationship.endNodeId());
 
                 NeoRelation neoRelation = new NeoRelation(startNode, endNode, new ContextInfo(contextType, contextName), relationship.type());
                 neoRelations.put(id, neoRelation);
@@ -77,7 +77,7 @@ public class NeoGraph {
         this.relations = neoRelations.values();
     }
     
-    public List<NeoConcept> getConcepts() {
+    public List<NeoConceptBinding> getConcepts() {
         return concepts.stream().collect(Collectors.toList());
     }
     

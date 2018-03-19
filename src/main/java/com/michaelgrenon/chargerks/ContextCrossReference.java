@@ -56,26 +56,30 @@ public class ContextCrossReference {
         return corefConcept;
     }
 
-    public Map<String, Concept> getCloneMap() {
-        return cloneIdsToOrig;
+    public Set<NeoConcept> getReferencedConcepts() {
+        return neoConceptToClone.keySet();
     }
 
-    private HashMap<String, Concept> origIdsToClones = new HashMap<String, Concept>();
-    private HashMap<String, Concept> cloneIdsToOrig = new HashMap<String, Concept>();
+    public NeoConcept getReferencedConcept(String cloneId) {
+        return cloneIdToNeoConcept.get(cloneId);
+    }
+
+    private HashMap<NeoConcept, Concept> neoConceptToClone = new HashMap<NeoConcept, Concept>();
+    private HashMap<String, NeoConcept> cloneIdToNeoConcept = new HashMap<String, NeoConcept>();
 
     private HashSet<String> insertedIds = new HashSet<String>();
 
-    public Concept referenceConcept(Concept conceptToClone) {
-        if (!origIdsToClones.containsKey(conceptToClone.objectID.toString()))  {
+    public Concept referenceConcept(NeoConcept conceptToClone) {
+        if (!neoConceptToClone.containsKey(conceptToClone))  {
             Concept clone = new Concept();
-            clone.setReferent(conceptToClone.getReferent());          
-            clone.setTypeLabel(conceptToClone.getTypeLabel());
+            clone.setReferent(conceptToClone.getReferent().orElse(""));          
+            clone.setTypeLabel(conceptToClone.getType());
 
             Relation relation = new Relation();
             relation.setTextLabel("in");
             
-            origIdsToClones.put(conceptToClone.objectID.toString(), clone);
-            cloneIdsToOrig.put(clone.objectID.toString(), conceptToClone);
+            neoConceptToClone.put(conceptToClone, clone);
+            cloneIdToNeoConcept.put(clone.objectID.toString(), conceptToClone);
             
             GEdge edge1 = new Arrow(clone, relation);
             GEdge edge2 = new Arrow(relation, corefConcept);
@@ -92,7 +96,7 @@ public class ContextCrossReference {
             
             return clone;
         } else {
-            return origIdsToClones.get(conceptToClone.objectID.toString());
+            return neoConceptToClone.get(conceptToClone);
         }
     }
     
@@ -137,7 +141,7 @@ public class ContextCrossReference {
         this.coref = new Coref(this.corefConcept, toGraph);
     }
     
-    public ContextCrossReference(Coref existingCoref, NameGenerator nameGenerator) {
+    public ContextCrossReference(Coref existingCoref) {
         this.coref = existingCoref;
         
         if (coref.toObj.myKind == Kind.GRAPH) {
@@ -167,22 +171,12 @@ public class ContextCrossReference {
             for (Object node : inRel.getLinkedNodes(GEdge.Direction.FROM)) {
                 if (node instanceof Concept) {
                     Concept clone = (Concept) node;
-                    Concept orig = null;
-                    DeepIterator itr = new DeepIterator(toGraph, Kind.GNODE);
-                    while (itr.hasNext() && orig == null) {
-                        GraphObject next = itr.next();
-                        String id = next.objectID.toString();
-                        if (next instanceof Concept) {
-                            Concept concept = (Concept) next;
-                            if (Objects.equals(concept.getReferent(), clone.getReferent()) && Objects.equals(concept.getTypeLabel(), clone.getTypeLabel())) {
-                                orig = concept;
-                            }
-                        }
-                    }
+                    ContextInfo info = new ContextInfo(ContextType.valueOf(toGraph.getTypeLabel().toUpperCase(Locale.US)), toGraph.getReferent());
+                    NeoConcept neoConcept = new NeoConcept(clone.getTypeLabel(), clone.getReferent(), info);
 
+                    neoConceptToClone.put(neoConcept, clone);
+                    cloneIdToNeoConcept.put(clone.objectID.toString(), neoConcept);
                     insertedIds.add(clone.objectID.toString());
-                    origIdsToClones.put(orig.objectID.toString(), clone);
-                    cloneIdsToOrig.put(clone.objectID.toString(), orig);
                 }
             }
         }

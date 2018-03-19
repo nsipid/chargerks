@@ -12,9 +12,9 @@ public class IndexIntentCommand implements Command {
 	public String toCypher() {
         StringBuilder builder = new StringBuilder();
 
-        for (NeoConcept concept : intent.getConcepts()) {
+        for (NeoConceptBinding binding : intent.getConcepts()) {
             builder.append("CREATE INDEX ON :");
-            builder.append(concept.getType());
+            builder.append(binding.getConcept().getType());
             builder.append("(referent);");
             builder.append(NEW_LINE);    
         }

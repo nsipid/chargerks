@@ -4,6 +4,7 @@ import cgif.generate.NameGenerator;
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
 import com.michaelgrenon.chargerks.NeoConcept;
+import com.michaelgrenon.chargerks.NeoConceptBinding;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
 import java.util.List;
@@ -22,14 +23,14 @@ public class BorderedTableMetadataExtractor implements MetadataExtractor {
         ContextInfo contextOfIntent = new ContextInfo(ContextType.INTENT, catalogName);
                 
         NameGenerator namer = new NameGenerator();
-        List<NeoConcept> concepts = table.getHeader().getColumnNames().stream()
-                .map(s -> new NeoConcept(namer.generateName(), "Value", s, contextOfIntent))
+        List<NeoConceptBinding> concepts = table.getHeader().getColumnNames().stream()
+                .map(s -> new NeoConceptBinding(namer.generateName(), new NeoConcept("Value", s, contextOfIntent)))
                 .collect(Collectors.toList());
         
-        NeoConcept recordConcept = new NeoConcept(namer.generateName(), "Record", null, new ContextInfo(ContextType.INTENT, catalogName));
+        NeoConceptBinding recordConcept = new NeoConceptBinding(namer.generateName(), new NeoConcept("Record", null, new ContextInfo(ContextType.INTENT, catalogName)));
         
         List<NeoRelation> relations = concepts.stream()
-                .map(c -> new NeoRelation(recordConcept, c, contextOfIntent, c.getReferent().orElse("Value")))
+                .map(c -> new NeoRelation(recordConcept, c, contextOfIntent, c.getConcept().getReferent().orElse("Value")))
                 .collect(Collectors.toList());
         
         concepts.add(recordConcept);

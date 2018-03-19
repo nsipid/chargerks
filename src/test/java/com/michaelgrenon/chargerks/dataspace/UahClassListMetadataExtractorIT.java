@@ -5,7 +5,7 @@
  */
 package com.michaelgrenon.chargerks.dataspace;
 
-import com.michaelgrenon.chargerks.NeoConcept;
+import com.michaelgrenon.chargerks.NeoConceptBinding;
 import com.michaelgrenon.chargerks.NeoGraph;
 import java.util.List;
 import static org.hamcrest.CoreMatchers.is;
@@ -49,7 +49,7 @@ public class UahClassListMetadataExtractorIT {
         String catalogName = "CourseListing";
         UahClassListMetadataExtractor instance = new UahClassListMetadataExtractor("https://www.uah.edu/cgi-bin/schedule.pl?file=sprg2016.html&segment=NDX&dir=archived");
         NeoGraph result = instance.generateCatalog(catalogName);
-        List<NeoConcept> concepts = result.getConcepts();
+        List<NeoConceptBinding> concepts = result.getConcepts();
         assertContainsConceptOfType(concepts, "Sec Type");
         assertContainsConceptOfType(concepts, "CRN");
         assertContainsConceptOfType(concepts, "Course");
@@ -67,8 +67,8 @@ public class UahClassListMetadataExtractorIT {
         assertContainsConceptOfType(concepts, "Instructor");
     }
     
-    private void assertContainsConceptOfType(List<NeoConcept> concepts, String type) {
-        assertTrue(concepts.stream().anyMatch(concept -> concept.getType().equals(type)));
+    private void assertContainsConceptOfType(List<NeoConceptBinding> concepts, String type) {
+        assertTrue(concepts.stream().anyMatch(concept -> concept.getConcept().getType().equals(type)));
     }
     
 }

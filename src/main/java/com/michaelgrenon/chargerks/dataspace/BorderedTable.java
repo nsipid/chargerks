@@ -5,12 +5,6 @@
  */
 package com.michaelgrenon.chargerks.dataspace;
 
-import cgif.generate.NameGenerator;
-import com.michaelgrenon.chargerks.ContextInfo;
-import com.michaelgrenon.chargerks.ContextType;
-import com.michaelgrenon.chargerks.NeoConcept;
-import com.michaelgrenon.chargerks.NeoGraph;
-import com.michaelgrenon.chargerks.NeoRelation;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;

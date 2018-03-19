@@ -21,11 +21,11 @@ public class ApplyContextOfUseCommand implements Command {
             //MATCH (x1:c1Type {contextType: "STORE", contextName: "c1ContextName"}), (x2:c2Type {contextType: "STORE", contextName: "c2ContextName"})
             //WHERE x1.referent = x2.referent
             //MERGE x1-[:relationLabel {contextType:"STORE", contextName:contextOfUseName}]->x2
-            NeoConcept intentC1 = neoRelation.getConcept1();
-            NeoConcept c1 = new NeoConcept(generator.generateName(), intentC1.getType(), null, new ContextInfo(ContextType.STORE, neoRelation.getContext().getName()));
+            NeoConceptBinding intentC1 = neoRelation.getConcept1();
+            NeoConceptBinding c1 = new NeoConceptBinding(generator.generateName(), new NeoConcept(intentC1.getConcept().getType(), null, new ContextInfo(ContextType.STORE, neoRelation.getContext().getName())));
 
-            NeoConcept intentC2 = neoRelation.getConcept2();
-            NeoConcept c2 = new NeoConcept(generator.generateName(), intentC2.getType(), null, new ContextInfo(ContextType.STORE, neoRelation.getContext().getName()));
+            NeoConceptBinding intentC2 = neoRelation.getConcept2();
+            NeoConceptBinding c2 = new NeoConceptBinding(generator.generateName(), new NeoConcept(intentC2.getConcept().getType(), null, new ContextInfo(ContextType.STORE, neoRelation.getContext().getName())));
 
             NeoRelation instanceRelation = new NeoRelation(c1, c2, new ContextInfo(ContextType.STORE, neoRelation.getContext().getName()), neoRelation.getLabel());
 

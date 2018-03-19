@@ -4,10 +4,9 @@ import java.util.Objects;
 import java.util.Optional;
 
 public class NeoConcept {
-
-    public String getVariable() {
-        return variable;
-    }
+    private String type;
+    private String referent;
+    private ContextInfo context;
 
     public String getType() {
         return type;
@@ -20,8 +19,6 @@ public class NeoConcept {
     public ContextInfo getContext() {
         return context;
     }
-
-    private String variable;
 
     @Override
     public int hashCode() {
@@ -53,14 +50,12 @@ public class NeoConcept {
         if (!Objects.equals(this.context, other.context)) {
             return false;
         }
+
         return true;
     }
-    private String type;
-    private String referent;
-    private ContextInfo context;
+
     
-    public NeoConcept(String variable, String type, String referent, ContextInfo context) {
-        this.variable = variable;
+    public NeoConcept(String type, String referent, ContextInfo context) {
         this.type = type;
         this.referent = referent;
         this.context = context;
@@ -71,7 +66,7 @@ public class NeoConcept {
         String referentPart =  nullOrEmpty ? String.format("referent: '%s', ", referent) : "";
         String contextTypePart = String.format("contextType: '%s', ", context.getType().name());
         String contextNamePart = String.format("contextName: '%s'", context.getName());
-        return String.format("(%s:`%s` {%s%s%s})", variable, type, referentPart, contextTypePart, contextNamePart);
+        return String.format("(:`%s` {%s%s%s})", type, referentPart, contextTypePart, contextNamePart);
     }
     
 }

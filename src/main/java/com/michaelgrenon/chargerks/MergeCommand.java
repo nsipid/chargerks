@@ -20,9 +20,14 @@ public class MergeCommand implements Command {
     @Override
     public String toCypher() {
         StringBuilder builder = new StringBuilder();
-        for (NeoConcept concept : graph.getConcepts()) {
-            builder.append("MERGE ");
-            builder.append(concept.toCypher());
+        for (NeoConceptBinding binding : graph.getConcepts()) {
+            if (binding.getConcept().getReferent().isPresent()) {
+                builder.append("MERGE ");
+            } else {
+                builder.append("CREATE ");
+            }
+
+            builder.append(binding.toCypher());
             builder.append(NEW_LINE);
         }
         

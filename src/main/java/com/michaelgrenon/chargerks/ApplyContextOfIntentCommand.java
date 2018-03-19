@@ -2,7 +2,6 @@ package com.michaelgrenon.chargerks;
 
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
-import com.michaelgrenon.chargerks.NeoConcept;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
 
@@ -37,17 +36,17 @@ public class ApplyContextOfIntentCommand implements Command {
         return builder.toString();
     }
 
-    private void buildNodeString(StringBuilder builder, NeoConcept template) {
-        ContextInfo instanceContext = new ContextInfo(ContextType.STORE, template.getContext().getName());
+    private void buildNodeString(StringBuilder builder, NeoConceptBinding template) {
+        ContextInfo instanceContext = new ContextInfo(ContextType.STORE, template.getConcept().getContext().getName());
         String instanceReferent;
 
-        if (template.getType().toUpperCase().equals("RECORD")) {
+        if (template.getConcept().getType().toUpperCase().equals("RECORD")) {
             instanceReferent = "jsonline";
         } else {
-            instanceReferent = "line.`" + template.getReferent() + "`";
+            instanceReferent = "line.`" + template.getConcept().getReferent() + "`";
         }
             
-        NeoConcept instanceConcept = new NeoConcept(template.getVariable(), template.getType(), instanceReferent, instanceContext);
+        NeoConceptBinding instanceConcept = new NeoConceptBinding(template.getVariable(), new NeoConcept(template.getConcept().getType(), instanceReferent, instanceContext));
         
         builder.append("MERGE ");
         builder.append(instanceConcept.toCypher());

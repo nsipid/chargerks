@@ -74,14 +74,9 @@ public class ContextCrossReferences {
     HashSet<String> insertedObjectIds = new HashSet<>();
     NameGenerator nameGenerator;
     
-    public ContextCrossReferences(Graph universe, NameGenerator nameGenerator) {
-        this.universe = universe;
-        this.nameGenerator = nameGenerator;
-        extractCrossReferences();
-    }
-
     public ContextCrossReferences(Graph universe) {
-        this(universe, new NameGenerator());
+        this.universe = universe;
+        extractCrossReferences();
     }
     
     public ContextCrossReference getOrAddCrossReference(
@@ -96,10 +91,21 @@ public class ContextCrossReferences {
         return crossReferences.get(key);
     }
 
-    public Map<String, Concept> getCloneMap () {
-        return crossReferences.values().stream().map(refs -> refs.getCloneMap())
-            .flatMap(m -> m.entrySet().stream())
-            .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+    public Set<NeoConcept> getReferencedConcepts () {
+        return crossReferences.values().stream().map(refs -> refs.getReferencedConcepts())
+            .flatMap(m -> m.stream())
+            .collect(Collectors.toSet());
+    }
+
+    public NeoConcept getReferencedConcept(String cloneId) {
+        for (ContextCrossReference cRef : crossReferences.values()) {
+            NeoConcept referenced = cRef.getReferencedConcept(cloneId);
+            if (referenced != null) {
+                return referenced;
+            }
+        }
+
+        return null;
     }
     
     public Set<String> getAllIds() {
@@ -112,7 +118,7 @@ public class ContextCrossReferences {
         GraphObjectIterator corefItr = new ShallowIterator(universe, new Coref());
         while(corefItr.hasNext()) {
             Coref coref = (Coref) corefItr.next();
-            ContextCrossReference crossReference = new ContextCrossReference(coref, nameGenerator);
+            ContextCrossReference crossReference = new ContextCrossReference(coref);
             crossReferences.put(new Key(crossReference.getTo(), crossReference.getFrom()), crossReference);
         }
     }
