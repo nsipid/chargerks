@@ -38,15 +38,6 @@ import java.util.stream.Stream;
 public class ContextCrossReference {
     private ContextInfo from;
     private Graph fromGraph;
-
-    public Graph getFromGraph() {
-        return fromGraph;
-    }
-
-    public Graph getToGraph() {
-        return toGraph;
-    }
-    private Graph toGraph;
     
     private Concept corefConcept;
     
@@ -132,7 +123,6 @@ public class ContextCrossReference {
         this.to = to;
         
         this.fromGraph = fromGraph;
-        this.toGraph = toGraph;
         
         this.corefConcept = new Concept();
         this.corefConcept.setReferent(this.to.getName());
@@ -140,21 +130,11 @@ public class ContextCrossReference {
 
         this.coref = new Coref(this.corefConcept, toGraph);
     }
-    
-    public ContextCrossReference(Coref existingCoref) {
-        this.coref = existingCoref;
-        
-        if (coref.toObj.myKind == Kind.GRAPH) {
-            corefConcept = (Concept) coref.fromObj;
-            toGraph = (Graph) coref.toObj;
-        } else {
-            corefConcept = (Concept) coref.toObj;
-            toGraph = (Graph) coref.fromObj;           
-        }
-        
-        fromGraph = corefConcept.ownerGraph;
-        to = new ContextInfo(ContextType.valueOf(toGraph.getTypeLabel().toUpperCase(Locale.US)), toGraph.getReferent());
-        from = new ContextInfo(ContextType.valueOf(fromGraph.getTypeLabel().toUpperCase(Locale.US)), fromGraph.getReferent());
+
+    public ContextCrossReference(Concept corefConcept) {
+        this.fromGraph = corefConcept.ownerGraph;
+        this.from = new ContextInfo(ContextType.valueOf(fromGraph.getTypeLabel().toUpperCase(Locale.US)), fromGraph.getReferent());
+        this.to = new ContextInfo(ContextType.valueOf(corefConcept.getTypeLabel().toUpperCase(Locale.US)), corefConcept.getReferent());
 
         ArrayList<GNode> linkedNodes = corefConcept.getLinkedNodes(GEdge.Direction.FROM);
         insertedIds.add(corefConcept.objectID.toString());
@@ -164,15 +144,14 @@ public class ContextCrossReference {
                 .filter(rel -> "IN".equals(rel.getTextLabel().toUpperCase(Locale.US)))
                 .map(Relation.class::cast)
                 .collect(Collectors.toList());
-        
+
         for (Relation inRel : relations) {
             insertedIds.add(inRel.objectID.toString());
  
             for (Object node : inRel.getLinkedNodes(GEdge.Direction.FROM)) {
                 if (node instanceof Concept) {
                     Concept clone = (Concept) node;
-                    ContextInfo info = new ContextInfo(ContextType.valueOf(toGraph.getTypeLabel().toUpperCase(Locale.US)), toGraph.getReferent());
-                    NeoConcept neoConcept = new NeoConcept(clone.getTypeLabel(), clone.getReferent(), info);
+                    NeoConcept neoConcept = new NeoConcept(clone.getTypeLabel(), clone.getReferent(), to);
 
                     neoConceptToClone.put(neoConcept, clone);
                     cloneIdToNeoConcept.put(clone.objectID.toString(), neoConcept);
@@ -180,6 +159,5 @@ public class ContextCrossReference {
                 }
             }
         }
-    }
-    
+    }   
 }

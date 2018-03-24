@@ -10,6 +10,7 @@ import static charger.EditToolbar.Mode.Concept;
 import cgif.generate.NameGenerator;
 import charger.obj.Concept;
 import charger.obj.Coref;
+import charger.obj.DeepIterator;
 import charger.obj.GEdge;
 import charger.obj.GEdge.Direction;
 import charger.obj.GNode;
@@ -113,13 +114,32 @@ public class ContextCrossReferences {
                 .flatMap(c -> c.getAllIds().stream())
                 .collect(Collectors.toCollection(HashSet::new));
     }
-    
+
     private void extractCrossReferences() {
-        GraphObjectIterator corefItr = new ShallowIterator(universe, new Coref());
-        while(corefItr.hasNext()) {
-            Coref coref = (Coref) corefItr.next();
-            ContextCrossReference crossReference = new ContextCrossReference(coref);
-            crossReferences.put(new Key(crossReference.getTo(), crossReference.getFrom()), crossReference);
+        GraphObjectIterator crossRefItr = new DeepIterator(universe, new Relation());
+        while(crossRefItr.hasNext()) {
+            Relation relation = (Relation) crossRefItr.next();
+            if (relation.getTextLabel().toUpperCase().equals("IN")) {
+                Concept corefConcept = null;
+                for (Object node : relation.getLinkedNodes(GEdge.Direction.TO)) {
+                    if (node instanceof Concept) {
+                        corefConcept = (Concept) node;
+                        break;
+                    }
+                }
+                if (corefConcept != null) {
+                    Graph fromGraph = corefConcept.ownerGraph;
+                    ContextInfo from = new ContextInfo(ContextType.valueOf(fromGraph.getTypeLabel().toUpperCase(Locale.US)), fromGraph.getReferent());
+                    ContextInfo to = new ContextInfo(ContextType.valueOf(corefConcept.getTypeLabel().toUpperCase(Locale.US)), corefConcept.getReferent());
+                    Key key = new Key(to, from);
+
+                    // creating a new crossreference will backtrack the "in" relations, so only do it once
+                    if (!crossReferences.containsKey(key)) {
+                        ContextCrossReference crossReference = new ContextCrossReference(corefConcept);
+                        crossReferences.put(key, crossReference);
+                    }
+                }
+            }
         }
     }
 }

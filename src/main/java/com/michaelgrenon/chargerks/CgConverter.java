@@ -44,7 +44,7 @@ public class CgConverter {
             NeoConcept unbound = null;
             NeoConceptBinding bound = null;
             if (obj instanceof Concept && !(obj instanceof Graph)) {
-                if (ignoredIds.contains(obj.objectID)) {
+                if (ignoredIds.contains(obj.objectID.toString())) {
                     unbound = crossReferences.getReferencedConcept(obj.objectID.toString());
                 } else {
                     unbound = chargerConceptToNeo((Concept) obj);

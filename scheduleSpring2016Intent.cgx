@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 18, 2018 9:39:55 PM" modified="Mar 18, 2018 9:39:55 PM" user="nsipi" wrapLabels="false" wrapColumns="30">
+<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 18, 2018 9:39:55 PM" modified="Mar 24, 2018 11:04:14 AM" user="grenon" wrapLabels="false" wrapColumns="30">
 <graph id="64dd022c:1623c209c6c:-7fd9" owner="0">
     <type>
         <label>Proposition</label>
@@ -9,6 +9,13 @@
         <color foreground="0,94,192" background="0,94,192"/>
         <font name="SansSerif" style="1" size="12" />
     </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
     <graph id="64dd022c:1623c209c6c:-7fc8" owner="64dd022c:1623c209c6c:-7fd9">
         <type>
             <label>INTENT</label>
@@ -17,29 +24,50 @@
             <label>scheduleSpring2016</label>
         </referent>
         <layout>
-            <rectangle x="640.00" y="480.00" width="640.00" height="480.00" depth="1.00"/>
+            <rectangle x="40.00" y="39.00" width="762.26" height="612.54" depth="1.00"/>
             <color foreground="0,94,192" background="0,94,192"/>
             <font name="SansSerif" style="1" size="12" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         <relation id="64dd022c:1623c209c6c:-7fa5" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>End</label>
             </type>
             <layout>
-                <rectangle x="940.00" y="708.00" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="253.27" y="289.63" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <relation id="64dd022c:1623c209c6c:-7fa2" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Bldg</label>
             </type>
             <layout>
-                <rectangle x="940.00" y="708.00" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="206.50" y="360.12" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <concept id="64dd022c:1623c209c6c:-7fcc" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -49,10 +77,17 @@
                 <label>Bldg</label>
             </referent>
             <layout>
-                <rectangle x="924.50" y="705.00" width="71.00" height="30.00" depth="1.00"/>
+                <rectangle x="53.00" y="361.69" width="71.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <concept id="64dd022c:1623c209c6c:-7fcb" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -62,11 +97,40 @@
                 <label>Room</label>
             </referent>
             <layout>
-                <rectangle x="920.50" y="705.00" width="79.00" height="30.00" depth="1.00"/>
+                <rectangle x="701.69" y="307.63" width="79.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
+        <relation id="-3135b09d:16258aa5964:-7f35" owner="64dd022c:1623c209c6c:-7fc8">
+            <type>
+                <label>matches</label>
+            </type>
+            <layout>
+                <rectangle x="545.00" y="215.00" width="58.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 24, 2018 11:02:55 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 24, 2018 11:03:08 AM" type="USER">
+        <description>User modified object. Label matches</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </relation>
         <concept id="64dd022c:1623c209c6c:-7fca" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Value</label>
@@ -75,10 +139,42 @@
                 <label>Instructor</label>
             </referent>
             <layout>
-                <rectangle x="909.00" y="705.00" width="102.00" height="30.00" depth="1.00"/>
+                <rectangle x="203.86" y="553.26" width="102.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="-3135b09d:16258aa5964:-7f33" owner="64dd022c:1623c209c6c:-7fc8">
+            <type>
+                <label>Course</label>
+            </type>
+            <referent>
+                <label>CRN</label>
+            </referent>
+            <layout>
+                <rectangle x="567.50" y="134.00" width="79.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 24, 2018 11:03:14 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 24, 2018 11:03:32 AM" type="USER">
+        <description>User modified object. Label Course: CRN</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
         </concept>
         <concept id="64dd022c:1623c209c6c:-7fcf" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -88,10 +184,17 @@
                 <label>Days</label>
             </referent>
             <layout>
-                <rectangle x="923.00" y="705.00" width="74.00" height="30.00" depth="1.00"/>
+                <rectangle x="219.99" y="81.29" width="74.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <concept id="64dd022c:1623c209c6c:-7fce" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -101,10 +204,17 @@
                 <label>Start</label>
             </referent>
             <layout>
-                <rectangle x="923.00" y="705.00" width="74.00" height="30.00" depth="1.00"/>
+                <rectangle x="332.66" y="71.00" width="74.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <concept id="64dd022c:1623c209c6c:-7fcd" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -114,100 +224,170 @@
                 <label>End</label>
             </referent>
             <layout>
-                <rectangle x="926.50" y="705.00" width="67.00" height="30.00" depth="1.00"/>
+                <rectangle x="90.66" y="253.88" width="67.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <relation id="64dd022c:1623c209c6c:-7fb1" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Avail</label>
             </type>
             <layout>
-                <rectangle x="940.00" y="708.00" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="500.77" y="459.53" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <relation id="64dd022c:1623c209c6c:-7fb4" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Enrl</label>
             </type>
             <layout>
-                <rectangle x="940.00" y="708.00" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="524.00" y="409.68" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <relation id="64dd022c:1623c209c6c:-7fa8" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Start</label>
             </type>
             <layout>
-                <rectangle x="940.00" y="708.00" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="391.38" y="170.50" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <relation id="64dd022c:1623c209c6c:-7fc3" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>CRN</label>
             </type>
             <layout>
-                <rectangle x="940.00" y="708.00" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="577.57" y="396.72" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <relation id="64dd022c:1623c209c6c:-7fc0" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Course</label>
             </type>
             <layout>
-                <rectangle x="935.50" y="708.00" width="49.00" height="24.00" depth="1.00"/>
+                <rectangle x="371.59" y="489.32" width="49.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <relation id="64dd022c:1623c209c6c:-7fc6" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Sec Type</label>
             </type>
             <layout>
-                <rectangle x="930.00" y="708.00" width="60.00" height="24.00" depth="1.00"/>
+                <rectangle x="294.30" y="389.02" width="60.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <relation id="64dd022c:1623c209c6c:-7fae" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Wait List</label>
             </type>
             <layout>
-                <rectangle x="931.00" y="708.00" width="58.00" height="24.00" depth="1.00"/>
+                <rectangle x="439.58" y="515.38" width="58.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <relation id="64dd022c:1623c209c6c:-7fab" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Days</label>
             </type>
             <layout>
-                <rectangle x="940.00" y="708.00" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="324.40" y="180.34" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <relation id="64dd022c:1623c209c6c:-7fb7" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Max Enrl</label>
             </type>
             <layout>
-                <rectangle x="931.50" y="708.00" width="57.00" height="24.00" depth="1.00"/>
+                <rectangle x="449.94" y="197.16" width="57.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <concept id="64dd022c:1623c209c6c:-7fd4" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -217,10 +397,17 @@
                 <label>Credit</label>
             </referent>
             <layout>
-                <rectangle x="920.00" y="705.00" width="80.00" height="30.00" depth="1.00"/>
+                <rectangle x="709.26" y="369.02" width="80.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <concept id="64dd022c:1623c209c6c:-7fd3" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -230,10 +417,17 @@
                 <label>Max Enrl</label>
             </referent>
             <layout>
-                <rectangle x="912.50" y="705.00" width="95.00" height="30.00" depth="1.00"/>
+                <rectangle x="446.45" y="74.49" width="95.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <concept id="64dd022c:1623c209c6c:-7fd2" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -243,10 +437,17 @@
                 <label>Enrl</label>
             </referent>
             <layout>
-                <rectangle x="926.00" y="705.00" width="68.00" height="30.00" depth="1.00"/>
+                <rectangle x="673.66" y="514.29" width="68.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <concept id="64dd022c:1623c209c6c:-7fd1" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -256,20 +457,34 @@
                 <label>Avail</label>
             </referent>
             <layout>
-                <rectangle x="923.50" y="705.00" width="73.00" height="30.00" depth="1.00"/>
+                <rectangle x="580.01" y="541.19" width="73.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <relation id="64dd022c:1623c209c6c:-7f9f" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Room</label>
             </type>
             <layout>
-                <rectangle x="939.50" y="708.00" width="41.00" height="24.00" depth="1.00"/>
+                <rectangle x="606.73" y="298.79" width="41.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <concept id="64dd022c:1623c209c6c:-7fd8" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -279,10 +494,17 @@
                 <label>Sec Type</label>
             </referent>
             <layout>
-                <rectangle x="911.00" y="705.00" width="98.00" height="30.00" depth="1.00"/>
+                <rectangle x="124.43" y="457.80" width="98.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <concept id="64dd022c:1623c209c6c:-7fd7" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -292,10 +514,17 @@
                 <label>CRN</label>
             </referent>
             <layout>
-                <rectangle x="925.00" y="705.00" width="70.00" height="30.00" depth="1.00"/>
+                <rectangle x="654.66" y="422.49" width="70.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <concept id="64dd022c:1623c209c6c:-7fd6" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -305,10 +534,17 @@
                 <label>Course</label>
             </referent>
             <layout>
-                <rectangle x="916.50" y="705.00" width="87.00" height="30.00" depth="1.00"/>
+                <rectangle x="346.65" y="607.54" width="87.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <concept id="64dd022c:1623c209c6c:-7fd5" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -318,10 +554,17 @@
                 <label>Title</label>
             </referent>
             <layout>
-                <rectangle x="925.00" y="705.00" width="70.00" height="30.00" depth="1.00"/>
+                <rectangle x="200.65" y="190.05" width="70.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <concept id="64dd022c:1623c209c6c:-7fd0" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
@@ -331,78 +574,149 @@
                 <label>Wait List</label>
             </referent>
             <layout>
-                <rectangle x="912.00" y="705.00" width="96.00" height="30.00" depth="1.00"/>
+                <rectangle x="476.98" y="589.25" width="96.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <relation id="64dd022c:1623c209c6c:-7f9c" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Instructor</label>
             </type>
             <layout>
-                <rectangle x="928.00" y="708.00" width="64.00" height="24.00" depth="1.00"/>
+                <rectangle x="293.16" y="466.21" width="64.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <relation id="64dd022c:1623c209c6c:-7fba" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Credit</label>
             </type>
             <layout>
-                <rectangle x="939.00" y="708.00" width="42.00" height="24.00" depth="1.00"/>
+                <rectangle x="594.96" y="341.49" width="42.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <relation id="64dd022c:1623c209c6c:-7fbd" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Title</label>
             </type>
             <layout>
-                <rectangle x="940.00" y="708.00" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="342.75" y="263.66" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </relation>
         <concept id="64dd022c:1623c209c6c:-7fc9" owner="64dd022c:1623c209c6c:-7fc8">
             <type>
                 <label>Record</label>
             </type>
             <layout>
-                <rectangle x="935.50" y="705.00" width="49.00" height="30.00" depth="1.00"/>
+                <rectangle x="419.72" y="332.27" width="49.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </concept>
         <arrow id="64dd022c:1623c209c6c:-7fa1" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7fa2">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="327.57" y="356.13" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fa0" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fa2" to="64dd022c:1623c209c6c:-7fcc">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="162.76" y="370.10" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fa4" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7fa5">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="350.09" y="319.21" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fa3" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fa5" to="64dd022c:1623c209c6c:-7fcd">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="203.31" y="283.14" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="-3135b09d:16258aa5964:-7f34" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="-3135b09d:16258aa5964:-7f35">
+            <layout>
+                <rectangle x="509.01" y="279.52" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -410,159 +724,307 @@
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fb2" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fb4" to="64dd022c:1623c209c6c:-7fd2">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="614.79" y="466.85" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fb0" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7fb1">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="480.61" y="408.83" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fb6" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7fb7">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="458.02" y="271.44" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fb5" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fb7" to="64dd022c:1623c209c6c:-7fd3">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="481.79" y="148.50" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fb3" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7fb4">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="495.89" y="384.78" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fa9" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fab" to="64dd022c:1623c209c6c:-7fcf">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="299.99" y="143.93" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fa7" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7fa8">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="423.24" y="258.07" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fa6" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fa8" to="64dd022c:1623c209c6c:-7fce">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="387.91" y="133.47" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fc2" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7fc3">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="522.51" y="376.25" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fc1" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc3" to="64dd022c:1623c209c6c:-7fd7">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="629.36" y="415.90" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fc5" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7fc6">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="376.57" y="371.80" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fc4" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc6" to="64dd022c:1623c209c6c:-7fd8">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="254.28" y="428.42" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7faf" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fb1" to="64dd022c:1623c209c6c:-7fd1">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="560.16" y="505.90" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7faa" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7fab">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="388.25" y="262.61" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fad" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7fae">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="452.79" y="436.25" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fac" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fae" to="64dd022c:1623c209c6c:-7fd0">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="490.40" y="558.57" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fb9" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7fba">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="529.35" y="346.50" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fb8" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fba" to="64dd022c:1623c209c6c:-7fd4">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="666.75" y="362.04" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7f9a" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7f9c" to="64dd022c:1623c209c6c:-7fca">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="288.56" y="515.97" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7f9e" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7f9f">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="535.72" y="324.24" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="-3135b09d:16258aa5964:-7f32" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="-3135b09d:16258aa5964:-7f35" to="-3135b09d:16258aa5964:-7f33">
+            <layout>
+                <rectangle x="585.16" y="187.16" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -570,51 +1032,93 @@
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7f9d" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7f9f" to="64dd022c:1623c209c6c:-7fcb">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="668.95" y="311.54" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7f9b" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7f9c">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="377.86" y="411.86" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fbb" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fbd" to="64dd022c:1623c209c6c:-7fd5">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="304.40" y="241.47" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fbf" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7fc0">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="415.15" y="423.53" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fbe" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc0" to="64dd022c:1623c209c6c:-7fd6">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="389.27" y="554.84" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="64dd022c:1623c209c6c:-7fbc" owner="64dd022c:1623c209c6c:-7fc8" label="-" from="64dd022c:1623c209c6c:-7fc9" to="64dd022c:1623c209c6c:-7fbd">
             <layout>
-                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="394.69" y="303.25" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 24, 2018 11:01:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\scheduleSpring2016Intent.cgx</file>
+    </event>
+</history>
         </arrow>
     </graph>
 </graph>

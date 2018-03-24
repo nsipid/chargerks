@@ -8,6 +8,7 @@ import com.michaelgrenon.chargerks.CgConverter;
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextQuestion;
 import com.michaelgrenon.chargerks.ContextType;
+import com.michaelgrenon.chargerks.FullKsQuestion;
 import com.michaelgrenon.chargerks.KnowledgeSpace;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.Question;
@@ -21,8 +22,13 @@ public class AskMetadataCli implements Runnable {
 	private String outputFile;
 
 	public AskMetadataCli(KnowledgeSpace ks, String contextName, String contextType, String outputFile) {
-        this.contextInfo = new ContextInfo(ContextType.valueOf(contextType), contextName);
-        this.question = new ContextQuestion(this.contextInfo);
+		
+		if (contextType == null) {
+			this.question = new FullKsQuestion();
+		} else {
+			this.contextInfo = new ContextInfo(ContextType.valueOf(contextType), contextName);
+			this.question = new ContextQuestion(this.contextInfo);
+		}
         this.outputFile = outputFile;
         this.ks = ks;
     }

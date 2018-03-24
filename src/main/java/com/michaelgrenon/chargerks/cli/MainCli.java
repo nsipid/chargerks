@@ -24,7 +24,6 @@ public class MainCli {
     public static final void main(final String[] args) {
         Option input = Option.builder("i").argName("input")
                 .desc("input cgx graph file or database uri")
-                .required(true)
                 .hasArg(true)
                 .longOpt("input")
                 .build();
@@ -153,13 +152,17 @@ public class MainCli {
                     break;
                 case "apply-intent":
                     cmd = new ApplyContextOfIntentCli(ks, contextNameArg, formatArg, inputArg);
+                    cmd.run();
                     break;
                 case "apply-use":
                     cmd = new ApplyContextOfUseCli(ks, contextNameArg);
+                    cmd.run();
                     break;
                 case "delete-context":
                     break;
                 case "ask-metadata":
+                    cmd = new AskMetadataCli(ks, contextNameArg, contextTypeArg, outputArg);
+                    cmd.run();
                     break;
                 case "ask-data":
                     break;

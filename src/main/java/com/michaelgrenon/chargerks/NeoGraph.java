@@ -37,9 +37,9 @@ public class NeoGraph {
         for (Node node : nodes) {
             Long id = node.id();
             if (!neoConcepts.containsKey(id)) {
-                Value referentValue = node.get("properties").get("referent");
-                Value contextTypeValue = node.get("properties").get("contextType");
-                Value contextNameValue = node.get("properties").get("contextName");
+                Value referentValue = node.get("referent");
+                Value contextTypeValue = node.get("contextType");
+                Value contextNameValue = node.get("contextName");
                 
                 String type = "T";
                 Iterator<String> itr = node.labels().iterator();
@@ -59,8 +59,8 @@ public class NeoGraph {
         for (Relationship relationship : relationships) {
             Long id = relationship.id();
             if (!neoRelations.containsKey(id)) {
-                Value contextTypeValue = relationship.get("properties").get("contextType");
-                Value contextNameValue = relationship.get("properties").get("contextName");
+                Value contextTypeValue = relationship.get("contextType");
+                Value contextNameValue = relationship.get("contextName");
 
                 ContextType contextType = contextTypeValue.isNull() ? ContextType.UNIVERSE : ContextType.valueOf(contextTypeValue.asString());
                 String contextName = contextNameValue.isNull() ? "" : contextNameValue.asString();
