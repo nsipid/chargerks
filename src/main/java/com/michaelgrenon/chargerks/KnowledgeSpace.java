@@ -49,4 +49,13 @@ public class KnowledgeSpace {
             session.run(cypher);
         }
     }
+
+    public void Execute(MultiCommand command) {
+        try (Session session = driver.session()) {
+            String[] cyphers = command.toCypher();
+            for (String cypher : cyphers) {
+                session.run(cypher);
+            }
+        }
+    }
 }

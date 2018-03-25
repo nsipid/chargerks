@@ -54,5 +54,18 @@ public class NeoConceptBinding {
         String contextNamePart = String.format("contextName: '%s'", concept.getContext().getName());
         return String.format("(%s:`%s` {%s%s%s})", variable, concept.getType(), referentPart, contextTypePart, contextNamePart);
     }
+
+    public String toCypherWithSpecialReferent() {
+        String referentPart = concept.getReferent().map(referent -> String.format("referent: %s, ", referent)).orElse("");
+        String contextTypePart = String.format("contextType: '%s', ", concept.getContext().getType().name());
+        String contextNamePart = String.format("contextName: '%s'", concept.getContext().getName());
+        return String.format("(%s:`%s` {%s%s%s})", variable, concept.getType(), referentPart, contextTypePart, contextNamePart);
+    }
+
+    public String toCypherWithoutReferent() {
+        String contextTypePart = String.format("contextType: '%s', ", concept.getContext().getType().name());
+        String contextNamePart = String.format("contextName: '%s'", concept.getContext().getName());
+        return String.format("(%s:`%s` {%s%s})", variable, concept.getType(), contextTypePart, contextNamePart);
+    }
     
 }

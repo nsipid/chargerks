@@ -68,5 +68,13 @@ public class NeoConcept {
         String contextNamePart = String.format("contextName: '%s'", context.getName());
         return String.format("(:`%s` {%s%s%s})", type, referentPart, contextTypePart, contextNamePart);
     }
+
+    public String toCypherWithSpecialReferent() {
+        boolean nullOrEmpty = referent != null && !referent.isEmpty();
+        String referentPart =  nullOrEmpty ? String.format("referent: %s, ", referent) : "";
+        String contextTypePart = String.format("contextType: '%s', ", context.getType().name());
+        String contextNamePart = String.format("contextName: '%s'", context.getName());
+        return String.format("(:`%s` {%s%s%s})", type, referentPart, contextTypePart, contextNamePart);
+    }
     
 }

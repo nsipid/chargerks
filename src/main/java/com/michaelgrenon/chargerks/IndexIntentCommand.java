@@ -1,25 +1,27 @@
 package com.michaelgrenon.chargerks;
 
-public class IndexIntentCommand implements Command {
+import java.util.LinkedHashSet;
+
+public class IndexIntentCommand implements MultiCommand {
     private static final String NEW_LINE = System.getProperty("line.separator");
-    private NeoGraph intent;
+    private LinkedHashSet<String> commands;
 
 	public IndexIntentCommand(NeoGraph intent) {
-        
-        this.intent = intent;
-    }
-	@Override
-	public String toCypher() {
-        StringBuilder builder = new StringBuilder();
+        commands = new LinkedHashSet<>();
 
         for (NeoConceptBinding binding : intent.getConcepts()) {
+            StringBuilder builder = new StringBuilder();
             builder.append("CREATE INDEX ON :");
             builder.append(binding.getConcept().getType());
             builder.append("(referent);");
-            builder.append(NEW_LINE);    
+            builder.append(NEW_LINE);
+            commands.add(builder.toString());  
         }
-
-        return builder.toString();
+    }
+	@Override
+	public String[] toCypher() {
+        String[] ret = new String[commands.size()];
+        return commands.toArray(ret);
 	}
 
 }

@@ -1,5 +1,10 @@
 package com.michaelgrenon.chargerks;
 
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.stream.Collectors;
+
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
 import com.michaelgrenon.chargerks.NeoGraph;
@@ -17,17 +22,31 @@ public class ApplyContextOfIntentCommand implements Command {
 
     @Override
     public String toCypher() {
+        final String coalesceTemplate = "COALESCE(line.%1$s, '') AS %1$s";
+        HashSet<NeoConceptBinding> visitedConcepts = new HashSet<NeoConceptBinding>();
+        Set<String> headings = contextOfIntent.getConcepts().stream().filter(c -> c.getConcept().getReferent().isPresent()).map(c -> String.format("`%s`",c.getConcept().getReferent().get())).collect(Collectors.toSet());
+
         StringBuilder builder = new StringBuilder();
-        builder.append("LOAD CSV WITH HEADERS FROM ");
+        builder.append("LOAD CSV WITH HEADERS FROM '");
         builder.append(csvPath);
-        builder.append(" as line");
+        builder.append("' as line");
         builder.append(NEW_LINE);
-        builder.append("CALL apoc.convert.toJson(line) YIELD jsonLine");
+        builder.append("WITH line,");
         builder.append(NEW_LINE);
+        Iterator<String> itr = headings.iterator();
+        
+        while (itr.hasNext()) {
+            String heading = itr.next();
+            builder.append(String.format(coalesceTemplate, heading));
+            if (itr.hasNext()) {
+                builder.append(",");
+            }
+            builder.append(NEW_LINE);
+        }
 
         for (NeoRelation relation : contextOfIntent.getRelations()) {
-            NeoConceptBinding c1 = appendNodeString(builder, relation.getConcept1());
-            NeoConceptBinding c2 = appendNodeString(builder, relation.getConcept2());
+            NeoConceptBinding c1 = appendNodeString(builder, visitedConcepts, relation.getConcept1());
+            NeoConceptBinding c2 = appendNodeString(builder, visitedConcepts, relation.getConcept2());
 
             appendRelationString(builder, c1, c2, relation.getLabel());
         }
@@ -35,30 +54,40 @@ public class ApplyContextOfIntentCommand implements Command {
         return builder.toString();
     }
 
-    private NeoConceptBinding appendNodeString(StringBuilder builder, NeoConceptBinding template) {
+    private NeoConceptBinding appendNodeString(StringBuilder builder, Set<NeoConceptBinding> visitedConcepts, NeoConceptBinding template) {
         ContextInfo instanceContext = new ContextInfo(ContextType.STORE, template.getConcept().getContext().getName());
         String instanceReferent = null;
-        String operation = "MERGE ";
+        
+        boolean doMerge = true;
 
         if (template.getConcept().getType().toUpperCase().equals("RECORD")) {
-            instanceReferent = "jsonLine";
+            instanceReferent = "apoc.convert.toJson(line)";
         } else if (!template.getConcept().getReferent().isPresent()) { 
-            operation = "CREATE ";
+            doMerge = false;
         } else {
-            instanceReferent = "line.`" + template.getConcept().getReferent() + "`";
+            instanceReferent = "`" + template.getConcept().getReferent().get() + "`";
         }
             
         NeoConceptBinding instanceConcept = new NeoConceptBinding(template.getVariable(), new NeoConcept(template.getConcept().getType(), instanceReferent, instanceContext));
         
-        builder.append(operation);
-        builder.append(instanceConcept.toCypher());
-        builder.append(NEW_LINE);
+        if (!visitedConcepts.contains(instanceConcept)) {
+            visitedConcepts.add(instanceConcept);
+            if (doMerge) {
+                builder.append("MERGE ");
+            } else {
+                builder.append("CREATE ");
+            }
+
+            builder.append(instanceConcept.toCypherWithSpecialReferent());
+            builder.append(NEW_LINE);
+        }
 
         return instanceConcept;
     }
 
     private void appendRelationString(StringBuilder builder, NeoConceptBinding concept1, NeoConceptBinding concept2, String label) {     
         NeoRelation instanceRelation = new NeoRelation(concept1, concept2, concept1.getConcept().getContext(), label);
+        builder.append("MERGE ");
         builder.append(instanceRelation.toCypherExplicit());
         builder.append(NEW_LINE);
     }

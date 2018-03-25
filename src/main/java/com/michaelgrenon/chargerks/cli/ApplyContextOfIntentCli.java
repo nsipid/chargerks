@@ -31,11 +31,11 @@ public class ApplyContextOfIntentCli implements Runnable {
     private Command buildCommand() throws IOException {
         Question getContext = new ContextQuestion(new ContextInfo(ContextType.INTENT, contextOfIntent));
         NeoGraph contextGraph = ks.Ask(getContext);
-        if (this.format == "csv" || this.format == "csv-header") {
+        if (this.format.equals("csv") || this.format.equals("csv-header")) {
             
-        } else if (this.format == "uah-classes") {
-            UahClassListTransformer.toCsv(this.importDataUri, "D:\\Source\\neo4j\\import\\uahclasses.csv");
-            importDataUri = "D:\\Source\\neo4j\\import\\uahclasses.csv";
+        } else if (this.format.equals("uah-classes")) {
+            UahClassListTransformer.toCsv(this.importDataUri, "D:\\Source\\neo4j\\import\\scheduleSpring2016.csv");
+            importDataUri = "D:\\Source\\neo4j\\import\\scheduleSpring2016.csv";
         } else {
             throw new IllegalArgumentException("Bad format");
         }
