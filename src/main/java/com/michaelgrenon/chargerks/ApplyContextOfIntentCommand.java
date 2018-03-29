@@ -13,21 +13,28 @@ import com.michaelgrenon.chargerks.NeoRelation;
 public class ApplyContextOfIntentCommand implements Command {
     private static final String NEW_LINE = System.getProperty("line.separator");
 	private NeoGraph contextOfIntent;
-	private String csvPath;
+    private String csvPath;
+    private boolean withHeaders;
 
-    public ApplyContextOfIntentCommand(NeoGraph contextOfIntent, String csvPath) {
+    public ApplyContextOfIntentCommand(NeoGraph contextOfIntent, String csvPath, boolean withHeaders) {
         this.contextOfIntent = contextOfIntent;
         this.csvPath = csvPath;
+        this.withHeaders = withHeaders;
     }
 
     @Override
     public String toCypher() {
-        final String coalesceTemplate = "COALESCE(line.%1$s, '') AS %1$s";
+        final String coalesceTemplateWithHeaders = "COALESCE(line.%1$s, '') AS %1$s";
+        final String coalesceTemplateWithoutHeaders = "COALESCE(line[%d], '') AS %s"; 
         HashSet<NeoConceptBinding> visitedConcepts = new HashSet<NeoConceptBinding>();
         Set<String> headings = contextOfIntent.getConcepts().stream().filter(c -> c.getConcept().getReferent().isPresent()).map(c -> String.format("`%s`",c.getConcept().getReferent().get())).collect(Collectors.toSet());
 
         StringBuilder builder = new StringBuilder();
-        builder.append("LOAD CSV WITH HEADERS FROM '");
+        builder.append("LOAD CSV");
+        if (withHeaders) {
+            builder.append(" WITH HEADERS");
+        }
+        builder.append(" FROM '");
         builder.append(csvPath);
         builder.append("' as line");
         builder.append(NEW_LINE);
@@ -35,13 +42,20 @@ public class ApplyContextOfIntentCommand implements Command {
         builder.append(NEW_LINE);
         Iterator<String> itr = headings.iterator();
         
+        int i = 0;
         while (itr.hasNext()) {
             String heading = itr.next();
-            builder.append(String.format(coalesceTemplate, heading));
+            if (withHeaders) {
+                builder.append(String.format(coalesceTemplateWithHeaders, heading));
+            } else {
+                builder.append(String.format(coalesceTemplateWithoutHeaders, i, "Value"+i+1));
+            }
+            
             if (itr.hasNext()) {
                 builder.append(",");
             }
             builder.append(NEW_LINE);
+            i++;
         }
 
         for (NeoRelation relation : contextOfIntent.getRelations()) {
@@ -61,7 +75,13 @@ public class ApplyContextOfIntentCommand implements Command {
         boolean doMerge = true;
 
         if (template.getConcept().getType().toUpperCase().equals("RECORD")) {
-            instanceReferent = "apoc.convert.toJson(line)";
+            if(template.getConcept().getReferent().isPresent()) {
+                if (template.getConcept().getReferent().get().toUpperCase().equals("ROW")) {
+                    instanceReferent = "apoc.convert.toJson(line)";
+                } else {
+                    instanceReferent = "apoc.create.uuid()";
+                }
+            }
         } else if (!template.getConcept().getReferent().isPresent()) { 
             doMerge = false;
         } else {

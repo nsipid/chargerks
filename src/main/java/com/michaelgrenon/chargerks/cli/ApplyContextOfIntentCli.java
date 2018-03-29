@@ -31,8 +31,11 @@ public class ApplyContextOfIntentCli implements Runnable {
     private Command buildCommand() throws IOException {
         Question getContext = new ContextQuestion(new ContextInfo(ContextType.INTENT, contextOfIntent));
         NeoGraph contextGraph = ks.Ask(getContext);
-        if (this.format.equals("csv") || this.format.equals("csv-header")) {
-            
+        boolean withHeaders = false;
+        if (this.format.equals("csv")) {
+            withHeaders = false;
+        } else if (this.format.equals("csv-header")) {
+            withHeaders = true;
         } else if (this.format.equals("uah-classes")) {
             UahClassListTransformer.toCsv(this.importDataUri, "D:\\Source\\neo4j\\import\\scheduleSpring2016.csv");
             importDataUri = "D:\\Source\\neo4j\\import\\scheduleSpring2016.csv";
@@ -43,7 +46,7 @@ public class ApplyContextOfIntentCli implements Runnable {
         IndexIntentCommand indexing = new IndexIntentCommand(contextGraph);
         ks.Execute(indexing);
         
-        return new ApplyContextOfIntentCommand(contextGraph, importDataUri);
+        return new ApplyContextOfIntentCommand(contextGraph, importDataUri, withHeaders);
     }
     
 	@Override
