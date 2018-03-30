@@ -9,6 +9,7 @@ import com.michaelgrenon.chargerks.IndexIntentCommand;
 import com.michaelgrenon.chargerks.KnowledgeSpace;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.Question;
+import com.michaelgrenon.chargerks.dataspace.DistanceMatrixTransformer;
 import com.michaelgrenon.chargerks.dataspace.UahClassListTransformer;
 import java.io.IOException;
 
@@ -19,12 +20,14 @@ public class ApplyContextOfIntentCli implements Runnable {
 	private KnowledgeSpace ks;
 	private String format;
 	private Command apply;
+	private String apiKey;
 
-	public ApplyContextOfIntentCli(KnowledgeSpace ks, String contextOfIntent, String format, String importDataUri) throws IOException {
+	public ApplyContextOfIntentCli(KnowledgeSpace ks, String contextOfIntent, String format, String importDataUri, String apikeyArg) throws IOException {
         this.ks = ks;
         this.format = format;
         this.contextOfIntent = contextOfIntent;
         this.importDataUri = importDataUri;
+        this.apiKey = apikeyArg;
         this.apply = buildCommand();
     }
 
@@ -39,6 +42,9 @@ public class ApplyContextOfIntentCli implements Runnable {
         } else if (this.format.equals("uah-classes")) {
             UahClassListTransformer.toCsv(this.importDataUri, "D:\\Source\\neo4j\\import\\scheduleSpring2016.csv");
             importDataUri = "D:\\Source\\neo4j\\import\\scheduleSpring2016.csv";
+        } else if (this.format.equals("distance-matrix")) {
+            DistanceMatrixTransformer.toCsv(apiKey, importDataUri, "Code", "Address", "D:\\Source\\neo4j\\import\\distanceMatrix.csv");
+            importDataUri = "D:\\Source\\neo4j\\import\\distanceMatrix.csv";
         } else {
             throw new IllegalArgumentException("Bad format");
         }

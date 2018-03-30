@@ -70,6 +70,12 @@ public class MainCli {
                 .hasArg(true)
                 .build();
         
+        Option apikey = Option.builder("a").argName("api key")
+                .desc("api key for input operations that need it, such as google distance-matrix")
+                .longOpt("apikey")
+                .hasArg(true)
+                .build();
+        
         Options options = new Options();
         options.addOption(input);
         options.addOption(output);
@@ -79,6 +85,7 @@ public class MainCli {
         options.addOption(username);
         options.addOption(password);
         options.addOption(format);
+        options.addOption(apikey);
         
         CommandLineParser parser = new DefaultParser();
         
@@ -132,6 +139,11 @@ public class MainCli {
                 formatArg = cmdLine.getParsedOptionValue("format").toString();
             }
 
+            String apikeyArg = null;
+            if (cmdLine.hasOption("apikey")) {
+                apikeyArg = cmdLine.getParsedOptionValue("apikey").toString();
+            }
+
             if (remainingArgs.length != 1) {
                 helpRunner.run();
             }
@@ -151,7 +163,7 @@ public class MainCli {
                     cmd.run();
                     break;
                 case "apply-intent":
-                    cmd = new ApplyContextOfIntentCli(ks, contextNameArg, formatArg, inputArg);
+                    cmd = new ApplyContextOfIntentCli(ks, contextNameArg, formatArg, inputArg, apikeyArg);
                     cmd.run();
                     break;
                 case "apply-use":

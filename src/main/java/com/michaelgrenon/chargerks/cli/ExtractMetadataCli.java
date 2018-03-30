@@ -12,6 +12,7 @@ import chargerlib.FileFormat;
 import com.michaelgrenon.chargerks.CgConverter;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.dataspace.CsvMetadataExtractor;
+import com.michaelgrenon.chargerks.dataspace.DistanceMatrixMetadataExtractor;
 import com.michaelgrenon.chargerks.dataspace.UahClassListMetadataExtractor;
 
 public class ExtractMetadataCli implements Runnable {
@@ -51,6 +52,8 @@ public class ExtractMetadataCli implements Runnable {
                     UahClassListMetadataExtractor uahClassExtractor = new UahClassListMetadataExtractor(inputUri);
                     metaGraph = uahClassExtractor.generateCatalog(contextName);
                     break;
+                case "distance-matrix":
+                    metaGraph = new DistanceMatrixMetadataExtractor().generateCatalog(contextName);
                 default:
                     throw new IllegalArgumentException("Unknown format.");
             }
