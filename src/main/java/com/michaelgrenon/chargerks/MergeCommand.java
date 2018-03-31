@@ -26,7 +26,8 @@ public class MergeCommand implements Command {
             builder.append(NEW_LINE);
         }
         
-        for (NeoRelation relation : graph.getRelations()) {
+        for (NeoRelationBinding relationBinding : graph.getRelations()) {
+            NeoRelation relation = relationBinding.getRelation();
             builder.append("MERGE ");
             builder.append(relation.toCypherExplicit());
             builder.append(NEW_LINE);

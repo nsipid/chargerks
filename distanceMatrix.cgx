@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 31, 2018 9:20:38 AM" modified="Mar 31, 2018 9:41:41 AM" user="grenon" wrapLabels="false" wrapColumns="30">
+<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 31, 2018 9:20:38 AM" modified="Mar 31, 2018 11:32:54 AM" user="grenon" wrapLabels="false" wrapColumns="30">
 <graph id="-60441ee7:1627c6e7c7a:-7fd9" owner="0">
     <type>
         <label>Proposition</label>
@@ -15,6 +15,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
 </history>
     <graph id="-60441ee7:1627c6e7c7a:-7fd4" owner="-60441ee7:1627c6e7c7a:-7fd9">
         <type>
@@ -24,7 +29,7 @@
             <label>distanceMatrix</label>
         </referent>
         <layout>
-            <rectangle x="40.00" y="40.00" width="524.91" height="295.34" depth="1.00"/>
+            <rectangle x="40.00" y="40.00" width="658.50" height="295.34" depth="1.00"/>
             <color foreground="0,94,192" background="0,94,192"/>
             <font name="SansSerif" style="1" size="12" />
         </layout>
@@ -34,7 +39,64 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
 </history>
+        <relation id="-7016a8f8:1627c6ec10a:-7f94" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>matches</label>
+            </type>
+            <layout>
+                <rectangle x="350.00" y="179.00" width="58.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:31:03 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:31:08 AM" type="USER">
+        <description>User modified object. Label matches</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </relation>
+        <concept id="-7016a8f8:1627c6ec10a:-7f95" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>Trip</label>
+            </type>
+            <referent>
+                <label>row</label>
+            </referent>
+            <layout>
+                <rectangle x="465.00" y="210.00" width="58.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:30:43 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:30:55 AM" type="USER">
+        <description>User modified object. Label Trip</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:31:36 AM" type="USER">
+        <description>User modified object. Label Trip: row</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </concept>
         <concept id="-60441ee7:1627c6e7c7a:-7fd7" owner="-60441ee7:1627c6e7c7a:-7fd4">
             <type>
                 <label>Value</label>
@@ -43,12 +105,17 @@
                 <label>destination</label>
             </referent>
             <layout>
-                <rectangle x="138.81" y="291.34" width="109.00" height="30.00" depth="1.00"/>
+                <rectangle x="196.81" y="283.34" width="109.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
 <history>
     <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
@@ -63,12 +130,17 @@
                 <label>origin</label>
             </referent>
             <layout>
-                <rectangle x="473.91" y="76.72" width="78.00" height="30.00" depth="1.00"/>
+                <rectangle x="482.91" y="107.72" width="78.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
 <history>
     <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
@@ -79,8 +151,11 @@
             <type>
                 <label>Record</label>
             </type>
+            <referent>
+                <label>row</label>
+            </referent>
             <layout>
-                <rectangle x="250.05" y="111.91" width="49.00" height="30.00" depth="1.00"/>
+                <rectangle x="236.05" y="111.91" width="77.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -89,6 +164,16 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:24:36 AM" type="USER">
+        <description>User modified object. Label Record: row</description>
+        <id>no id</id>
+        <user>grenon</user>
     </event>
 </history>
         </concept>
@@ -110,6 +195,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
 </history>
         </concept>
         <relation id="-60441ee7:1627c6e7c7a:-7fd2" owner="-60441ee7:1627c6e7c7a:-7fd4">
@@ -117,7 +207,7 @@
                 <label>origin</label>
             </type>
             <layout>
-                <rectangle x="367.50" y="93.60" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="371.50" y="109.60" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -127,19 +217,76 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
 </history>
         </relation>
+        <relation id="-7016a8f8:1627c6ec10a:-7f9c" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>matches</label>
+            </type>
+            <layout>
+                <rectangle x="348.00" y="286.00" width="58.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:26:20 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:26:27 AM" type="USER">
+        <description>User modified object. Label matches</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </relation>
+        <concept id="-7016a8f8:1627c6ec10a:-7f9d" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>Building</label>
+            </type>
+            <referent>
+                <label>destination</label>
+            </referent>
+            <layout>
+                <rectangle x="452.00" y="283.00" width="122.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:25:21 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:26:05 AM" type="USER">
+        <description>User modified object. Label Building: destination</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </concept>
         <relation id="-60441ee7:1627c6e7c7a:-7fcf" owner="-60441ee7:1627c6e7c7a:-7fd4">
             <type>
                 <label>destination</label>
             </type>
             <layout>
-                <rectangle x="240.84" y="216.32" width="71.00" height="24.00" depth="1.00"/>
+                <rectangle x="218.84" y="209.32" width="71.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
 <history>
     <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
@@ -151,7 +298,7 @@
                 <label>duration</label>
             </type>
             <layout>
-                <rectangle x="127.71" y="68.00" width="55.00" height="24.00" depth="1.00"/>
+                <rectangle x="127.71" y="77.00" width="55.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -161,47 +308,126 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
 </history>
         </relation>
+        <relation id="-7016a8f8:1627c6ec10a:-7f98" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>matches</label>
+            </type>
+            <layout>
+                <rectangle x="494.00" y="161.00" width="58.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:27:06 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:27:12 AM" type="USER">
+        <description>User modified object. Label matches</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </relation>
+        <concept id="-7016a8f8:1627c6ec10a:-7f99" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>Building</label>
+            </type>
+            <referent>
+                <label>origin</label>
+            </referent>
+            <layout>
+                <rectangle x="594.50" y="165.00" width="91.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:26:55 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:27:03 AM" type="USER">
+        <description>User modified object. Label Building: origin</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </concept>
+        <arrow id="-7016a8f8:1627c6ec10a:-7f92" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-7016a8f8:1627c6ec10a:-7f94" to="-7016a8f8:1627c6ec10a:-7f95">
+            <layout>
+                <rectangle x="428.38" y="202.78" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+        </arrow>
+        <arrow id="-7016a8f8:1627c6ec10a:-7f93" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fd5" to="-7016a8f8:1627c6ec10a:-7f94">
+            <layout>
+                <rectangle x="329.69" y="159.20" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+        </arrow>
         <arrow id="-60441ee7:1627c6e7c7a:-7fd1" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fd5" to="-60441ee7:1627c6e7c7a:-7fd2">
             <layout>
-                <rectangle x="331.32" y="111.44" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="339.97" y="119.76" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
 <history>
     <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
     </event>
 </history>
         </arrow>
-        <arrow id="-60441ee7:1627c6e7c7a:-7fd0" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fd2" to="-60441ee7:1627c6e7c7a:-7fd8">
+        <arrow id="-7016a8f8:1627c6ec10a:-7f9b" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fd7" to="-7016a8f8:1627c6ec10a:-7f9c">
             <layout>
-                <rectangle x="435.24" y="95.87" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="324.43" y="294.13" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
-    </event>
-</history>
+        </arrow>
+        <arrow id="-7016a8f8:1627c6ec10a:-7f9a" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-7016a8f8:1627c6ec10a:-7f9c" to="-7016a8f8:1627c6ec10a:-7f9d">
+            <layout>
+                <rectangle x="423.62" y="294.00" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
         </arrow>
         <arrow id="-60441ee7:1627c6e7c7a:-7fcd" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fcf" to="-60441ee7:1627c6e7c7a:-7fd7">
             <layout>
-                <rectangle x="234.51" y="259.87" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="248.95" y="252.60" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
 <history>
     <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
@@ -210,13 +436,18 @@
         </arrow>
         <arrow id="-60441ee7:1627c6e7c7a:-7fce" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fd5" to="-60441ee7:1627c6e7c7a:-7fcf">
             <layout>
-                <rectangle x="271.50" y="176.53" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="259.81" y="173.10" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
 <history>
     <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
@@ -225,13 +456,18 @@
         </arrow>
         <arrow id="-60441ee7:1627c6e7c7a:-7fcb" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fd5" to="-60441ee7:1627c6e7c7a:-7fcc">
             <layout>
-                <rectangle x="207.14" y="97.98" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="201.07" y="100.84" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
 <history>
     <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
@@ -240,7 +476,7 @@
         </arrow>
         <arrow id="-60441ee7:1627c6e7c7a:-7fca" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fcc" to="-60441ee7:1627c6e7c7a:-7fd6">
             <layout>
-                <rectangle x="125.57" y="114.66" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="125.87" y="119.12" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -251,7 +487,48 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
 </history>
+        </arrow>
+        <arrow id="-60441ee7:1627c6e7c7a:-7fd0" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fd2" to="-60441ee7:1627c6e7c7a:-7fd8">
+            <layout>
+                <rectangle x="441.64" y="118.06" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="-7016a8f8:1627c6ec10a:-7f96" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-7016a8f8:1627c6ec10a:-7f98" to="-7016a8f8:1627c6ec10a:-7f99">
+            <layout>
+                <rectangle x="567.62" y="171.91" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+        </arrow>
+        <arrow id="-7016a8f8:1627c6ec10a:-7f97" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fd8" to="-7016a8f8:1627c6ec10a:-7f98">
+            <layout>
+                <rectangle x="518.52" y="146.83" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
         </arrow>
     </graph>
 </graph>

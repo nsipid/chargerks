@@ -11,7 +11,7 @@ public class ApplyContextOfUseCommand implements MultiCommand {
 
     @Override
     public String[] toCypher() {
-        return contextOfUse.getRelations().stream().map(this::buildCommand).toArray(String[]::new);
+        return contextOfUse.getRelations().stream().map(r -> buildCommand(r.getRelation())).toArray(String[]::new);
     }
 
     private String buildCommand(NeoRelation neoRelation) {

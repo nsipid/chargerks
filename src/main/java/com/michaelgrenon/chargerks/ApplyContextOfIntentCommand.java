@@ -58,7 +58,8 @@ public class ApplyContextOfIntentCommand implements Command {
             i++;
         }
 
-        for (NeoRelation relation : contextOfIntent.getRelations()) {
+        for (NeoRelationBinding relationBinding : contextOfIntent.getRelations()) {
+            NeoRelation relation = relationBinding.getRelation();
             NeoConceptBinding c1 = appendNodeString(builder, visitedConcepts, relation.getConcept1());
             NeoConceptBinding c2 = appendNodeString(builder, visitedConcepts, relation.getConcept2());
 

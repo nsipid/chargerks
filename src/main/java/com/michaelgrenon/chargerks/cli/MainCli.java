@@ -177,6 +177,8 @@ public class MainCli {
                     cmd.run();
                     break;
                 case "ask-data":
+                    cmd = new AskDataCli(ks, inputArg, contextNameArg);
+                    cmd.run();
                     break;
                 default:
                     helpRunner.run();

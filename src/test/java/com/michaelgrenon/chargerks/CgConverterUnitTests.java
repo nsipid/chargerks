@@ -79,7 +79,7 @@ public class CgConverterUnitTests {
     
     public NeoGraph getExampleNeoGraph() {
         ArrayList<NeoConceptBinding> concepts = new ArrayList<NeoConceptBinding>();
-        ArrayList<NeoRelation> relations = new ArrayList<NeoRelation>();
+        ArrayList<NeoRelationBinding> relations = new ArrayList<NeoRelationBinding>();
         
         ContextInfo catA = new ContextInfo(ContextType.INTENT, "catA");
         NeoConceptBinding studentCatA = new NeoConceptBinding("student", new NeoConcept("Student", "", catA));
@@ -93,7 +93,7 @@ public class CgConverterUnitTests {
         concepts.add(studentCatA);
         concepts.add(studentCatB);
         
-        relations.add(relAMatches);
+        relations.add(new NeoRelationBinding("var", relAMatches));
         
         return new NeoGraph(concepts, relations);
     }

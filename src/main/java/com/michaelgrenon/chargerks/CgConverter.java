@@ -38,7 +38,7 @@ public class CgConverter {
         Map<NeoConcept, NeoConceptBinding> unboundToBound = 
             crossReferences.getReferencedConcepts().stream().collect(Collectors.toMap(c -> c, c -> new NeoConceptBinding(generator.generateName(), c)));
 
-        HashMap<String, NeoRelation> relations = new HashMap<String, NeoRelation>();
+        HashMap<String, NeoRelationBinding> relations = new HashMap<String, NeoRelationBinding>();
 
         Function<GraphObject, NeoConceptBinding> visitConcept = obj -> {
             NeoConcept unbound = null;
@@ -75,7 +75,7 @@ public class CgConverter {
 
                 NeoConceptBinding boundConcept1 = visitConcept.apply(concept1);
                 NeoConceptBinding boundConcept2 = visitConcept.apply(concept2);
-                NeoRelation neoRelation = chargerRelationToNeo(relation, boundConcept1, boundConcept2);
+                NeoRelationBinding neoRelation = new NeoRelationBinding(generator.generateName(), chargerRelationToNeo(relation, boundConcept1, boundConcept2));
                 relations.put(obj.objectID.toString(), neoRelation);
             }
         };
@@ -113,14 +113,14 @@ public class CgConverter {
     
     private static NeoConcept chargerConceptToNeo(Concept concept) {
         Graph owner = concept.getOwnerGraph();
-        ContextInfo info = new ContextInfo(ContextType.valueOf(owner.getTypeLabel().toUpperCase(Locale.US)), owner.getReferent());
+        ContextInfo info = new ContextInfo(getValidContextType(owner.getTypeLabel()), owner.getReferent());
         NeoConcept neoConcept = new NeoConcept(concept.getTypeLabel(), concept.getReferent(), info);
         return neoConcept;
     }
     
     private static NeoRelation chargerRelationToNeo(Relation relation, NeoConceptBinding concept1, NeoConceptBinding concept2) {
         Graph owner = relation.getOwnerGraph();
-        ContextInfo info = new ContextInfo(ContextType.valueOf(owner.getTypeLabel().toUpperCase(Locale.US)), owner.getReferent());
+        ContextInfo info = new ContextInfo(getValidContextType(owner.getTypeLabel()), owner.getReferent());
         NeoRelation neoRelation = new NeoRelation(concept1, concept2, info, relation.getTextLabel());
         return neoRelation;
     }
@@ -132,14 +132,23 @@ public class CgConverter {
         concept.resizeIfNecessary();
         return concept;
     }
+
+    private static ContextType getValidContextType(String contextType) {
+        try {
+            return ContextType.valueOf(contextType.toUpperCase(Locale.US));
+        } catch(IllegalArgumentException e) {
+            return ContextType.UNIVERSE;
+        }
+    }
     
-    private static void addNeoRelationsToCharger(List<NeoRelation> neoRelations,
+    private static void addNeoRelationsToCharger(List<NeoRelationBinding> neoRelations,
             Graph universe, Map<ContextInfo, Graph> chargerContexts,
             Map<NeoConceptBinding, Concept> conceptLookup) {
         
         ContextCrossReferences crossReferences = new ContextCrossReferences(universe);
         
-        for (NeoRelation neo : neoRelations) {
+        for (NeoRelationBinding neoBinding : neoRelations) {
+            NeoRelation neo = neoBinding.getRelation();
             // contexts without any concepts (only relations) have not been captured
             // until this point
             Graph relCtxGraph;

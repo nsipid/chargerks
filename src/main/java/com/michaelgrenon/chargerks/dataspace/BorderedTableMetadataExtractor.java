@@ -7,6 +7,8 @@ import com.michaelgrenon.chargerks.NeoConcept;
 import com.michaelgrenon.chargerks.NeoConceptBinding;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
+import com.michaelgrenon.chargerks.NeoRelationBinding;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -29,8 +31,8 @@ public class BorderedTableMetadataExtractor implements MetadataExtractor {
         
         NeoConceptBinding recordConcept = new NeoConceptBinding(namer.generateName(), new NeoConcept("Record", null, new ContextInfo(ContextType.INTENT, catalogName)));
         
-        List<NeoRelation> relations = concepts.stream()
-                .map(c -> new NeoRelation(recordConcept, c, contextOfIntent, c.getConcept().getReferent().orElse("Value")))
+        List<NeoRelationBinding> relations = concepts.stream()
+                .map(c -> new NeoRelationBinding(namer.generateName(), new NeoRelation(recordConcept, c, contextOfIntent, c.getConcept().getReferent().orElse("Value"))))
                 .collect(Collectors.toList());
         
         concepts.add(recordConcept);

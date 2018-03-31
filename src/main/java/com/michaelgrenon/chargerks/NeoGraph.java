@@ -22,16 +22,16 @@ import org.neo4j.driver.v1.types.Relationship;
  */
 public class NeoGraph {
     private Collection<NeoConceptBinding> concepts;
-    private Collection<NeoRelation> relations;
+    private Collection<NeoRelationBinding> relations;
     
-    public NeoGraph(Collection<NeoConceptBinding> concepts, Collection<NeoRelation> relations) {
+    public NeoGraph(Collection<NeoConceptBinding> concepts, Collection<NeoRelationBinding> relations) {
         this.concepts = new ArrayList<NeoConceptBinding>(concepts);
-        this.relations = new ArrayList<NeoRelation>(relations);
+        this.relations = new ArrayList<NeoRelationBinding>(relations);
     }
 
     public NeoGraph(List<Node> nodes, List<Relationship> relationships) {
         HashMap<Long, NeoConceptBinding> neoConcepts = new HashMap<Long, NeoConceptBinding>();
-        HashMap<Long, NeoRelation> neoRelations = new HashMap<Long, NeoRelation>();
+        HashMap<Long, NeoRelationBinding> neoRelations = new HashMap<Long, NeoRelationBinding>();
         NameGenerator generator = new NameGenerator();
 
         for (Node node : nodes) {
@@ -68,7 +68,7 @@ public class NeoGraph {
                 NeoConceptBinding startNode = neoConcepts.get(relationship.startNodeId());
                 NeoConceptBinding endNode = neoConcepts.get(relationship.endNodeId());
 
-                NeoRelation neoRelation = new NeoRelation(startNode, endNode, new ContextInfo(contextType, contextName), relationship.type());
+                NeoRelationBinding neoRelation = new NeoRelationBinding(generator.generateName(), new NeoRelation(startNode, endNode, new ContextInfo(contextType, contextName), relationship.type()));
                 neoRelations.put(id, neoRelation);
             }
         }
@@ -81,7 +81,7 @@ public class NeoGraph {
         return concepts.stream().collect(Collectors.toList());
     }
     
-    public List<NeoRelation> getRelations() {
+    public List<NeoRelationBinding> getRelations() {
         return relations.stream().collect(Collectors.toList());
     }
 }
