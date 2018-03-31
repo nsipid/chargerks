@@ -54,6 +54,7 @@ public class ExtractMetadataCli implements Runnable {
                     break;
                 case "distance-matrix":
                     metaGraph = new DistanceMatrixMetadataExtractor().generateCatalog(contextName);
+                    break;
                 default:
                     throw new IllegalArgumentException("Unknown format.");
             }

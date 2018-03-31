@@ -41,10 +41,12 @@ public class ApplyContextOfIntentCli implements Runnable {
             withHeaders = true;
         } else if (this.format.equals("uah-classes")) {
             UahClassListTransformer.toCsv(this.importDataUri, "D:\\Source\\neo4j\\import\\scheduleSpring2016.csv");
-            importDataUri = "D:\\Source\\neo4j\\import\\scheduleSpring2016.csv";
+            importDataUri = "file:///scheduleSpring2016.csv";
+            withHeaders = true;
         } else if (this.format.equals("distance-matrix")) {
             DistanceMatrixTransformer.toCsv(apiKey, importDataUri, "Code", "Address", "D:\\Source\\neo4j\\import\\distanceMatrix.csv");
-            importDataUri = "D:\\Source\\neo4j\\import\\distanceMatrix.csv";
+            importDataUri = "file:///distanceMatrix.csv";
+            withHeaders = true;
         } else {
             throw new IllegalArgumentException("Bad format");
         }

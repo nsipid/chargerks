@@ -20,12 +20,9 @@ public class DistanceMatrixIterable implements Iterable<String[]> {
     }
 
     private class DistanceMatrixIterator implements Iterator<String[]> {
-        private DistanceMatrixRow[] rows;
-        private DistanceMatrixRow row;
         private String[] locations;
         private int rowNum = 0;
         private int colNum = 0;
-        private boolean initialized = false;
 		private String[] addresses;
 		private String apiKey;
 
@@ -33,15 +30,12 @@ public class DistanceMatrixIterable implements Iterable<String[]> {
             this.locations = locations;
             this.addresses = addresses;
             this.apiKey = apiKey;
+            
         }
 
         @Override
         public boolean hasNext() {
-            init();
-
-            if (row == null) return false;
-
-            if (rowNum < rows.length || colNum < row.elements.length) {
+            if (rowNum < addresses.length && colNum < addresses.length) {
                 return true;
             }
 
@@ -54,38 +48,30 @@ public class DistanceMatrixIterable implements Iterable<String[]> {
                 throw new NoSuchElementException();
             }
             
-            String origin = locations[rowNum];
-            String dest = locations[colNum];
-            String duration = Long.toString(row.elements[colNum].duration.inSeconds);
-            String[] nextRet = {origin, dest, duration};
-
-            if (colNum < row.elements.length) {
-                colNum++;
-            } else {
-                colNum = 0;
-                rowNum++;
-            }
-
-            return nextRet;
-        }
-
-        private void init() {
-            if (this.initialized) {
-                return;
-            }
-
-            this.initialized = true;
-
             try
             {
+                Thread.sleep(100);
                 GeoApiContext context = new GeoApiContext.Builder().apiKey(apiKey).build();
-                DistanceMatrixApiRequest request = DistanceMatrixApi.newRequest(context);
-                DistanceMatrix matrix = request.origins(addresses).destinations(addresses).mode(TravelMode.WALKING).await();
+                String origin = locations[rowNum];
+                String dest = locations[colNum];
 
-                this.rows = matrix.rows;
-                if (matrix.rows.length > 0) {
-                    this.row = rows[0];
+                
+                DistanceMatrixApiRequest request = DistanceMatrixApi.newRequest(context);
+                DistanceMatrix matrix = request.origins(addresses[rowNum]).destinations(addresses[colNum]).mode(TravelMode.WALKING).await();
+
+                String duration = Long.toString(matrix.rows[0].elements[0].duration.inSeconds);
+
+                String[] nextRet = {origin, dest, duration};
+
+                if (colNum < addresses.length - 1) {
+                    colNum++;
+                } else {
+                    colNum = 0;
+                    rowNum++;
                 }
+    
+                return nextRet;
+
             } catch (Exception e) {
                 throw new NoSuchElementException(e.getMessage());
             }

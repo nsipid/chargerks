@@ -71,19 +71,16 @@ public class ApplyContextOfIntentCommand implements Command {
     private NeoConceptBinding appendNodeString(StringBuilder builder, Set<NeoConceptBinding> visitedConcepts, NeoConceptBinding template) {
         ContextInfo instanceContext = new ContextInfo(ContextType.STORE, template.getConcept().getContext().getName());
         String instanceReferent = null;
-        
-        boolean doMerge = true;
 
         if (template.getConcept().getType().toUpperCase().equals("RECORD")) {
             if(template.getConcept().getReferent().isPresent()) {
                 if (template.getConcept().getReferent().get().toUpperCase().equals("ROW")) {
                     instanceReferent = "apoc.convert.toJson(line)";
-                } else {
-                    instanceReferent = "apoc.create.uuid()";
                 }
             }
+            instanceReferent = "apoc.create.uuid()";
         } else if (!template.getConcept().getReferent().isPresent()) { 
-            doMerge = false;
+            instanceReferent = "apoc.create.uuid()";
         } else {
             instanceReferent = "`" + template.getConcept().getReferent().get() + "`";
         }
@@ -92,11 +89,7 @@ public class ApplyContextOfIntentCommand implements Command {
         
         if (!visitedConcepts.contains(instanceConcept)) {
             visitedConcepts.add(instanceConcept);
-            if (doMerge) {
-                builder.append("MERGE ");
-            } else {
-                builder.append("CREATE ");
-            }
+            builder.append("MERGE ");
 
             builder.append(instanceConcept.toCypherWithSpecialReferent());
             builder.append(NEW_LINE);
