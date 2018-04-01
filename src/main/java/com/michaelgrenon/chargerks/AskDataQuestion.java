@@ -84,7 +84,7 @@ public class AskDataQuestion implements Question {
             builder.append(NEW_LINE);
         }
 
-        builder.append("RETURN * LIMIT ");
+        builder.append("RETURN DISTINCT * LIMIT ");
         builder.append(resultLimit);
 
         return builder.toString();

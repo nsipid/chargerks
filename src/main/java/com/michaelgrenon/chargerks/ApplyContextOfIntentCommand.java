@@ -48,7 +48,8 @@ public class ApplyContextOfIntentCommand implements Command {
             if (withHeaders) {
                 builder.append(String.format(coalesceTemplateWithHeaders, heading));
             } else {
-                builder.append(String.format(coalesceTemplateWithoutHeaders, i, "Value"+i+1));
+                int valNum = i+1;
+                builder.append(String.format(coalesceTemplateWithoutHeaders, i, "Value"+valNum));
             }
             
             if (itr.hasNext()) {
@@ -80,7 +81,7 @@ public class ApplyContextOfIntentCommand implements Command {
                 }
             }
             instanceReferent = "apoc.create.uuid()";
-        } else if (!template.getConcept().getReferent().isPresent()) { 
+        } else if (!template.getConcept().getReferent().isPresent() || template.getConcept().getReferent().get().toUpperCase().equals("UUID")) { 
             instanceReferent = "apoc.create.uuid()";
         } else {
             instanceReferent = "`" + template.getConcept().getReferent().get() + "`";

@@ -1,5 +1,7 @@
 package com.michaelgrenon.chargerks.cli;
 
+import java.util.Collection;
+
 import com.michaelgrenon.chargerks.ApplyContextOfUseCommand;
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextQuestion;
@@ -21,10 +23,10 @@ public class ApplyContextOfUseCli implements Runnable {
     
 	@Override
 	public void run() {
-                Question getContext = new ContextQuestion(new ContextInfo(ContextType.USE, contextOfUse));
-                NeoGraph contextGraph = ks.Ask(getContext);
+        Question getContext = new ContextQuestion(new ContextInfo(ContextType.USE, contextOfUse));
+        NeoGraph contextGraph = ks.Ask(getContext).iterator().next();
 
-                MultiCommand apply = new ApplyContextOfUseCommand(contextGraph);
-                ks.Execute(apply);
+        MultiCommand apply = new ApplyContextOfUseCommand(contextGraph);
+        ks.Execute(apply);
 	}
 }

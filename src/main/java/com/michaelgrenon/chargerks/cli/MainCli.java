@@ -182,6 +182,8 @@ public class MainCli {
                     cmd.run();
                     break;
                 case "delete-context":
+                    cmd = new DeleteCli(ks, contextNameArg);
+                    cmd.run();
                     break;
                 case "ask-metadata":
                     cmd = new AskMetadataCli(ks, contextNameArg, contextTypeArg, outputArg);
