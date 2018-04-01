@@ -1,5 +1,6 @@
 package com.michaelgrenon.chargerks;
 
+import java.util.Collection;
 import java.util.Optional;
 import org.neo4j.driver.v1.AuthToken;
 import org.neo4j.driver.v1.AuthTokens;
@@ -35,7 +36,7 @@ public class KnowledgeSpace {
         }
     }
     
-    public NeoGraph Ask(Question question) {
+    public Collection<NeoGraph> Ask(Question question) {
         try (Session session = driver.session()) {
             String query = question.toCypher();
             StatementResult result = session.run(query);

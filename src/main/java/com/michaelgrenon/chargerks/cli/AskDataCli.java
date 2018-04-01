@@ -1,10 +1,12 @@
 package com.michaelgrenon.chargerks.cli;
 
 import java.io.InputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 
 import com.michaelgrenon.chargerks.AskDataQuestion;
 import com.michaelgrenon.chargerks.CgConverter;
@@ -12,19 +14,26 @@ import com.michaelgrenon.chargerks.KnowledgeSpace;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.Question;
 
+import charger.IOManager;
+import charger.exception.CGFileException;
 import charger.obj.Graph;
 import charger.xml.CGXParser;
+import chargerlib.FileFormat;
 
 public class AskDataCli implements Runnable {
 
     private String inputFile;
     private String contextName;
     private KnowledgeSpace ks;
+	private int limit;
+	private String outputFile;
 
-	public AskDataCli(KnowledgeSpace ks, String inputFile, String contextName) {
+	public AskDataCli(KnowledgeSpace ks, String inputFile, String outputFile, String contextName, int limit) {
         this.ks = ks;
         this.inputFile = inputFile;
+        this.outputFile = outputFile;
         this.contextName = contextName;
+        this.limit = limit;
     }
 
     private Question buildQuestion() throws FileNotFoundException {
@@ -35,7 +44,7 @@ public class AskDataCli implements Runnable {
         CGXParser.parseForNewGraph(inputStream, readGraph);
         
         NeoGraph neoGraph = CgConverter.chargerToNeo(readGraph);
-        Question question = new AskDataQuestion(contextName, neoGraph);
+        Question question = new AskDataQuestion(contextName, neoGraph, limit);
 
         return question;
     }
@@ -44,9 +53,21 @@ public class AskDataCli implements Runnable {
 	public void run() {
         try {
             Question question = buildQuestion();
-            ks.Ask(question);
+            Collection<NeoGraph> results = ks.Ask(question);
+            int i = 0;
+            for (NeoGraph result : results) {
+                Graph outGraph = CgConverter.neoToCharger(result);
+                
+                int extension = outputFile.lastIndexOf(".");
+                String infix = i > 0 ? Integer.toString(i) : "";
+                String currentFile = outputFile.substring(0, extension) + infix + outputFile.substring(extension);
+                IOManager.saveGraphAsTextFormat(outGraph, FileFormat.CHARGER4, new File(currentFile));
+                i++;
+            }
         } catch (IOException e) {
             throw new IllegalArgumentException("Could not read to input data.", e);
+        } catch (CGFileException e) {
+            throw new IllegalArgumentException("Could not write to output file.", e);
         }
 	}
 

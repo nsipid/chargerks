@@ -11,9 +11,12 @@ public class AskDataQuestion implements Question {
 
 	private String contextName;
 
-	public AskDataQuestion(String contextName, NeoGraph query) {
+	private int resultLimit;
+
+	public AskDataQuestion(String contextName, NeoGraph query, int resultLimit) {
         this.query = query;
         this.contextName = contextName;
+        this.resultLimit = resultLimit;
     }
 
 	@Override
@@ -81,50 +84,14 @@ public class AskDataQuestion implements Question {
             builder.append(NEW_LINE);
         }
 
-        /** 
-        //WITH collect(x1) + ... + collect(xn) as aggNodes, collect(y1) + ... + collect(yn) as aggRels
-        builder.append("WITH ");
-        builder.append(NEW_LINE);
-        Iterator<NeoConceptBinding> conItr = query.getConcepts().iterator();
-        while (conItr.hasNext()) {
-            String var = conItr.next().getVariable();
-            builder.append("collect(");
-            builder.append(var);
-            builder.append(")");
-            if (conItr.hasNext()) {
-                builder.append(" + ");
-            }
-        }
-        builder.append("AS aggNodes, ");
-
-        relItr = query.getRelations().iterator();
-        while (relItr.hasNext()) {
-            String var = relItr.next().getVariable();
-            builder.append("collect(");
-            builder.append(var);
-            builder.append(")");
-            if (relItr.hasNext()) {
-                builder.append(" + ");
-            }
-        }
-        builder.append("AS aggRels");
-        builder.append(NEW_LINE);
-        
-        builder.append("UNWIND aggNodes as n");
-        builder.append(NEW_LINE);
-        builder.append("UNWIND aggRels as r");
-        builder.append(NEW_LINE);
-        builder.append("RETURN collect(DISTINCT n) as nodes, collect(DISTINCT r) as relationships");
-        */
-
-
-        builder.append("RETURN * LIMIT 2000");
+        builder.append("RETURN * LIMIT ");
+        builder.append(resultLimit);
 
         return builder.toString();
 	}
 
 	@Override
 	public Answer getAnswer() {
-		return new PatternMatchAnswer();
+		return new PatternMatchAnswer(query);
 	}
 }

@@ -76,6 +76,12 @@ public class MainCli {
                 .hasArg(true)
                 .build();
         
+        Option limit = Option.builder("l").argName("limit")
+                .desc("limits the number of results returned from the knowledge space")
+                .longOpt("limit")
+                .hasArg(true)
+                .build();
+        
         Options options = new Options();
         options.addOption(input);
         options.addOption(output);
@@ -144,6 +150,11 @@ public class MainCli {
                 apikeyArg = cmdLine.getParsedOptionValue("apikey").toString();
             }
 
+            int limitArg = 2000;
+            if (cmdLine.hasOption("limit")) {
+                limitArg = Integer.parseInt(cmdLine.getParsedOptionValue("limit").toString());
+            }
+
             if (remainingArgs.length != 1) {
                 helpRunner.run();
             }
@@ -177,7 +188,7 @@ public class MainCli {
                     cmd.run();
                     break;
                 case "ask-data":
-                    cmd = new AskDataCli(ks, inputArg, contextNameArg);
+                    cmd = new AskDataCli(ks, inputArg, outputArg, contextNameArg, limitArg);
                     cmd.run();
                     break;
                 default:

@@ -33,7 +33,7 @@ public class ApplyContextOfIntentCli implements Runnable {
 
     private Command buildCommand() throws IOException {
         Question getContext = new ContextQuestion(new ContextInfo(ContextType.INTENT, contextOfIntent));
-        NeoGraph contextGraph = ks.Ask(getContext);
+        NeoGraph contextGraph = ks.Ask(getContext).iterator().next();
         boolean withHeaders = false;
         if (this.format.equals("csv")) {
             withHeaders = false;

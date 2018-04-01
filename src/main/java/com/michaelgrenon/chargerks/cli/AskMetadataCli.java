@@ -37,7 +37,7 @@ public class AskMetadataCli implements Runnable {
 	public void run() {
         charger.Global.setup( null, new ArrayList<String>(), false );
         
-        NeoGraph neoGraph = ks.Ask(this.question);
+        NeoGraph neoGraph = ks.Ask(this.question).iterator().next();
         
         Graph outGraph = CgConverter.neoToCharger(neoGraph);
         try {
