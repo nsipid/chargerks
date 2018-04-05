@@ -196,6 +196,8 @@ public class MainCli {
                 default:
                     helpRunner.run();
             }
+
+            System.out.println("Finished");
             
         } catch (ParseException e) {
             helpRunner.run();

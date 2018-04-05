@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 31, 2018 3:20:17 PM" modified="Mar 31, 2018 3:23:41 PM" user="grenon" wrapLabels="false" wrapColumns="30">
+<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 31, 2018 3:20:17 PM" modified="Apr 1, 2018 2:29:44 PM" user="grenon" wrapLabels="false" wrapColumns="30">
 <graph id="-7016a8f8:1627c6ec10a:-7f1c" owner="0">
     <type>
         <label>Proposition</label>
@@ -9,12 +9,73 @@
         <color foreground="0,94,192" background="0,94,192"/>
         <font name="SansSerif" style="1" size="12" />
     </layout>
-    <relation id="-7016a8f8:1627c6ec10a:-7f16" owner="-7016a8f8:1627c6ec10a:-7f1c">
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 2:24:48 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\enrollQuery.cgx</file>
+    </event>
+</history>
+    <concept id="-7016a8f8:1627c6ec10a:-7f1b" owner="-7016a8f8:1627c6ec10a:-7f1c">
         <type>
-            <label>Title</label>
+            <label>Student</label>
         </type>
         <layout>
-            <rectangle x="544.00" y="174.00" width="40.00" height="24.00" depth="1.00"/>
+            <rectangle x="138.00" y="179.00" width="52.00" height="30.00" depth="1.00"/>
+            <color foreground="255,255,255" background="0,94,192"/>
+            <font name="SansSerif" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 3:20:26 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 3:20:33 PM" type="USER">
+        <description>User modified object. Label Student</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 2:24:48 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\enrollQuery.cgx</file>
+    </event>
+</history>
+    </concept>
+    <relation id="-7016a8f8:1627c6ec10a:-7f1a" owner="-7016a8f8:1627c6ec10a:-7f1c">
+        <type>
+            <label>enroll</label>
+        </type>
+        <layout>
+            <rectangle x="260.00" y="179.00" width="40.00" height="24.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+            <font name="SansSerif" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 3:20:36 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 3:20:41 PM" type="USER">
+        <description>User modified object. Label enroll</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 2:24:48 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\enrollQuery.cgx</file>
+    </event>
+</history>
+    </relation>
+    <relation id="-7016a8f8:1627c6ec10a:-7f16" owner="-7016a8f8:1627c6ec10a:-7f1c">
+        <type>
+            <label>Days</label>
+        </type>
+        <layout>
+            <rectangle x="532.00" y="174.00" width="64.00" height="24.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,231,100"/>
             <font name="SansSerif" style="1" size="12" />
         </layout>
@@ -26,6 +87,21 @@
     </event>
     <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 3:21:20 PM" type="USER">
         <description>User modified object. Label Title</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 2:24:48 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\enrollQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 1, 2018 2:25:12 PM" type="USER">
+        <description>User modified object. Label Days  MW</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 1, 2018 2:25:17 PM" type="USER">
+        <description>User modified object. Label Days</description>
         <id>no id</id>
         <user>grenon</user>
     </event>
@@ -51,36 +127,41 @@
         <id>no id</id>
         <user>grenon</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 2:24:48 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\enrollQuery.cgx</file>
+    </event>
 </history>
     </concept>
-    <concept id="-7016a8f8:1627c6ec10a:-7f1b" owner="-7016a8f8:1627c6ec10a:-7f1c">
+    <relation id="-62c8c3fc:16282248068:-7d65" owner="-7016a8f8:1627c6ec10a:-7f1c">
         <type>
-            <label>Student</label>
+            <label>Days</label>
         </type>
         <layout>
-            <rectangle x="138.00" y="181.00" width="52.00" height="30.00" depth="1.00"/>
-            <color foreground="255,255,255" background="0,94,192"/>
+            <rectangle x="408.00" y="435.00" width="40.00" height="24.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,231,100"/>
             <font name="SansSerif" style="1" size="12" />
         </layout>
 <history>
-    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 3:20:26 PM" type="USER">
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 1, 2018 2:29:16 PM" type="USER">
         <description>User created object.</description>
         <id>no id</id>
         <user>grenon</user>
     </event>
-    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 3:20:33 PM" type="USER">
-        <description>User modified object. Label Student</description>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 1, 2018 2:29:25 PM" type="USER">
+        <description>User modified object. Label Days</description>
         <id>no id</id>
         <user>grenon</user>
     </event>
 </history>
-    </concept>
+    </relation>
     <concept id="-7016a8f8:1627c6ec10a:-7f14" owner="-7016a8f8:1627c6ec10a:-7f1c">
         <type>
             <label>Value</label>
         </type>
         <referent>
-            <label>PRINCIPLES OF BIOLOGY</label>
+            <label>MW</label>
         </referent>
         <layout>
             <rectangle x="483.00" y="349.00" width="186.00" height="30.00" depth="1.00"/>
@@ -98,30 +179,62 @@
         <id>no id</id>
         <user>grenon</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 2:24:48 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\enrollQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 1, 2018 2:25:27 PM" type="USER">
+        <description>User modified object. Label Value: MW</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
 </history>
     </concept>
-    <relation id="-7016a8f8:1627c6ec10a:-7f1a" owner="-7016a8f8:1627c6ec10a:-7f1c">
+    <relation id="-62c8c3fc:16282248068:-7d69" owner="-7016a8f8:1627c6ec10a:-7f1c">
         <type>
             <label>enroll</label>
         </type>
         <layout>
-            <rectangle x="260.00" y="179.00" width="40.00" height="24.00" depth="1.00"/>
+            <rectangle x="257.00" y="275.00" width="40.00" height="24.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,231,100"/>
             <font name="SansSerif" style="1" size="12" />
         </layout>
 <history>
-    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 3:20:36 PM" type="USER">
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 1, 2018 2:25:36 PM" type="USER">
         <description>User created object.</description>
         <id>no id</id>
         <user>grenon</user>
     </event>
-    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 3:20:41 PM" type="USER">
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 1, 2018 2:25:48 PM" type="USER">
         <description>User modified object. Label enroll</description>
         <id>no id</id>
         <user>grenon</user>
     </event>
 </history>
     </relation>
+    <concept id="-62c8c3fc:16282248068:-7d68" owner="-7016a8f8:1627c6ec10a:-7f1c">
+        <type>
+            <label>Course</label>
+        </type>
+        <layout>
+            <rectangle x="323.50" y="379.00" width="49.00" height="30.00" depth="1.00"/>
+            <color foreground="255,255,255" background="0,94,192"/>
+            <font name="SansSerif" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 1, 2018 2:25:53 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 1, 2018 2:26:00 PM" type="USER">
+        <description>User modified object. Label Course</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+    </concept>
     <arrow id="-7016a8f8:1627c6ec10a:-7f17" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-7016a8f8:1627c6ec10a:-7f1a" to="-7016a8f8:1627c6ec10a:-7f19">
         <layout>
             <rectangle x="325.35" y="185.14" width="8.00" height="8.00" depth="1.00"/>
@@ -129,14 +242,28 @@
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 2:24:48 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\enrollQuery.cgx</file>
+    </event>
+</history>
     </arrow>
     <arrow id="-7016a8f8:1627c6ec10a:-7f18" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-7016a8f8:1627c6ec10a:-7f1b" to="-7016a8f8:1627c6ec10a:-7f1a">
         <layout>
-            <rectangle x="222.33" y="189.31" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="222.33" y="188.39" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 2:24:48 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\enrollQuery.cgx</file>
+    </event>
+</history>
     </arrow>
     <arrow id="-7016a8f8:1627c6ec10a:-7f13" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-7016a8f8:1627c6ec10a:-7f16" to="-7016a8f8:1627c6ec10a:-7f14">
         <layout>
@@ -145,10 +272,56 @@
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 2:24:48 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\enrollQuery.cgx</file>
+    </event>
+</history>
+    </arrow>
+    <arrow id="-62c8c3fc:16282248068:-7d64" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-62c8c3fc:16282248068:-7d68" to="-62c8c3fc:16282248068:-7d65">
+        <layout>
+            <rectangle x="391.09" y="421.20" width="8.00" height="8.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif" style="1" size="12" />
+            <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+        </layout>
+    </arrow>
+    <arrow id="-62c8c3fc:16282248068:-7d63" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-62c8c3fc:16282248068:-7d65" to="-7016a8f8:1627c6ec10a:-7f14">
+        <layout>
+            <rectangle x="489.02" y="406.54" width="8.00" height="8.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif" style="1" size="12" />
+            <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+        </layout>
     </arrow>
     <arrow id="-7016a8f8:1627c6ec10a:-7f15" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-7016a8f8:1627c6ec10a:-7f19" to="-7016a8f8:1627c6ec10a:-7f16">
         <layout>
-            <rectangle x="474.57" y="182.48" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="468.31" y="182.52" width="8.00" height="8.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif" style="1" size="12" />
+            <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+        </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 2:24:48 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\enrollQuery.cgx</file>
+    </event>
+</history>
+    </arrow>
+    <arrow id="-62c8c3fc:16282248068:-7d67" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-7016a8f8:1627c6ec10a:-7f1b" to="-62c8c3fc:16282248068:-7d69">
+        <layout>
+            <rectangle x="221.56" y="240.66" width="8.00" height="8.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif" style="1" size="12" />
+            <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+        </layout>
+    </arrow>
+    <arrow id="-62c8c3fc:16282248068:-7d66" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-62c8c3fc:16282248068:-7d69" to="-62c8c3fc:16282248068:-7d68">
+        <layout>
+            <rectangle x="306.24" y="333.10" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />

@@ -74,13 +74,8 @@ public class ApplyContextOfIntentCommand implements Command {
         ContextInfo instanceContext = new ContextInfo(ContextType.STORE, template.getConcept().getContext().getName());
         String instanceReferent = null;
 
-        if (template.getConcept().getType().toUpperCase().equals("RECORD")) {
-            if(template.getConcept().getReferent().isPresent()) {
-                if (template.getConcept().getReferent().get().toUpperCase().equals("ROW")) {
-                    instanceReferent = "apoc.convert.toJson(line)";
-                }
-            }
-            instanceReferent = "apoc.create.uuid()";
+        if (template.getConcept().getReferent().isPresent() && template.getConcept().getReferent().get().toUpperCase().equals("ROW")) {
+            instanceReferent = "apoc.convert.toJson(line)";
         } else if (!template.getConcept().getReferent().isPresent() || template.getConcept().getReferent().get().toUpperCase().equals("UUID")) { 
             instanceReferent = "apoc.create.uuid()";
         } else {
