@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 16, 2018 2:24:48 PM" modified="Apr 1, 2018 1:08:41 PM" user="grenon" wrapLabels="false" wrapColumns="30">
+<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 16, 2018 2:24:48 PM" modified="Apr 6, 2018 4:19:12 PM" user="grenon" wrapLabels="false" wrapColumns="30">
 <graph id="6308c1ea:1623035fe0e:-7f76" owner="0">
     <type>
         <label>Proposition</label>
@@ -20,6 +20,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
     <graph id="6308c1ea:1623035fe0e:-7f1e" owner="6308c1ea:1623035fe0e:-7f76">
         <type>
@@ -29,7 +34,7 @@
             <label>schedulingOffice</label>
         </referent>
         <layout>
-            <rectangle x="78.00" y="89.00" width="548.50" height="424.00" depth="1.00"/>
+            <rectangle x="405.50" y="140.00" width="674.00" height="525.00" depth="1.00"/>
             <color foreground="0,94,192" background="0,94,192"/>
             <font name="SansSerif" style="1" size="12" />
         </layout>
@@ -49,13 +54,18 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         <relation id="-62c8c3fc:16282248068:-7ed9" owner="6308c1ea:1623035fe0e:-7f1e">
             <type>
                 <label>matches</label>
             </type>
             <layout>
-                <rectangle x="243.00" y="383.00" width="58.00" height="24.00" depth="1.00"/>
+                <rectangle x="599.00" y="458.00" width="58.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -70,6 +80,33 @@
         <id>no id</id>
         <user>grenon</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="b1282bc:1629cc05cf2:-7f6a" owner="6308c1ea:1623035fe0e:-7f1e">
+            <type>
+                <label>in</label>
+            </type>
+            <layout>
+                <rectangle x="474.00" y="517.00" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 4:12:28 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 4:12:34 PM" type="USER">
+        <description>User modified object. Label in</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
 </history>
         </relation>
         <relation id="-62c8c3fc:16282248068:-7ed2" owner="6308c1ea:1623035fe0e:-7f1e">
@@ -77,7 +114,7 @@
                 <label>in</label>
             </type>
             <layout>
-                <rectangle x="538.00" y="340.00" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="941.00" y="614.00" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -92,6 +129,11 @@
         <id>no id</id>
         <user>grenon</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </relation>
         <concept id="-62c8c3fc:16282248068:-7ed5" owner="6308c1ea:1623035fe0e:-7f1e">
@@ -102,7 +144,7 @@
                 <label>bldgs</label>
             </referent>
             <layout>
-                <rectangle x="128.50" y="469.00" width="85.00" height="30.00" depth="1.00"/>
+                <rectangle x="704.50" y="571.00" width="85.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -117,6 +159,11 @@
         <id>no id</id>
         <user>grenon</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </concept>
         <concept id="-62c8c3fc:16282248068:-7ed4" owner="6308c1ea:1623035fe0e:-7f1e">
@@ -127,7 +174,7 @@
                 <label>distanceMatrix</label>
             </referent>
             <layout>
-                <rectangle x="474.50" y="467.00" width="139.00" height="30.00" depth="1.00"/>
+                <rectangle x="424.50" y="610.00" width="139.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -142,6 +189,11 @@
         <id>no id</id>
         <user>grenon</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </concept>
         <relation id="-62c8c3fc:16282248068:-7ed3" owner="6308c1ea:1623035fe0e:-7f1e">
@@ -149,7 +201,7 @@
                 <label>in</label>
             </type>
             <layout>
-                <rectangle x="146.00" y="398.00" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="727.00" y="517.00" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -164,6 +216,11 @@
         <id>no id</id>
         <user>grenon</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </relation>
         <relation id="6308c1ea:1623035fe0e:-7f75" owner="6308c1ea:1623035fe0e:-7f1e">
@@ -171,7 +228,7 @@
                 <label>in</label>
             </type>
             <layout>
-                <rectangle x="180.00" y="217.00" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="498.00" y="180.00" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -196,6 +253,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </relation>
         <concept id="6308c1ea:1623035fe0e:-7f74" owner="6308c1ea:1623035fe0e:-7f1e">
@@ -203,7 +265,7 @@
                 <label>Course</label>
             </type>
             <layout>
-                <rectangle x="188.50" y="125.00" width="49.00" height="30.00" depth="1.00"/>
+                <rectangle x="593.50" y="176.00" width="49.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -228,6 +290,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </concept>
         <relation id="6308c1ea:1623035fe0e:-7f70" owner="6308c1ea:1623035fe0e:-7f1e">
@@ -235,7 +302,7 @@
                 <label>matches</label>
             </type>
             <layout>
-                <rectangle x="293.00" y="119.00" width="58.00" height="24.00" depth="1.00"/>
+                <rectangle x="702.00" y="175.00" width="58.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -260,8 +327,38 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </relation>
+        <concept id="b1282bc:1629cc05cf2:-7f6b" owner="6308c1ea:1623035fe0e:-7f1e">
+            <type>
+                <label>Building</label>
+            </type>
+            <referent>
+                <label>Bldg</label>
+            </referent>
+            <layout>
+                <rectangle x="673.00" y="295.00" width="84.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 4:08:37 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 4:09:07 PM" type="USER">
+        <description>User modified object. Label Building: Bldg</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </concept>
         <concept id="6308c1ea:1623035fe0e:-7f73" owner="6308c1ea:1623035fe0e:-7f1e">
             <type>
                 <label>INTENT</label>
@@ -270,7 +367,7 @@
                 <label>enrollmentSpring2016</label>
             </referent>
             <layout>
-                <rectangle x="101.50" y="281.00" width="201.00" height="30.00" depth="1.00"/>
+                <rectangle x="418.50" y="291.00" width="201.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -315,6 +412,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </concept>
         <concept id="6308c1ea:1623035fe0e:-7f72" owner="6308c1ea:1623035fe0e:-7f1e">
@@ -322,7 +424,7 @@
                 <label>Course</label>
             </type>
             <layout>
-                <rectangle x="432.50" y="121.00" width="49.00" height="30.00" depth="1.00"/>
+                <rectangle x="828.50" y="175.00" width="49.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -347,8 +449,35 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </concept>
+        <relation id="b1282bc:1629cc05cf2:-7f67" owner="6308c1ea:1623035fe0e:-7f1e">
+            <type>
+                <label>in</label>
+            </type>
+            <layout>
+                <rectangle x="797.00" y="293.00" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 4:17:09 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 4:17:13 PM" type="USER">
+        <description>User modified object. Label in</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </relation>
         <concept id="6308c1ea:1623035fe0e:-7f6f" owner="6308c1ea:1623035fe0e:-7f1e">
             <type>
                 <label>INTENT</label>
@@ -357,7 +486,7 @@
                 <label>scheduleSpring2016</label>
             </referent>
             <layout>
-                <rectangle x="374.50" y="286.00" width="171.00" height="30.00" depth="1.00"/>
+                <rectangle x="895.50" y="293.00" width="171.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -387,14 +516,85 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </concept>
+        <relation id="b1282bc:1629cc05cf2:-7f63" owner="6308c1ea:1623035fe0e:-7f1e">
+            <type>
+                <label>matches</label>
+            </type>
+            <layout>
+                <rectangle x="727.00" y="388.00" width="58.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 4:18:26 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 4:18:29 PM" type="USER">
+        <description>User modified object. Label matches</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </relation>
+        <relation id="b1282bc:1629cc05cf2:-7f62" owner="6308c1ea:1623035fe0e:-7f1e">
+            <type>
+                <label>matches</label>
+            </type>
+            <layout>
+                <rectangle x="883.00" y="372.00" width="58.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 4:18:31 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 4:18:36 PM" type="USER">
+        <description>User modified object. Label matches</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </relation>
+        <relation id="b1282bc:1629cc05cf2:-7f64" owner="6308c1ea:1623035fe0e:-7f1e">
+            <type>
+                <label>matches</label>
+            </type>
+            <layout>
+                <rectangle x="575.00" y="370.00" width="58.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 4:18:14 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 4:18:24 PM" type="USER">
+        <description>User modified object. Label matches</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        </relation>
         <relation id="6308c1ea:1623035fe0e:-7f26" owner="6308c1ea:1623035fe0e:-7f1e">
             <type>
                 <label>in</label>
             </type>
             <layout>
-                <rectangle x="449.00" y="205.00" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="957.00" y="175.00" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -419,6 +619,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </relation>
         <relation id="-62c8c3fc:16282248068:-7edb" owner="6308c1ea:1623035fe0e:-7f1e">
@@ -426,7 +631,7 @@
                 <label>matches</label>
             </type>
             <layout>
-                <rectangle x="275.00" y="335.00" width="58.00" height="24.00" depth="1.00"/>
+                <rectangle x="831.00" y="459.00" width="58.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -441,6 +646,11 @@
         <id>no id</id>
         <user>grenon</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </relation>
         <concept id="-62c8c3fc:16282248068:-7ede" owner="6308c1ea:1623035fe0e:-7f1e">
@@ -451,7 +661,7 @@
                 <label>Code</label>
             </referent>
             <layout>
-                <rectangle x="133.00" y="338.00" width="88.00" height="30.00" depth="1.00"/>
+                <rectangle x="704.00" y="455.00" width="88.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -466,6 +676,11 @@
         <id>no id</id>
         <user>grenon</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </concept>
         <concept id="-62c8c3fc:16282248068:-7edd" owner="6308c1ea:1623035fe0e:-7f1e">
@@ -476,7 +691,7 @@
                 <label>origin</label>
             </referent>
             <layout>
-                <rectangle x="386.50" y="335.00" width="91.00" height="30.00" depth="1.00"/>
+                <rectangle x="914.50" y="461.00" width="91.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -491,6 +706,11 @@
         <id>no id</id>
         <user>grenon</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </concept>
         <concept id="-62c8c3fc:16282248068:-7edc" owner="6308c1ea:1623035fe0e:-7f1e">
@@ -501,7 +721,7 @@
                 <label>destination</label>
             </referent>
             <layout>
-                <rectangle x="331.00" y="400.00" width="122.00" height="30.00" depth="1.00"/>
+                <rectangle x="432.00" y="456.00" width="122.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -516,43 +736,91 @@
         <id>no id</id>
         <user>grenon</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
         </concept>
         <arrow id="-62c8c3fc:16282248068:-7ed8" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="-62c8c3fc:16282248068:-7ede" to="-62c8c3fc:16282248068:-7ed9">
             <layout>
-                <rectangle x="231.40" y="374.82" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="674.78" y="466.00" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="-62c8c3fc:16282248068:-7ed7" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="-62c8c3fc:16282248068:-7edb" to="-62c8c3fc:16282248068:-7edd">
             <layout>
-                <rectangle x="354.00" y="344.27" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="895.95" y="469.00" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="-62c8c3fc:16282248068:-7ed1" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="-62c8c3fc:16282248068:-7ede" to="-62c8c3fc:16282248068:-7ed3">
             <layout>
-                <rectangle x="166.92" y="380.52" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="743.45" y="498.30" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="-62c8c3fc:16282248068:-7ed0" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="-62c8c3fc:16282248068:-7ed3" to="-62c8c3fc:16282248068:-7ed5">
             <layout>
-                <rectangle x="164.30" y="440.11" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="743.00" y="550.48" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
+</history>
         </arrow>
         <arrow id="-62c8c3fc:16282248068:-7ed6" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="-62c8c3fc:16282248068:-7ed9" to="-62c8c3fc:16282248068:-7edc">
             <layout>
-                <rectangle x="309.34" y="397.89" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="573.98" y="466.37" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="b1282bc:1629cc05cf2:-7f61" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="b1282bc:1629cc05cf2:-7f6b" to="b1282bc:1629cc05cf2:-7f64">
+            <layout>
+                <rectangle x="649.04" y="346.19" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -560,7 +828,22 @@
         </arrow>
         <arrow id="-62c8c3fc:16282248068:-7ecf" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="-62c8c3fc:16282248068:-7edd" to="-62c8c3fc:16282248068:-7ed2">
             <layout>
-                <rectangle x="505.16" y="347.22" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="956.52" y="549.80" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="b1282bc:1629cc05cf2:-7f60" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="b1282bc:1629cc05cf2:-7f64" to="-62c8c3fc:16282248068:-7edc">
+            <layout>
+                <rectangle x="549.10" y="418.81" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -568,7 +851,46 @@
         </arrow>
         <arrow id="-62c8c3fc:16282248068:-7ece" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="-62c8c3fc:16282248068:-7ed2" to="-62c8c3fc:16282248068:-7ed4">
             <layout>
-                <rectangle x="547.34" y="409.84" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="749.97" y="621.56" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="b1282bc:1629cc05cf2:-7f66" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="b1282bc:1629cc05cf2:-7f6b" to="b1282bc:1629cc05cf2:-7f67">
+            <layout>
+                <rectangle x="774.39" y="302.89" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+        </arrow>
+        <arrow id="b1282bc:1629cc05cf2:-7f69" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="-62c8c3fc:16282248068:-7edc" to="b1282bc:1629cc05cf2:-7f6a">
+            <layout>
+                <rectangle x="489.55" y="498.91" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+        </arrow>
+        <arrow id="b1282bc:1629cc05cf2:-7f68" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="b1282bc:1629cc05cf2:-7f6a" to="-62c8c3fc:16282248068:-7ed4">
+            <layout>
+                <rectangle x="490.00" y="569.75" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+        </arrow>
+        <arrow id="b1282bc:1629cc05cf2:-7f65" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="b1282bc:1629cc05cf2:-7f67" to="6308c1ea:1623035fe0e:-7f6f">
+            <layout>
+                <rectangle x="860.75" y="301.87" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -576,7 +898,7 @@
         </arrow>
         <arrow id="6308c1ea:1623035fe0e:-7f28" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="6308c1ea:1623035fe0e:-7f74" to="6308c1ea:1623035fe0e:-7f75">
             <layout>
-                <rectangle x="202.06" y="183.49" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="560.16" y="187.54" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -588,6 +910,11 @@
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
     <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 1:04:08 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
@@ -596,7 +923,7 @@
         </arrow>
         <arrow id="6308c1ea:1623035fe0e:-7f27" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="6308c1ea:1623035fe0e:-7f75" to="6308c1ea:1623035fe0e:-7f73">
             <layout>
-                <rectangle x="196.91" y="255.53" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="514.47" y="241.98" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -608,6 +935,11 @@
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
     <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 1:04:08 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
@@ -616,7 +948,7 @@
         </arrow>
         <arrow id="6308c1ea:1623035fe0e:-7f24" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="6308c1ea:1623035fe0e:-7f72" to="6308c1ea:1623035fe0e:-7f26">
             <layout>
-                <rectangle x="459.43" y="175.42" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="914.83" y="184.41" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -628,6 +960,11 @@
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
     <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 1:04:08 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
@@ -636,7 +973,7 @@
         </arrow>
         <arrow id="6308c1ea:1623035fe0e:-7f23" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="6308c1ea:1623035fe0e:-7f26" to="6308c1ea:1623035fe0e:-7f6f">
             <layout>
-                <rectangle x="460.79" y="252.31" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="974.90" y="240.39" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -652,11 +989,39 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
+        </arrow>
+        <arrow id="b1282bc:1629cc05cf2:-7f5f" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="b1282bc:1629cc05cf2:-7f6b" to="b1282bc:1629cc05cf2:-7f63">
+            <layout>
+                <rectangle x="732.99" y="354.27" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
         </arrow>
         <arrow id="-62c8c3fc:16282248068:-7eda" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="-62c8c3fc:16282248068:-7ede" to="-62c8c3fc:16282248068:-7edb">
             <layout>
-                <rectangle x="245.37" y="345.58" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="808.88" y="466.58" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="b1282bc:1629cc05cf2:-7f5e" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="b1282bc:1629cc05cf2:-7f63" to="-62c8c3fc:16282248068:-7ede">
+            <layout>
+                <rectangle x="748.37" y="427.77" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -664,7 +1029,7 @@
         </arrow>
         <arrow id="6308c1ea:1623035fe0e:-7f22" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="6308c1ea:1623035fe0e:-7f74" to="6308c1ea:1623035fe0e:-7f70">
             <layout>
-                <rectangle x="263.02" y="131.54" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="669.93" y="185.02" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -676,6 +1041,11 @@
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
     <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 1, 2018 1:04:08 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
@@ -684,7 +1054,7 @@
         </arrow>
         <arrow id="6308c1ea:1623035fe0e:-7f21" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="6308c1ea:1623035fe0e:-7f70" to="6308c1ea:1623035fe0e:-7f72">
             <layout>
-                <rectangle x="386.27" y="129.53" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="788.77" y="184.52" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -700,7 +1070,28 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 3:58:46 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\schedulingOfficeUse.cgx</file>
+    </event>
 </history>
+        </arrow>
+        <arrow id="b1282bc:1629cc05cf2:-7f5d" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="b1282bc:1629cc05cf2:-7f6b" to="b1282bc:1629cc05cf2:-7f62">
+            <layout>
+                <rectangle x="821.48" y="347.50" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+        </arrow>
+        <arrow id="b1282bc:1629cc05cf2:-7f5c" owner="6308c1ea:1623035fe0e:-7f1e" label="-" from="b1282bc:1629cc05cf2:-7f62" to="-62c8c3fc:16282248068:-7edd">
+            <layout>
+                <rectangle x="930.36" y="422.86" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
         </arrow>
     </graph>
 </graph>

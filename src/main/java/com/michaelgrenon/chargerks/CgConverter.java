@@ -99,10 +99,7 @@ public class CgConverter {
                        .collect(Collectors.toMap(n -> n, CgConverter::neoConceptToCharger, (c1, c2) -> c1));
        
        Map<ContextInfo, Graph> chargerContexts = 
-               neo.getConcepts().stream().collect(
-                       Collectors.collectingAndThen(
-                               Collectors.groupingBy(b -> b.getConcept().getContext()),
-                               n -> neoContextsToCharger(n, conceptLookup)));
+               extractChargerContexts(neo, conceptLookup);
        
        chargerContexts.values().stream().forEach(c -> universeGraph.insertObject(c));
        
@@ -110,6 +107,13 @@ public class CgConverter {
        
        return universeGraph;
     }
+
+	private static Map<ContextInfo, Graph> extractChargerContexts(NeoGraph neo, Map<NeoConceptBinding, Concept> conceptLookup) {
+		return neo.getConcepts().stream().collect(
+                       Collectors.collectingAndThen(
+                               Collectors.groupingBy(b -> b.getConcept().getContext()),
+                               n -> neoContextsToCharger(n, conceptLookup)));
+	}
     
     private static NeoConcept chargerConceptToNeo(Concept concept) {
         Graph owner = concept.getOwnerGraph();
