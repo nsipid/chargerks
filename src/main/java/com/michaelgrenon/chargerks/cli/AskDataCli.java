@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import com.michaelgrenon.chargerks.AskDataQuestion;
-import com.michaelgrenon.chargerks.CgConverter;
+import com.michaelgrenon.chargerks.cg.CgConverter;
 import com.michaelgrenon.chargerks.KnowledgeSpace;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.Question;

@@ -4,7 +4,7 @@ import charger.IOManager;
 import charger.exception.CGFileException;
 import charger.obj.Graph;
 import chargerlib.FileFormat;
-import com.michaelgrenon.chargerks.CgConverter;
+import com.michaelgrenon.chargerks.cg.CgConverter;
 import com.michaelgrenon.chargerks.Command;
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextQuestion;

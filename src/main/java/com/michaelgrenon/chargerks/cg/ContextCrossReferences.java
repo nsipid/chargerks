@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.michaelgrenon.chargerks;
+package com.michaelgrenon.chargerks.cg;
 
 import static charger.EditToolbar.Mode.Concept;
 
@@ -29,6 +29,10 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import com.michaelgrenon.chargerks.ContextInfo;
+import com.michaelgrenon.chargerks.ContextType;
+import com.michaelgrenon.chargerks.NeoConcept;
 
 /**
  *

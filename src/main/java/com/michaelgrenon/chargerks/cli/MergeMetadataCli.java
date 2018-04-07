@@ -13,7 +13,7 @@ import charger.exception.CGFileException;
 import charger.obj.Graph;
 import charger.xml.CGXParser;
 import chargerlib.FileFormat;
-import com.michaelgrenon.chargerks.CgConverter;
+import com.michaelgrenon.chargerks.cg.CgConverter;
 import com.michaelgrenon.chargerks.Command;
 import com.michaelgrenon.chargerks.KnowledgeSpace;
 import com.michaelgrenon.chargerks.MergeCommand;
