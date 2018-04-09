@@ -74,9 +74,9 @@ public class ApplyContextOfIntentCommand implements Command {
         ContextInfo instanceContext = new ContextInfo(ContextType.STORE, template.getConcept().getContext().getName());
         String instanceReferent = null;
 
-        if (template.getConcept().getReferent().isPresent() && template.getConcept().getReferent().get().toUpperCase().equals("ROW")) {
+        if (hasReferent(template) && template.getConcept().getReferent().get().toUpperCase().equals("ROW")) {
             instanceReferent = "apoc.convert.toJson(line)";
-        } else if (!template.getConcept().getReferent().isPresent() || template.getConcept().getReferent().get().toUpperCase().equals("UUID")) { 
+        } else if (!hasReferent(template) || template.getConcept().getReferent().get().toUpperCase().equals("UUID")) { 
             instanceReferent = "apoc.create.uuid()";
         } else {
             instanceReferent = "`" + template.getConcept().getReferent().get() + "`";
@@ -93,6 +93,10 @@ public class ApplyContextOfIntentCommand implements Command {
         }
 
         return instanceConcept;
+    }
+
+    private boolean hasReferent(NeoConceptBinding concept) {
+        return !concept.getConcept().getReferent().orElse("").equals("");
     }
 
     private void appendRelationString(StringBuilder builder, NeoConceptBinding concept1, NeoConceptBinding concept2, String label) {     

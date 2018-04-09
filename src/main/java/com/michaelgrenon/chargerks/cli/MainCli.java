@@ -81,6 +81,18 @@ public class MainCli {
                 .longOpt("limit")
                 .hasArg(true)
                 .build();
+
+        Option maxVariableTraversal = Option.builder("T").argName("max var length traversal")
+                .desc("Set the maximum number of nodes traversed in variable length relations (such as match).  Lower numbers create cheaper execution plans, but it limits the number of matching concepts that will be traversed in a pattern matching query.")
+                .longOpt("maxTraversal")
+                .hasArg(true)
+                .build();
+        
+        Option maintainContexts = Option.builder("m").argName("maintain contexts")
+                .desc("If present, matching concepts and relations will be shown in their original contexts instead of a single graph resembling the query.")
+                .longOpt("maintainContext")
+                .hasArg(false)
+                .build();
         
         Options options = new Options();
         options.addOption(input);
@@ -92,6 +104,9 @@ public class MainCli {
         options.addOption(password);
         options.addOption(format);
         options.addOption(apikey);
+        options.addOption(limit);
+        options.addOption(maxVariableTraversal);
+        options.addOption(maintainContexts);
         
         CommandLineParser parser = new DefaultParser();
         
@@ -155,6 +170,16 @@ public class MainCli {
                 limitArg = Integer.parseInt(cmdLine.getParsedOptionValue("limit").toString());
             }
 
+            int maxVariableTraversalArg = 4;
+            if (cmdLine.hasOption("maxTraversal")) {
+                maxVariableTraversalArg = Integer.parseInt(cmdLine.getParsedOptionValue("maxTraversal").toString());
+            }
+
+            Boolean maintainContextsArg = false;
+            if (cmdLine.hasOption("maxTraversal")) {
+                maintainContextsArg = true;
+            }
+
             if (remainingArgs.length != 1) {
                 helpRunner.run();
             }
@@ -190,7 +215,7 @@ public class MainCli {
                     cmd.run();
                     break;
                 case "ask-data":
-                    cmd = new AskDataCli(ks, inputArg, outputArg, contextNameArg, limitArg);
+                    cmd = new AskDataCli(ks, inputArg, outputArg, contextNameArg, limitArg, maxVariableTraversalArg, maintainContextsArg);
                     cmd.run();
                     break;
                 default:

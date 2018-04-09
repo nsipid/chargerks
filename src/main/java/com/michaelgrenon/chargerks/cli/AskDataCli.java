@@ -31,13 +31,17 @@ public class AskDataCli implements Runnable {
     private KnowledgeSpace ks;
 	private int limit;
 	private String outputFile;
+	private int maxVariableExpansion;
+	private boolean maintainContextualInfo;
 
-	public AskDataCli(KnowledgeSpace ks, String inputFile, String outputFile, String contextName, int limit) {
+	public AskDataCli(KnowledgeSpace ks, String inputFile, String outputFile, String contextName, int limit, int maxVariableExpansion, boolean maintainContextualInfo) {
         this.ks = ks;
         this.inputFile = inputFile;
         this.outputFile = outputFile;
         this.contextName = contextName;
         this.limit = limit;
+        this.maxVariableExpansion = maxVariableExpansion;
+        this.maintainContextualInfo = maintainContextualInfo;
     }
 
     private Question buildQuestion() throws FileNotFoundException {
@@ -48,7 +52,7 @@ public class AskDataCli implements Runnable {
         CGXParser.parseForNewGraph(inputStream, readGraph);
         
         NeoGraph neoGraph = CgConverter.chargerToNeo(readGraph);
-        Question question = new AskDataQuestion(contextName, neoGraph, limit);
+        Question question = new AskDataQuestion(contextName, neoGraph, limit, maxVariableExpansion, maintainContextualInfo);
 
         return question;
     }

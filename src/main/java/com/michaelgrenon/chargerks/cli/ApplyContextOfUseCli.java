@@ -26,7 +26,7 @@ public class ApplyContextOfUseCli implements Runnable {
                 Question getContext = new ContextQuestion(new ContextInfo(ContextType.USE, contextOfUse));
                 NeoGraph contextGraph = ks.Ask(getContext).iterator().next();
 
-                MultiCommand apply = new ApplyContextOfUseCommand(contextGraph);
+                MultiCommand apply = new ApplyContextOfUseCommand(contextGraph, contextOfUse);
                 ks.Execute(apply);
 	}
 }

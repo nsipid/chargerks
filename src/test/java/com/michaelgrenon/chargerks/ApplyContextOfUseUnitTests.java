@@ -51,7 +51,7 @@ import org.junit.Test;
  *
  * @author Michael Grenon <grenonm@uah.edu>
  */
-public class AskDataQuestionUnitTests {
+public class ApplyContextOfUseUnitTests {
     NeoGraph exampleNeoGraph;
     
     @BeforeClass
@@ -74,20 +74,16 @@ public class AskDataQuestionUnitTests {
     }
 
     @Test
-    public void testLateStudentQuestion() throws Exception, CGFileException {
+    public void testSchedulingOffice() throws Exception, CGFileException {
         ClassLoader classLoader = getClass().getClassLoader();
-        InputStream chargerStream = classLoader.getResourceAsStream("LateStudents.cgx");
+        InputStream chargerStream = classLoader.getResourceAsStream("SchedulingOfficeUse.cgx");
 
         Graph origGraph = new Graph();
         CGXParser.parseForNewGraph(chargerStream, origGraph);
 
         NeoGraph neoGraph = CgConverter.chargerToNeo(origGraph);
-
-        AskDataQuestion question = new AskDataQuestion("schedulingOffice", neoGraph, 1, 3, true);
-        AskDataQuestion question2 = new AskDataQuestion("schedulingOffice", neoGraph, 0, 3, false);
-        String cypher = question.toCypher();
-        String cypher2 = question2.toCypher();
+        MultiCommand command = new ApplyContextOfUseCommand(neoGraph, "schedulingOffice");
+        String[] cypher = command.toCypher();
         assertNotNull(cypher);
-        assertNotNull(cypher2);
     }
 }

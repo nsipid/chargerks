@@ -10,6 +10,7 @@ import java.util.stream.Stream;
 public class ActorLambda {
     private NeoActorBinding actorBinding;
     private Set<NeoConceptBinding> conceptsLinkedByRelation;
+	private boolean referentIsRecord;
 
     public boolean isConstraint() {
         NeoActor actor = actorBinding.getActor();
@@ -30,9 +31,10 @@ public class ActorLambda {
         return actorBinding.getActor().getOutputs().stream().map(c->c.getVariable()).findAny().get();
     }
 
-    public ActorLambda(NeoActorBinding actorBinding, Set<NeoConceptBinding> conceptsLinkedByRelation) {
+    public ActorLambda(NeoActorBinding actorBinding, Set<NeoConceptBinding> conceptsLinkedByRelation, boolean referentIsRecord) {
         this.actorBinding = actorBinding;
         this.conceptsLinkedByRelation = conceptsLinkedByRelation;
+        this.referentIsRecord = referentIsRecord;
     }
 
     public String toCypherExpressionOrProcedure() {
@@ -61,6 +63,8 @@ public class ActorLambda {
                 cypher = String.format("%s < %s", ref(0), ref(1));
                 break;
             case "regexp":
+            case "regex":
+            case "regular_expression":
                 cypher = String.format("%s =~ %s", ref(0), ref(1));
             default:
                 //assume stored-function then, CALL/YIELD not supported yet
@@ -91,7 +95,7 @@ public class ActorLambda {
     private String getArgument(NeoConceptBinding input) {
         boolean inputLinkedToRelation = conceptsLinkedByRelation.contains(input);
         if (inputLinkedToRelation) {
-            return input.getReferentVariable();
+            return referentIsRecord ? input.referToReferentAsRecord() : input.referToReferentAsNodeProperty();
         } else if(input.getConcept().getType().toUpperCase().trim().equals("LITERAL")) {
             return input.getConcept().getReferent().get();
         } else {

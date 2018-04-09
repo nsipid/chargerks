@@ -18,10 +18,16 @@ public class AskDataQuestion implements Question {
 
 	private int resultLimit;
 
-	public AskDataQuestion(String contextName, NeoGraph query, int resultLimit) {
+	private int maxVariableExpansion;
+
+	private boolean maintainContextualInfo;
+
+	public AskDataQuestion(String contextName, NeoGraph query, int resultLimit, int maxVariableExpansion, boolean maintainContextualInfo) {
         this.query = query;
         this.contextName = contextName;
         this.resultLimit = resultLimit;
+        this.maxVariableExpansion = maxVariableExpansion;
+        this.maintainContextualInfo = maintainContextualInfo;
     }
 
 	@Override
@@ -52,7 +58,7 @@ public class AskDataQuestion implements Question {
                 builder.append(String.format("(%s)", cBinding1.getVariable()));
             }
 
-            builder.append(String.format("-[:matches*0..9]-()-[%s:`%s`]->()-[:matches*0..9]-", relationBinding.getVariable(), relation.getLabel()));
+            builder.append(String.format("-[:matches*0..%d]-()-[%s:`%s`]->()-[:matches*0..%1$d]-", maxVariableExpansion, relationBinding.getVariable(), relation.getLabel()));
 
             if (!visitedConcepts.contains(cBinding2)) {
                 visitedConcepts.add(cBinding2);
@@ -77,7 +83,7 @@ public class AskDataQuestion implements Question {
             builder.append(NEW_LINE);
         }
 
-        //WHERE (var1.contextType = "STORE" OR var1.contextName = ctxOfUse) AND (var2 ...
+        //WHERE (var1.contextType = "STORE" OR var1.contextName = ctxOfUse) AND ((var1.invalid_for_ctxOfUseName IS NULL) OR (NOT var1.invalid_for_ctxOfUseName)) AND (var2 ...
         builder.append("WHERE ");
         builder.append(NEW_LINE);
         Iterator<String> varItr = variables.iterator();
@@ -93,6 +99,16 @@ public class AskDataQuestion implements Question {
             builder.append(contextName);
             builder.append("') ");
 
+            builder.append("AND ((");
+            builder.append(var);
+            builder.append(".invalid_for_");
+            builder.append(contextName);
+            builder.append(" IS NULL) OR (NOT ");
+            builder.append(var);
+            builder.append(".invalid_for_");
+            builder.append(contextName);
+            builder.append("))");
+
             if (varItr.hasNext()) {
                 builder.append("AND");
             }
@@ -106,8 +122,10 @@ public class AskDataQuestion implements Question {
         while (visIterator.hasNext()) {
             NeoConceptBinding c = visIterator.next();
             builder.append(c.getVariable());
-            builder.append(".referent AS ");
-            builder.append(c.getReferentVariable());
+            if (!maintainContextualInfo) {
+                builder.append(".referent AS ");
+                builder.append(c.referToReferentAsRecord());
+            }
             if (visIterator.hasNext()) {
                 builder.append(", ");
             }
@@ -121,7 +139,7 @@ public class AskDataQuestion implements Question {
         //WITH *, actorOneExpression AS actorOneVariable
         //WITH *, actorTwoExpression(may use actorOneVariable) AS actorTwoVariable
         for (NeoActorBinding actorBinding : actors) {
-            ActorLambda lambda = new ActorLambda(actorBinding, visitedConcepts);
+            ActorLambda lambda = new ActorLambda(actorBinding, visitedConcepts, !maintainContextualInfo);
             builder.append("WITH ");
             builder.append(lambda.toCypherExpressionOrProcedure());
             builder.append(" AS ");
@@ -130,7 +148,7 @@ public class AskDataQuestion implements Question {
         }
 
         //WHERE criteria1 AND criteria2, ...., AND NOT criteran, ...
-        List<ActorLambda> constraints = actors.stream().map(a -> new ActorLambda(a, visitedConcepts)).filter(lam -> lam.isConstraint()).collect(Collectors.toList());
+        List<ActorLambda> constraints = actors.stream().map(a -> new ActorLambda(a, visitedConcepts, !maintainContextualInfo)).filter(lam -> lam.isConstraint()).collect(Collectors.toList());
         Iterator<ActorLambda> lamItr = constraints.iterator();
         if (lamItr.hasNext()) builder.append("WHERE ");
         while(lamItr.hasNext()) {
@@ -143,14 +161,17 @@ public class AskDataQuestion implements Question {
         }
         builder.append(NEW_LINE);
 
-        builder.append("RETURN * LIMIT ");
-        builder.append(resultLimit);
-
+        builder.append("RETURN *");
+        if (resultLimit > 0) {
+            builder.append(" LIMIT ");
+            builder.append(resultLimit);
+        }
+    
         return builder.toString();
 	}
 
 	@Override
 	public Answer getAnswer() {
-		return new PatternMatchAnswer(query);
+		return maintainContextualInfo ? new ContextualPatternMatchAnswer(query) : new PatternMatchAnswer(query);
 	}
 }
