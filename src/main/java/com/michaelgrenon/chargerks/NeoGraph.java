@@ -23,10 +23,12 @@ import org.neo4j.driver.v1.types.Relationship;
 public class NeoGraph {
     private Collection<NeoConceptBinding> concepts;
     private Collection<NeoRelationBinding> relations;
+    private Collection<NeoActorBinding> actors;
     
-    public NeoGraph(Collection<NeoConceptBinding> concepts, Collection<NeoRelationBinding> relations) {
+    public NeoGraph(Collection<NeoConceptBinding> concepts, Collection<NeoRelationBinding> relations, Collection<NeoActorBinding> actors) {
         this.concepts = new ArrayList<NeoConceptBinding>(concepts);
         this.relations = new ArrayList<NeoRelationBinding>(relations);
+        this.actors = new ArrayList<NeoActorBinding>(actors);
     }
     
     public List<NeoConceptBinding> getConcepts() {
@@ -35,5 +37,9 @@ public class NeoGraph {
     
     public List<NeoRelationBinding> getRelations() {
         return relations.stream().collect(Collectors.toList());
+    }
+
+    public List<NeoActorBinding> getActors() {
+        return actors.stream().collect(Collectors.toList());
     }
 }

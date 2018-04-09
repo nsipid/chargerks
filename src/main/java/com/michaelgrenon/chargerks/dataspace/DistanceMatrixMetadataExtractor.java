@@ -2,6 +2,7 @@ package com.michaelgrenon.chargerks.dataspace;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -38,7 +39,7 @@ public class DistanceMatrixMetadataExtractor implements MetadataExtractor {
                 
                 concepts.add(recordConcept);
 
-                return new NeoGraph(concepts, relations);
+                return new NeoGraph(concepts, relations, Collections.emptyList());
 	}
 
 	@Override

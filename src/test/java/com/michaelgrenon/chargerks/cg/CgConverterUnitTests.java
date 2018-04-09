@@ -15,12 +15,18 @@ import charger.obj.GraphObjectIterator;
 import charger.obj.ShallowIterator;
 import charger.xml.CGXParser;
 import chargerlib.FileFormat;
+
+import java.awt.Frame;
 import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import javax.swing.JFrame;
 
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
@@ -33,6 +39,8 @@ import com.michaelgrenon.chargerks.NeoRelationBinding;
 import org.junit.After;
 import org.junit.AfterClass;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -47,10 +55,12 @@ public class CgConverterUnitTests {
     @BeforeClass
     public static void setUpClass() {
         charger.Global.setup( null, new ArrayList<String>(), false );
+        Arrays.stream(JFrame.getFrames()).forEach(f -> f.setVisible(false));
     }
     
     @AfterClass
     public static void tearDownClass() {
+        Arrays.stream(JFrame.getFrames()).forEach(Frame::dispose);
     }
     
     @Before
@@ -73,7 +83,7 @@ public class CgConverterUnitTests {
     }
     
     @Test
-    public void testChargerToNeo() throws Exception, CGFileException {
+    public void testChargerToNeoCoref() throws Exception, CGFileException {
         ClassLoader classLoader = getClass().getClassLoader();
         InputStream chargerStream = classLoader.getResourceAsStream("Coreference.cgx");
 
@@ -84,6 +94,20 @@ public class CgConverterUnitTests {
         
         Graph verifyGraph = CgConverter.neoToCharger(neoGraph);
         IOManager.saveGraphAsTextFormat(verifyGraph, FileFormat.CHARGER4, new File("C:\\Users\\nsipi\\testverify.cgx"));
+    }
+
+    @Test
+    public void testChargerToNeoWithActors() throws Exception, CGFileException {
+        ClassLoader classLoader = getClass().getClassLoader();
+        InputStream chargerStream = classLoader.getResourceAsStream("LateStudents.cgx");
+
+        Graph origGraph = new Graph();
+        CGXParser.parseForNewGraph(chargerStream, origGraph);
+
+        NeoGraph neoGraph = CgConverter.chargerToNeo(origGraph); 
+        assertTrue(neoGraph.getActors().size() == 2);
+        assertTrue(neoGraph.getConcepts().size() == 12);
+        assertTrue(neoGraph.getRelations().size() == 11);
     }
     
     public NeoGraph getExampleNeoGraph() {
@@ -104,6 +128,6 @@ public class CgConverterUnitTests {
         
         relations.add(new NeoRelationBinding("var", relAMatches));
         
-        return new NeoGraph(concepts, relations);
+        return new NeoGraph(concepts, relations, Collections.emptyList());
     }
 }

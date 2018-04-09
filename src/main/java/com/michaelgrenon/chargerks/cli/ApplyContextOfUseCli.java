@@ -23,10 +23,10 @@ public class ApplyContextOfUseCli implements Runnable {
     
 	@Override
 	public void run() {
-        Question getContext = new ContextQuestion(new ContextInfo(ContextType.USE, contextOfUse));
-        NeoGraph contextGraph = ks.Ask(getContext).iterator().next();
+                Question getContext = new ContextQuestion(new ContextInfo(ContextType.USE, contextOfUse));
+                NeoGraph contextGraph = ks.Ask(getContext).iterator().next();
 
-        MultiCommand apply = new ApplyContextOfUseCommand(contextGraph);
-        ks.Execute(apply);
+                MultiCommand apply = new ApplyContextOfUseCommand(contextGraph);
+                ks.Execute(apply);
 	}
 }

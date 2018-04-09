@@ -9,6 +9,7 @@ import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
 import com.michaelgrenon.chargerks.NeoRelationBinding;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -36,7 +37,7 @@ public class BorderedTableMetadataExtractor implements MetadataExtractor {
                 .collect(Collectors.toList());
         
         concepts.add(recordConcept);
-        return new NeoGraph(concepts, relations);
+        return new NeoGraph(concepts, relations, Collections.emptyList());
     }
 
     @Override

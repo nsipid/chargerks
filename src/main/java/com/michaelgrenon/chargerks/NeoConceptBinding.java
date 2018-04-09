@@ -5,9 +5,14 @@ import java.util.Objects;
 public class NeoConceptBinding {
     private String variable;
     private NeoConcept concept;
+    private static final String referentVariableSuffix = "_referent";
 
     public String getVariable() {
         return variable;
+    }
+
+    public String getReferentVariable() {
+        return variable + referentVariableSuffix;
     }
 
     public NeoConcept getConcept() {

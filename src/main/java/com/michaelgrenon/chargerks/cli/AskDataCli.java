@@ -1,12 +1,16 @@
 package com.michaelgrenon.chargerks.cli;
 
 import java.io.InputStream;
+import java.awt.Frame;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
+
+import javax.swing.JFrame;
 
 import com.michaelgrenon.chargerks.AskDataQuestion;
 import com.michaelgrenon.chargerks.cg.CgConverter;
@@ -68,6 +72,8 @@ public class AskDataCli implements Runnable {
             throw new IllegalArgumentException("Could not read to input data.", e);
         } catch (CGFileException e) {
             throw new IllegalArgumentException("Could not write to output file.", e);
+        } finally {
+            Arrays.stream(JFrame.getFrames()).forEach(Frame::dispose);
         }
 	}
 

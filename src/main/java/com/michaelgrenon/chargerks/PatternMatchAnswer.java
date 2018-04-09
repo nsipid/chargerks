@@ -1,6 +1,7 @@
 package com.michaelgrenon.chargerks;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -12,7 +13,6 @@ import org.neo4j.driver.v1.StatementResult;
 import org.neo4j.driver.v1.Value;
 import org.neo4j.driver.v1.types.Node;
 import org.neo4j.driver.v1.types.Relationship;
-import org.omg.PortableServer.REQUEST_PROCESSING_POLICY_ID;
 
 public class PatternMatchAnswer implements Answer {
 
@@ -35,7 +35,7 @@ public class PatternMatchAnswer implements Answer {
         
         List<NeoRelationBinding> relations = template.getRelations().stream().map(rel -> getRelation(record, rel, conceptMap)).collect(Collectors.toList());
 
-        return new NeoGraph(conceptMap.values(), relations);
+        return new NeoGraph(conceptMap.values(), relations, Collections.emptyList());
     }
 
     private NeoConceptBinding getConcept(Record record, NeoConceptBinding template) {

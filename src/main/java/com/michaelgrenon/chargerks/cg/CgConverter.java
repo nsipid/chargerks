@@ -6,6 +6,7 @@
 package com.michaelgrenon.chargerks.cg;
 
 import cgif.generate.NameGenerator;
+import charger.obj.Actor;
 import charger.obj.Arrow;
 import charger.obj.Concept;
 import charger.obj.DeepIterator;
@@ -27,11 +28,15 @@ import java.util.stream.Collectors;
 
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
+import com.michaelgrenon.chargerks.NeoActor;
+import com.michaelgrenon.chargerks.NeoActorBinding;
 import com.michaelgrenon.chargerks.NeoConcept;
 import com.michaelgrenon.chargerks.NeoConceptBinding;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
 import com.michaelgrenon.chargerks.NeoRelationBinding;
+import java.util.Collection;
+import java.util.stream.Stream;
 
 /**
  *
@@ -41,28 +46,45 @@ public class CgConverter {
     public static NeoGraph chargerToNeo(Graph charger) {
         NameGenerator generator = new NameGenerator();
         ContextCrossReferences crossReferences = new ContextCrossReferences(charger);
+
         Set<String> ignoredIds = crossReferences.getAllIds();
 
         Map<NeoConcept, NeoConceptBinding> unboundToBound = 
             crossReferences.getReferencedConcepts().stream().collect(Collectors.toMap(c -> c, c -> new NeoConceptBinding(generator.generateName(), c)));
+        
+        Map<String, NeoConceptBinding> chargerIdToBound = new HashMap<String, NeoConceptBinding>();
 
         HashMap<String, NeoRelationBinding> relations = new HashMap<String, NeoRelationBinding>();
+        ArrayList<NeoActorBinding> actors = new ArrayList<NeoActorBinding>();
 
         Function<GraphObject, NeoConceptBinding> visitConcept = obj -> {
             NeoConcept unbound = null;
             NeoConceptBinding bound = null;
+            String objId = obj.objectID.toString();
             if (obj instanceof Concept && !(obj instanceof Graph)) {
-                if (ignoredIds.contains(obj.objectID.toString())) {
-                    unbound = crossReferences.getReferencedConcept(obj.objectID.toString());
+                if (ignoredIds.contains(objId)) {
+                    unbound = crossReferences.getReferencedConcept(objId);
                 } else {
                     unbound = chargerConceptToNeo((Concept) obj);
                 }
 
+                //we maintain duplicate concepts only when the referent is the existential quantifier
+                //(and not a cross referenced concept)
                 if (unbound != null) {
-                    if(!unboundToBound.containsKey(unbound)) {
-                        unboundToBound.put(unbound, new NeoConceptBinding(generator.generateName(), unbound));
+                    if (unboundToBound.containsKey(unbound)) {
+                        if (!unbound.getReferent().orElse("").equals("")) {
+                            bound = unboundToBound.get(unbound);
+                        } else if (chargerIdToBound.containsKey(objId)) {
+                            bound = chargerIdToBound.get(objId);
+                        } else {
+                            bound = new NeoConceptBinding(generator.generateName(), unbound);
+                            chargerIdToBound.put(objId, bound);
+                        }
+                    } else {
+                        bound = new NeoConceptBinding(generator.generateName(), unbound);
+                        unboundToBound.put(unbound, bound);
+                        chargerIdToBound.put(objId, bound);
                     }
-                    bound = unboundToBound.get(unbound);
                 }
             }
 
@@ -87,16 +109,31 @@ public class CgConverter {
                 relations.put(obj.objectID.toString(), neoRelation);
             }
         };
+
+        Consumer<GraphObject> visitActor = obj -> {
+            if (obj instanceof Actor && !(obj instanceof Graph)) {
+                Actor actor = (Actor) obj;
+                ActorInfo info = new ActorInfo(actor);
+                List<NeoConceptBinding> inputs = info.getInputs().stream().map(visitConcept).collect(Collectors.toList());
+                List<NeoConceptBinding> outputs = info.getOutputs().stream().map(visitConcept).collect(Collectors.toList());
+                actors.add(new NeoActorBinding(generator.generateName(), new NeoActor(info.getLabel(), inputs, outputs)));
+            }
+        };
                        
         DeepIterator itr = new DeepIterator(charger, Kind.GNODE);
         while (itr.hasNext()) {
             GraphObject next = itr.next();
             
+            visitActor.accept(next);
             visitConcept.apply(next);
             visitRelation.accept(next);
         }
         
-        return new NeoGraph(unboundToBound.values(), relations.values());
+        Set<NeoConceptBinding> allConcepts = 
+                Stream.concat(unboundToBound.values().stream(), 
+                        chargerIdToBound.values().stream()).collect(Collectors.toSet());
+        
+        return new NeoGraph(allConcepts, relations.values(), actors);
     }
     
     public static Graph neoToCharger(NeoGraph neo) {
@@ -117,9 +154,10 @@ public class CgConverter {
     }
 
 	private static Map<ContextInfo, Graph> extractChargerContexts(NeoGraph neo, Map<NeoConceptBinding, Concept> conceptLookup) {
+        Function<NeoConceptBinding, ContextInfo> classifier = b -> b.getConcept().getContext();
 		return neo.getConcepts().stream().collect(
                        Collectors.collectingAndThen(
-                               Collectors.groupingBy(b -> b.getConcept().getContext()),
+                               Collectors.groupingBy(classifier),
                                n -> neoContextsToCharger(n, conceptLookup)));
 	}
     

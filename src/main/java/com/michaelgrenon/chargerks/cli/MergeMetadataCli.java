@@ -23,14 +23,12 @@ import com.michaelgrenon.chargerks.dataspace.UahClassListMetadataExtractor;
 
 public class MergeMetadataCli implements Runnable {
 	private String inputFile;
-	private Command command;
 	private KnowledgeSpace ks;
 
 
 	public MergeMetadataCli(KnowledgeSpace ks, String inputFile) throws FileNotFoundException, IOException {
         this.inputFile = inputFile;
         this.ks = ks;
-        this.command = buildCommand();
     }
 
     private Command buildCommand() throws FileNotFoundException {
@@ -47,6 +45,10 @@ public class MergeMetadataCli implements Runnable {
 
 	@Override
 	public void run() {
-        ks.Execute(this.command);
+        try {
+			ks.Execute(this.buildCommand());
+		} catch (FileNotFoundException e) {
+			throw new IllegalArgumentException("Could not parse input file", e);
+		}
 	}
 }

@@ -12,8 +12,13 @@ import com.michaelgrenon.chargerks.FullKsQuestion;
 import com.michaelgrenon.chargerks.KnowledgeSpace;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.Question;
+
+import java.awt.Frame;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
+
+import javax.swing.JFrame;
 
 public class AskMetadataCli implements Runnable {
     private ContextInfo contextInfo;
@@ -44,6 +49,8 @@ public class AskMetadataCli implements Runnable {
 			IOManager.saveGraphAsTextFormat(outGraph, FileFormat.CHARGER4, new File(this.outputFile));
 		} catch (CGFileException e) {
 			throw new IllegalArgumentException("Could not write to output file.", e);
+		} finally {
+			Arrays.stream(JFrame.getFrames()).forEach(Frame::dispose);
 		}
 	}
 
