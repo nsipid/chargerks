@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 31, 2018 3:20:17 PM" modified="Apr 8, 2018 11:34:54 PM" user="nsipi" wrapLabels="false" wrapColumns="30">
+<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 31, 2018 3:20:17 PM" modified="Apr 10, 2018 12:57:43 PM" user="grenon" wrapLabels="false" wrapColumns="30">
 <graph id="-7016a8f8:1627c6ec10a:-7f1c" owner="0">
     <type>
         <label>Proposition</label>
@@ -25,13 +25,18 @@
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     <actor id="7cd4573b:162a85f26c0:-7f2f" owner="-7016a8f8:1627c6ec10a:-7f1c">
         <type>
             <label>apoc.date.parse</label>
         </type>
         <layout>
-            <rectangle x="827.00" y="568.00" width="100.00" height="24.00" depth="1.00"/>
+            <rectangle x="810.80" y="566.40" width="140.40" height="35.20" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
         </layout>
@@ -50,6 +55,11 @@
         <description>User modified object. Label apoc.date.parse</description>
         <id>no id</id>
         <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </actor>
@@ -83,6 +93,11 @@
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </relation>
     <concept id="7cd4573b:162a85f26c0:-7f2e" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -115,6 +130,11 @@
         <id>no id</id>
         <user>nsipi</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </concept>
     <concept id="7cd4573b:162a85f26c0:-7f2d" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -122,10 +142,10 @@
             <label>Literal</label>
         </type>
         <referent>
-            <label>s</label>
+            <label>"s"</label>
         </referent>
         <layout>
-            <rectangle x="976.50" y="578.00" width="67.00" height="24.00" depth="1.00"/>
+            <rectangle x="975.50" y="578.00" width="69.00" height="24.00" depth="1.00"/>
             <color foreground="255,255,255" background="0,94,192"/>
             <font name="SansSerif.bold" style="1" size="12" />
         </layout>
@@ -150,6 +170,16 @@
         <id>no id</id>
         <user>nsipi</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 12:12:31 PM" type="USER">
+        <description>User modified object. Label Literal: "s"</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
 </history>
     </concept>
     <concept id="7cd4573b:162a85f26c0:-7f2c" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -157,10 +187,10 @@
             <label>Literal</label>
         </type>
         <referent>
-            <label>HH:mm</label>
+            <label>"HH:mm"</label>
         </referent>
         <layout>
-            <rectangle x="923.50" y="637.00" width="91.00" height="24.00" depth="1.00"/>
+            <rectangle x="917.50" y="637.00" width="103.00" height="24.00" depth="1.00"/>
             <color foreground="255,255,255" background="0,94,192"/>
             <font name="SansSerif.bold" style="1" size="12" />
         </layout>
@@ -184,6 +214,16 @@
         <description>User modified object. Label Literal: HH:mm</description>
         <id>no id</id>
         <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 12:12:39 PM" type="USER">
+        <description>User modified object. Label Literal: "HH:mm"</description>
+        <id>no id</id>
+        <user>grenon</user>
     </event>
 </history>
     </concept>
@@ -222,6 +262,11 @@
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </concept>
     <relation id="-4bfc975a:1628b71393c:-7f90" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -248,6 +293,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </relation>
@@ -280,6 +330,11 @@
         <description>User modified object. Label TimeOfDay</description>
         <id>no id</id>
         <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </concept>
@@ -318,6 +373,11 @@
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </relation>
     <relation id="-4bfc975a:1628b71393c:-7f99" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -344,6 +404,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </relation>
@@ -375,6 +440,11 @@
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </concept>
     <actor id="-4bfc975a:1628b71393c:-7f57" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -382,7 +452,7 @@
             <label>greater_than</label>
         </type>
         <layout>
-            <rectangle x="689.00" y="276.00" width="82.00" height="30.00" depth="1.00"/>
+            <rectangle x="675.50" y="274.10" width="117.00" height="41.80" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
         </layout>
@@ -406,6 +476,11 @@
         <description>User modified object. Label greater_than</description>
         <id>no id</id>
         <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </actor>
@@ -439,6 +514,11 @@
         <id>no id</id>
         <user>nsipi</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </concept>
     <actor id="7cd4573b:162a85f26c0:-7f40" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -446,7 +526,7 @@
             <label>apoc.date.parse</label>
         </type>
         <layout>
-            <rectangle x="571.00" y="553.00" width="100.00" height="24.00" depth="1.00"/>
+            <rectangle x="554.80" y="551.40" width="140.40" height="35.20" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
         </layout>
@@ -465,6 +545,11 @@
         <description>User modified object. Label apoc.date.parse</description>
         <id>no id</id>
         <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </actor>
@@ -492,6 +577,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </concept>
@@ -524,6 +614,11 @@
         <description>User modified object. Label Seconds</description>
         <id>no id</id>
         <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </concept>
@@ -560,6 +655,11 @@
         <id>no id</id>
         <user>nsipi</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </concept>
     <concept id="7cd4573b:162a85f26c0:-7f31" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -594,6 +694,11 @@
         <description>User modified object. Label Literal: "HH:mm"</description>
         <id>no id</id>
         <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </concept>
@@ -632,6 +737,11 @@
         <id>no id</id>
         <user>nsipi</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </relation>
     <relation id="-62c8c3fc:16282248068:-7d69" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -664,6 +774,11 @@
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </relation>
     <concept id="-4bfc975a:1628b71393c:-7f5a" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -690,6 +805,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </concept>
@@ -723,6 +843,11 @@
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </concept>
     <relation id="-4bfc975a:1628b71393c:-7f5b" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -749,6 +874,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </relation>
@@ -777,6 +907,11 @@
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </relation>
     <concept id="-4bfc975a:1628b71393c:-7f80" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -803,6 +938,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </concept>
@@ -836,6 +976,11 @@
         <id>no id</id>
         <user>nsipi</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </concept>
     <concept id="-4bfc975a:1628b71393c:-7f83" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -868,6 +1013,11 @@
         <id>no id</id>
         <user>nsipi</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </concept>
     <actor id="7cd4573b:162a85f26c0:-7f06" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -875,7 +1025,7 @@
             <label>minus</label>
         </type>
         <layout>
-            <rectangle x="717.50" y="467.00" width="43.00" height="24.00" depth="1.00"/>
+            <rectangle x="709.85" y="465.40" width="66.30" height="35.20" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
         </layout>
@@ -889,6 +1039,11 @@
         <description>User modified object. Label minus</description>
         <id>no id</id>
         <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </actor>
@@ -922,6 +1077,11 @@
         <id>no id</id>
         <user>nsipi</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </relation>
     <relation id="-4bfc975a:1628b71393c:-7f87" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -954,6 +1114,11 @@
         <id>no id</id>
         <user>nsipi</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </relation>
     <relation id="-7016a8f8:1627c6ec10a:-7f16" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -961,7 +1126,7 @@
             <label>Meet</label>
         </type>
         <layout>
-            <rectangle x="825.00" y="959.00" width="64.00" height="24.00" depth="1.00"/>
+            <rectangle x="833.00" y="959.00" width="48.00" height="24.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,231,100"/>
             <font name="SansSerif" style="1" size="12" />
         </layout>
@@ -1006,6 +1171,11 @@
         <id>no id</id>
         <user>nsipi</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </relation>
     <concept id="-7016a8f8:1627c6ec10a:-7f19" owner="-7016a8f8:1627c6ec10a:-7f1c">
@@ -1042,6 +1212,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </concept>
@@ -1093,27 +1268,51 @@
         <id>no id</id>
         <user>nsipi</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </concept>
     <arrow id="7cd4573b:162a85f26c0:-7f2b" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="7cd4573b:162a85f26c0:-7f2f" to="7cd4573b:162a85f26c0:-7f2e">
         <layout>
-            <rectangle x="869.68" y="541.81" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="871.55" y="542.34" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+</history>
     </arrow>
-    <arrow id="7cd4573b:162a85f26c0:-7f2a" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="7cd4573b:162a85f26c0:-7f2d" to="7cd4573b:162a85f26c0:-7f2f">
+    <arrow id="7cd4573b:162a85f26c0:-7f2a" owner="-7016a8f8:1627c6ec10a:-7f1c" label="2" from="7cd4573b:162a85f26c0:-7f2d" to="7cd4573b:162a85f26c0:-7f2f">
         <layout>
-            <rectangle x="941.47" y="581.15" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="952.23" y="583.50" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 12:17:29 PM" type="USER">
+        <description>User modified object. Label 2</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f94" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f99" to="-4bfc975a:1628b71393c:-7f95">
         <layout>
-            <rectangle x="623.52" y="693.23" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="623.54" y="694.48" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1123,12 +1322,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f97" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-62c8c3fc:16282248068:-7d68" to="-4bfc975a:1628b71393c:-7f99">
         <layout>
-            <rectangle x="624.49" y="796.02" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="624.48" y="794.77" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1138,12 +1342,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f53" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f57" to="-4bfc975a:1628b71393c:-7f54">
         <layout>
-            <rectangle x="776.77" y="309.32" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="781.56" y="312.64" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1154,11 +1363,16 @@
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </arrow>
-    <arrow id="-4bfc975a:1628b71393c:-7f55" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f5a" to="-4bfc975a:1628b71393c:-7f57">
+    <arrow id="-4bfc975a:1628b71393c:-7f55" owner="-7016a8f8:1627c6ec10a:-7f1c" label="1" from="-4bfc975a:1628b71393c:-7f5a" to="-4bfc975a:1628b71393c:-7f57">
         <layout>
-            <rectangle x="723.04" y="240.66" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="724.89" y="240.91" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1169,27 +1383,56 @@
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 12:17:47 PM" type="USER">
+        <description>User modified object. Label 1</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
 </history>
     </arrow>
-    <arrow id="7cd4573b:162a85f26c0:-7f04" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="7cd4573b:162a85f26c0:-7f2e" to="7cd4573b:162a85f26c0:-7f06">
+    <arrow id="7cd4573b:162a85f26c0:-7f04" owner="-7016a8f8:1627c6ec10a:-7f1c" label="2" from="7cd4573b:162a85f26c0:-7f2e" to="7cd4573b:162a85f26c0:-7f06">
         <layout>
-            <rectangle x="791.94" y="487.60" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="796.90" y="490.40" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 12:20:41 PM" type="USER">
+        <description>User modified object. Label 2</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
     </arrow>
     <arrow id="7cd4573b:162a85f26c0:-7f03" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="7cd4573b:162a85f26c0:-7f06" to="-4bfc975a:1628b71393c:-7f8a">
         <layout>
-            <rectangle x="732.61" y="439.64" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="734.58" y="440.72" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+</history>
     </arrow>
-    <arrow id="-4bfc975a:1628b71393c:-7f56" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f8a" to="-4bfc975a:1628b71393c:-7f57">
+    <arrow id="-4bfc975a:1628b71393c:-7f56" owner="-7016a8f8:1627c6ec10a:-7f1c" label="2" from="-4bfc975a:1628b71393c:-7f8a" to="-4bfc975a:1628b71393c:-7f57">
         <layout>
-            <rectangle x="727.98" y="343.57" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="730.00" y="347.49" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1199,12 +1442,22 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 12:17:51 PM" type="USER">
+        <description>User modified object. Label 2</description>
+        <id>no id</id>
+        <user>grenon</user>
     </event>
 </history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f59" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f80" to="-4bfc975a:1628b71393c:-7f5b">
         <layout>
-            <rectangle x="716.47" y="96.22" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="716.46" y="97.47" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1214,12 +1467,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f58" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f5b" to="-4bfc975a:1628b71393c:-7f5a">
         <layout>
-            <rectangle x="717.88" y="158.59" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="717.81" y="157.34" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1229,12 +1487,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f8f" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-7016a8f8:1627c6ec10a:-7f19" to="-4bfc975a:1628b71393c:-7f90">
         <layout>
-            <rectangle x="848.03" y="799.79" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="848.05" y="798.54" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1244,12 +1507,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f60" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f80" to="-4bfc975a:1628b71393c:-7f7f">
         <layout>
-            <rectangle x="652.99" y="111.68" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="651.41" y="112.93" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1260,51 +1528,106 @@
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </arrow>
-    <arrow id="7cd4573b:162a85f26c0:-7f29" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="7cd4573b:162a85f26c0:-7f2c" to="7cd4573b:162a85f26c0:-7f2f">
+    <arrow id="7cd4573b:162a85f26c0:-7f29" owner="-7016a8f8:1627c6ec10a:-7f1c" label="3" from="7cd4573b:162a85f26c0:-7f2c" to="7cd4573b:162a85f26c0:-7f2f">
         <layout>
-            <rectangle x="916.44" y="608.58" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="919.45" y="611.35" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 12:17:25 PM" type="USER">
+        <description>User modified object. Label 3</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
     </arrow>
     <arrow id="7cd4573b:162a85f26c0:-7f27" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f90" to="7cd4573b:162a85f26c0:-7f42">
         <layout>
-            <rectangle x="843.73" y="705.17" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="843.90" y="706.42" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+</history>
     </arrow>
     <arrow id="7cd4573b:162a85f26c0:-7f34" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="7cd4573b:162a85f26c0:-7f40" to="7cd4573b:162a85f26c0:-7f36">
         <layout>
-            <rectangle x="614.66" y="531.00" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="616.53" y="531.22" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+</history>
     </arrow>
-    <arrow id="7cd4573b:162a85f26c0:-7f32" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="7cd4573b:162a85f26c0:-7f33" to="7cd4573b:162a85f26c0:-7f40">
+    <arrow id="7cd4573b:162a85f26c0:-7f32" owner="-7016a8f8:1627c6ec10a:-7f1c" label="2" from="7cd4573b:162a85f26c0:-7f33" to="7cd4573b:162a85f26c0:-7f40">
         <layout>
-            <rectangle x="548.83" y="550.36" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="546.54" y="551.65" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 12:17:10 PM" type="USER">
+        <description>User modified object. Label 2</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
     </arrow>
-    <arrow id="7cd4573b:162a85f26c0:-7f30" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="7cd4573b:162a85f26c0:-7f31" to="7cd4573b:162a85f26c0:-7f40">
+    <arrow id="7cd4573b:162a85f26c0:-7f30" owner="-7016a8f8:1627c6ec10a:-7f1c" label="3" from="7cd4573b:162a85f26c0:-7f31" to="7cd4573b:162a85f26c0:-7f40">
         <layout>
-            <rectangle x="552.93" y="590.50" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="554.56" y="592.88" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 12:17:05 PM" type="USER">
+        <description>User modified object. Label 3</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
     </arrow>
     <arrow id="-62c8c3fc:16282248068:-7d64" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-62c8c3fc:16282248068:-7d68" to="-62c8c3fc:16282248068:-7d65">
         <layout>
-            <rectangle x="629.14" y="921.35" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="629.24" y="922.60" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1319,12 +1642,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-62c8c3fc:16282248068:-7d63" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-62c8c3fc:16282248068:-7d65" to="-7016a8f8:1627c6ec10a:-7f14">
         <layout>
-            <rectangle x="686.18" y="1028.53" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="685.00" y="1027.28" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1339,12 +1667,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-62c8c3fc:16282248068:-7d67" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-7016a8f8:1627c6ec10a:-7f1b" to="-62c8c3fc:16282248068:-7d69">
         <layout>
-            <rectangle x="708.64" y="747.69" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="707.86" y="748.94" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1359,12 +1692,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f5c" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f5e" to="-4bfc975a:1628b71393c:-7f83">
         <layout>
-            <rectangle x="963.80" y="161.00" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="962.55" y="161.00" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1374,12 +1712,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-62c8c3fc:16282248068:-7d66" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-62c8c3fc:16282248068:-7d69" to="-62c8c3fc:16282248068:-7d68">
         <layout>
-            <rectangle x="654.60" y="827.36" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="655.53" y="826.11" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1394,12 +1737,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f5d" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f80" to="-4bfc975a:1628b71393c:-7f5e">
         <layout>
-            <rectangle x="781.65" y="113.14" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="783.20" y="114.39" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1409,12 +1757,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f5f" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f7f" to="-4bfc975a:1628b71393c:-7f84">
         <layout>
-            <rectangle x="465.74" y="154.05" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="466.99" y="154.07" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1425,27 +1778,56 @@
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </arrow>
-    <arrow id="7cd4573b:162a85f26c0:-7f26" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="7cd4573b:162a85f26c0:-7f42" to="7cd4573b:162a85f26c0:-7f2f">
+    <arrow id="7cd4573b:162a85f26c0:-7f26" owner="-7016a8f8:1627c6ec10a:-7f1c" label="1" from="7cd4573b:162a85f26c0:-7f42" to="7cd4573b:162a85f26c0:-7f2f">
         <layout>
-            <rectangle x="856.26" y="617.62" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="857.89" y="620.68" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 12:17:17 PM" type="USER">
+        <description>User modified object. Label 1</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
     </arrow>
-    <arrow id="7cd4573b:162a85f26c0:-7f3f" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f95" to="7cd4573b:162a85f26c0:-7f40">
+    <arrow id="7cd4573b:162a85f26c0:-7f3f" owner="-7016a8f8:1627c6ec10a:-7f1c" label="1" from="-4bfc975a:1628b71393c:-7f95" to="7cd4573b:162a85f26c0:-7f40">
         <layout>
-            <rectangle x="619.91" y="606.61" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="622.00" y="609.89" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 12:16:58 PM" type="USER">
+        <description>User modified object. Label 1</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f82" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f88" to="-4bfc975a:1628b71393c:-7f84">
         <layout>
-            <rectangle x="338.56" y="469.83" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="338.60" y="471.08" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1455,12 +1837,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f81" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-4bfc975a:1628b71393c:-7f87" to="-4bfc975a:1628b71393c:-7f83">
         <layout>
-            <rectangle x="1088.05" y="466.47" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="1088.09" y="467.72" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1470,12 +1857,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f86" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-62c8c3fc:16282248068:-7d68" to="-4bfc975a:1628b71393c:-7f88">
         <layout>
-            <rectangle x="483.41" y="824.42" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="482.16" y="824.05" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1485,12 +1877,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-4bfc975a:1628b71393c:-7f85" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-7016a8f8:1627c6ec10a:-7f19" to="-4bfc975a:1628b71393c:-7f87">
         <layout>
-            <rectangle x="976.43" y="812.59" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="977.68" y="812.14" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1501,19 +1898,36 @@
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
 </history>
     </arrow>
-    <arrow id="7cd4573b:162a85f26c0:-7f05" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="7cd4573b:162a85f26c0:-7f36" to="7cd4573b:162a85f26c0:-7f06">
+    <arrow id="7cd4573b:162a85f26c0:-7f05" owner="-7016a8f8:1627c6ec10a:-7f1c" label="1" from="7cd4573b:162a85f26c0:-7f36" to="7cd4573b:162a85f26c0:-7f06">
         <layout>
-            <rectangle x="682.08" y="484.46" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="680.11" y="487.35" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif.bold" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
         </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 12:20:37 PM" type="USER">
+        <description>User modified object. Label 1</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
     </arrow>
     <arrow id="-7016a8f8:1627c6ec10a:-7f17" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-7016a8f8:1627c6ec10a:-7f1a" to="-7016a8f8:1627c6ec10a:-7f19">
         <layout>
-            <rectangle x="818.83" y="820.20" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="817.92" y="818.95" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1533,12 +1947,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-7016a8f8:1627c6ec10a:-7f18" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-7016a8f8:1627c6ec10a:-7f1b" to="-7016a8f8:1627c6ec10a:-7f1a">
         <layout>
-            <rectangle x="767.91" y="744.72" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="768.70" y="745.97" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1558,12 +1977,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-7016a8f8:1627c6ec10a:-7f13" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-7016a8f8:1627c6ec10a:-7f16" to="-7016a8f8:1627c6ec10a:-7f14">
         <layout>
-            <rectangle x="800.48" y="1026.27" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="801.59" y="1025.02" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1583,12 +2007,17 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>
     <arrow id="-7016a8f8:1627c6ec10a:-7f15" owner="-7016a8f8:1627c6ec10a:-7f1c" label="-" from="-7016a8f8:1627c6ec10a:-7f19" to="-7016a8f8:1627c6ec10a:-7f16">
         <layout>
-            <rectangle x="850.09" y="914.67" width="8.00" height="8.00" depth="1.00"/>
+            <rectangle x="850.16" y="915.92" width="8.00" height="8.00" depth="1.00"/>
             <color foreground="0,0,0" background="255,255,255"/>
             <font name="SansSerif" style="1" size="12" />
             <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -1608,6 +2037,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\LateStudents.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 12:11:21 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\query\LateStudentsMWQuery.cgx</file>
     </event>
 </history>
     </arrow>

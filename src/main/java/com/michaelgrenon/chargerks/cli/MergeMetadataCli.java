@@ -1,5 +1,6 @@
 package com.michaelgrenon.chargerks.cli;
 
+import java.awt.Frame;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,6 +9,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
 import java.util.ArrayList;
+import java.util.Arrays;
+
+import javax.swing.JFrame;
+
 import charger.IOManager;
 import charger.exception.CGFileException;
 import charger.obj.Graph;
@@ -49,6 +54,8 @@ public class MergeMetadataCli implements Runnable {
 			ks.Execute(this.buildCommand());
 		} catch (FileNotFoundException e) {
 			throw new IllegalArgumentException("Could not parse input file", e);
-		}
+		} finally {
+            Arrays.stream(JFrame.getFrames()).forEach(Frame::dispose);
+        }
 	}
 }

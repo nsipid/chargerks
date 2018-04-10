@@ -35,15 +35,18 @@ public class AskDataQuestion implements Question {
         List<NeoActorBinding> actors = query.getActors();
 
         Set<NeoConceptBinding> visitedConcepts = new HashSet<NeoConceptBinding>();
+        Set<NeoRelationBinding> visitedRelations = new HashSet<NeoRelationBinding>();
+
         Set<String> variables = new HashSet<String>();
 
-        //MATCH relPattern1 WITH visitedConcepts, ... 
+        //MATCH relPattern1 WITH visitedConcepts, ... , visitedRelations
         Iterator<NeoRelationBinding> relItr = query.getRelations().iterator();
         StringBuilder builder = new StringBuilder();       
         while (relItr.hasNext()) {
             //MATCH relPattern
             builder.append("MATCH ");
             NeoRelationBinding relationBinding = relItr.next();
+            visitedRelations.add(relationBinding);
             variables.add(relationBinding.getVariable());
 
             NeoRelation relation = relationBinding.getRelation();
@@ -71,11 +74,11 @@ public class AskDataQuestion implements Question {
 
             //WITH concept1, concept2, ...
             builder.append("WITH DISTINCT ");
-            Iterator<NeoConceptBinding> visIterator = visitedConcepts.iterator();
-            while (visIterator.hasNext()) {
-                NeoConceptBinding bnd = visIterator.next();
-                builder.append(bnd.getVariable());
-                if (visIterator.hasNext()) {
+            Iterator<String> vIterator = variables.iterator();
+            while (vIterator.hasNext()) {
+                String v = vIterator.next();
+                builder.append(v);
+                if (vIterator.hasNext()) {
                     builder.append(", ");
                 }
             }
@@ -86,6 +89,7 @@ public class AskDataQuestion implements Question {
         //WHERE (var1.contextType = "STORE" OR var1.contextName = ctxOfUse) AND ((var1.invalid_for_ctxOfUseName IS NULL) OR (NOT var1.invalid_for_ctxOfUseName)) AND (var2 ...
         builder.append("WHERE ");
         builder.append(NEW_LINE);
+        Set<String> conceptVars = visitedConcepts.stream().map(c -> c.getVariable()).collect(Collectors.toSet());
         Iterator<String> varItr = variables.iterator();
         while (varItr.hasNext()) {
             String var = varItr.next();
@@ -99,18 +103,21 @@ public class AskDataQuestion implements Question {
             builder.append(contextName);
             builder.append("') ");
 
-            builder.append("AND ((");
-            builder.append(var);
-            builder.append(".invalid_for_");
-            builder.append(contextName);
-            builder.append(" IS NULL) OR (NOT ");
-            builder.append(var);
-            builder.append(".invalid_for_");
-            builder.append(contextName);
-            builder.append("))");
+            // if its a node we must make sure the context of use did not decide it was invalid
+            if (conceptVars.contains(var)) {
+                builder.append("AND ((");
+                builder.append(var);
+                builder.append(".invalid_for_");
+                builder.append(contextName);
+                builder.append(" IS NULL) OR (NOT ");
+                builder.append(var);
+                builder.append(".invalid_for_");
+                builder.append(contextName);
+                builder.append("))");
+            }
 
             if (varItr.hasNext()) {
-                builder.append("AND");
+                builder.append(" AND");
             }
             builder.append(NEW_LINE);
         }
@@ -127,7 +134,17 @@ public class AskDataQuestion implements Question {
                 builder.append(c.referToReferentAsRecord());
             }
             if (visIterator.hasNext()) {
+                builder.append(",");
+            }
+        }
+
+        if (maintainContextualInfo) {
+            Iterator<NeoRelationBinding> relIterator = visitedRelations.iterator();
+
+            while (relIterator.hasNext()) {
                 builder.append(", ");
+                NeoRelationBinding c = relIterator.next();
+                builder.append(c.getVariable());
             }
         }
         builder.append(NEW_LINE);
@@ -140,7 +157,7 @@ public class AskDataQuestion implements Question {
         //WITH *, actorTwoExpression(may use actorOneVariable) AS actorTwoVariable
         for (NeoActorBinding actorBinding : actors) {
             ActorLambda lambda = new ActorLambda(actorBinding, visitedConcepts, !maintainContextualInfo);
-            builder.append("WITH ");
+            builder.append("WITH *, ");
             builder.append(lambda.toCypherExpressionOrProcedure());
             builder.append(" AS ");
             builder.append(lambda.getVariable());

@@ -39,6 +39,7 @@ public class KnowledgeSpace {
     public Collection<NeoGraph> Ask(Question question) {
         try (Session session = driver.session()) {
             String query = question.toCypher();
+            System.out.println(query);
             StatementResult result = session.run(query);
             return question.getAnswer().fromResult(result);
         }
@@ -47,6 +48,7 @@ public class KnowledgeSpace {
     public void Execute(Command command) {
         try (Session session = driver.session()) {
             String cypher = command.toCypher();
+            System.out.println(cypher);
             session.run(cypher);
         }
     }
@@ -55,6 +57,7 @@ public class KnowledgeSpace {
         try (Session session = driver.session()) {
             String[] cyphers = command.toCypher();
             for (String cypher : cyphers) {
+                System.out.println(cypher);
                 session.run(cypher);
             }
         }

@@ -90,7 +90,7 @@ public class MainCli {
         
         Option maintainContexts = Option.builder("m").argName("maintain contexts")
                 .desc("If present, matching concepts and relations will be shown in their original contexts instead of a single graph resembling the query.")
-                .longOpt("maintainContext")
+                .longOpt("maintainContexts")
                 .hasArg(false)
                 .build();
         
@@ -176,7 +176,7 @@ public class MainCli {
             }
 
             Boolean maintainContextsArg = false;
-            if (cmdLine.hasOption("maxTraversal")) {
+            if (cmdLine.hasOption("maintainContexts")) {
                 maintainContextsArg = true;
             }
 
@@ -228,6 +228,8 @@ public class MainCli {
             helpRunner.run();
         } catch (Exception e) {
             System.out.println(e.getMessage());
+        } finally {
+            System.exit(0);
         }
     }  
 }

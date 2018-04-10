@@ -39,7 +39,7 @@ public class PatternMatchAnswer implements Answer {
     }
 
     private NeoConceptBinding getConcept(Record record, NeoConceptBinding template) {
-        Value referentValue = record.get(template.getReferentVariable());
+        Value referentValue = record.get(template.referToReferentAsRecord());
     
 
         String referent = referentValue.isNull() ? "" : referentValue.asString();

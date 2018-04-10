@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 31, 2018 9:20:38 AM" modified="Apr 10, 2018 10:51:29 AM" user="grenon" wrapLabels="false" wrapColumns="30">
+<graph id="-60441ee7:1627c6e7c7a:-7fd9" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="0.00" y="0.00" width="3000.00" height="3000.00" depth="1.00"/>
+        <color foreground="0,94,192" background="0,94,192"/>
+        <font name="SansSerif" style="1" size="12" />
+    </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+    <graph id="-60441ee7:1627c6e7c7a:-7fd4" owner="-60441ee7:1627c6e7c7a:-7fd9">
+        <type>
+            <label>INTENT</label>
+        </type>
+        <referent>
+            <label>UniDistanceMatrix</label>
+        </referent>
+        <layout>
+            <rectangle x="40.00" y="40.00" width="649.50" height="333.00" depth="1.00"/>
+            <color foreground="0,94,192" background="0,94,192"/>
+            <font name="SansSerif" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 10:19:02 AM" type="USER">
+        <description>User modified object. Label INTENT: uniDistanceMatrix</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 10:51:29 AM" type="USER">
+        <description>User modified object. Label INTENT: UniDistanceMatrix</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        <relation id="-be426fe:1629d930bea:-7fba" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>duration</label>
+            </type>
+            <layout>
+                <rectangle x="465.50" y="164.00" width="55.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 7:49:36 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 7:49:42 PM" type="USER">
+        <description>User modified object. Label duration</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="-be426fe:1629d930bea:-7fbb" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>Seconds</label>
+            </type>
+            <referent>
+                <label>duration</label>
+            </referent>
+            <layout>
+                <rectangle x="542.50" y="169.00" width="111.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 7:49:10 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 6, 2018 7:49:30 PM" type="USER">
+        <description>User modified object. Label Seconds: duration</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="-7016a8f8:1627c6ec10a:-7f94" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>matches</label>
+            </type>
+            <layout>
+                <rectangle x="350.00" y="179.00" width="58.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:31:03 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:31:08 AM" type="USER">
+        <description>User modified object. Label matches</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="-7016a8f8:1627c6ec10a:-7f95" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>Trip</label>
+            </type>
+            <referent>
+                <label>row</label>
+            </referent>
+            <layout>
+                <rectangle x="466.00" y="211.00" width="58.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:30:43 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:30:55 AM" type="USER">
+        <description>User modified object. Label Trip</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:31:36 AM" type="USER">
+        <description>User modified object. Label Trip: row</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="-60441ee7:1627c6e7c7a:-7fd7" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>destination</label>
+            </referent>
+            <layout>
+                <rectangle x="196.81" y="283.34" width="109.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="-60441ee7:1627c6e7c7a:-7fd8" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>origin</label>
+            </referent>
+            <layout>
+                <rectangle x="482.91" y="107.72" width="78.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="-60441ee7:1627c6e7c7a:-7fd5" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>Record</label>
+            </type>
+            <referent>
+                <label>row</label>
+            </referent>
+            <layout>
+                <rectangle x="236.05" y="111.91" width="77.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:24:36 AM" type="USER">
+        <description>User modified object. Label Record: row</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="-60441ee7:1627c6e7c7a:-7fd6" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>duration</label>
+            </referent>
+            <layout>
+                <rectangle x="53.00" y="149.01" width="93.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="-60441ee7:1627c6e7c7a:-7fd2" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>origin</label>
+            </type>
+            <layout>
+                <rectangle x="371.50" y="109.60" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="-7016a8f8:1627c6ec10a:-7f9d" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>Building</label>
+            </type>
+            <referent>
+                <label>destination</label>
+            </referent>
+            <layout>
+                <rectangle x="431.00" y="329.00" width="122.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:25:21 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:26:05 AM" type="USER">
+        <description>User modified object. Label Building: destination</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="-60441ee7:1627c6e7c7a:-7fcf" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>destination</label>
+            </type>
+            <layout>
+                <rectangle x="218.84" y="209.32" width="71.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="2d6f707:1629708ee88:-7fba" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>origin</label>
+            </type>
+            <layout>
+                <rectangle x="597.00" y="259.00" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 5, 2018 1:21:59 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 5, 2018 1:22:02 PM" type="USER">
+        <description>User modified object. Label origin</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="2d6f707:1629708ee88:-7fbb" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>destination</label>
+            </type>
+            <layout>
+                <rectangle x="458.50" y="272.00" width="71.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 5, 2018 1:21:50 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 5, 2018 1:21:57 PM" type="USER">
+        <description>User modified object. Label destination</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="-60441ee7:1627c6e7c7a:-7fcc" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>duration</label>
+            </type>
+            <layout>
+                <rectangle x="127.71" y="77.00" width="55.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="-7016a8f8:1627c6ec10a:-7f99" owner="-60441ee7:1627c6e7c7a:-7fd4">
+            <type>
+                <label>Building</label>
+            </type>
+            <referent>
+                <label>origin</label>
+            </referent>
+            <layout>
+                <rectangle x="585.50" y="330.00" width="91.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:26:55 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:27:03 AM" type="USER">
+        <description>User modified object. Label Building: origin</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </concept>
+        <arrow id="-7016a8f8:1627c6ec10a:-7f92" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-7016a8f8:1627c6ec10a:-7f94" to="-7016a8f8:1627c6ec10a:-7f95">
+            <layout>
+                <rectangle x="428.53" y="203.15" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="-7016a8f8:1627c6ec10a:-7f93" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fd5" to="-7016a8f8:1627c6ec10a:-7f94">
+            <layout>
+                <rectangle x="329.69" y="159.20" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="-60441ee7:1627c6e7c7a:-7fd1" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fd5" to="-60441ee7:1627c6e7c7a:-7fd2">
+            <layout>
+                <rectangle x="339.97" y="119.76" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="-60441ee7:1627c6e7c7a:-7fcd" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fcf" to="-60441ee7:1627c6e7c7a:-7fd7">
+            <layout>
+                <rectangle x="248.95" y="252.60" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="-60441ee7:1627c6e7c7a:-7fce" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fd5" to="-60441ee7:1627c6e7c7a:-7fcf">
+            <layout>
+                <rectangle x="259.81" y="173.10" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="-60441ee7:1627c6e7c7a:-7fcb" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fd5" to="-60441ee7:1627c6e7c7a:-7fcc">
+            <layout>
+                <rectangle x="201.07" y="100.84" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="-60441ee7:1627c6e7c7a:-7fca" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fcc" to="-60441ee7:1627c6e7c7a:-7fd6">
+            <layout>
+                <rectangle x="125.87" y="119.12" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2d6f707:1629708ee88:-7fb9" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-7016a8f8:1627c6ec10a:-7f95" to="2d6f707:1629708ee88:-7fbb">
+            <layout>
+                <rectangle x="490.45" y="253.91" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2d6f707:1629708ee88:-7fb7" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-7016a8f8:1627c6ec10a:-7f95" to="2d6f707:1629708ee88:-7fba">
+            <layout>
+                <rectangle x="559.67" y="247.33" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2d6f707:1629708ee88:-7fb8" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="2d6f707:1629708ee88:-7fbb" to="-7016a8f8:1627c6ec10a:-7f9d">
+            <layout>
+                <rectangle x="489.11" y="306.84" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="2d6f707:1629708ee88:-7fb6" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="2d6f707:1629708ee88:-7fba" to="-7016a8f8:1627c6ec10a:-7f99">
+            <layout>
+                <rectangle x="619.45" y="301.11" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="-be426fe:1629d930bea:-7fb9" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-7016a8f8:1627c6ec10a:-7f95" to="-be426fe:1629d930bea:-7fba">
+            <layout>
+                <rectangle x="489.88" y="194.00" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="-be426fe:1629d930bea:-7fb8" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-be426fe:1629d930bea:-7fba" to="-be426fe:1629d930bea:-7fbb">
+            <layout>
+                <rectangle x="525.95" y="174.81" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="-60441ee7:1627c6e7c7a:-7fd0" owner="-60441ee7:1627c6e7c7a:-7fd4" label="-" from="-60441ee7:1627c6e7c7a:-7fd2" to="-60441ee7:1627c6e7c7a:-7fd8">
+            <layout>
+                <rectangle x="441.64" y="118.06" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 9:21:09 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:23:45 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 5, 2018 1:20:38 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 6, 2018 7:48:45 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\distanceMatrix.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:18:30 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\UniDistanceMatrix.cgx</file>
+    </event>
+</history>
+        </arrow>
+    </graph>
+</graph>
+
+</conceptualgraph>
+

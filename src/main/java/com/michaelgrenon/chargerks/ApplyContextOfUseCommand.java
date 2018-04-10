@@ -127,7 +127,7 @@ public class ApplyContextOfUseCommand implements MultiCommand {
         public Optional<String> toCypher() {
             if (regexConcept == null || otherConcept == null)
                 return Optional.empty();
-            return Optional.of(String.format("(NOT (%s =~ %s))", otherConcept.referToReferentAsNodeProperty(), regexConcept.getConcept().getReferent().orElse("'*'")));
+            return Optional.of(String.format("(NOT (%s =~ %s))", otherConcept.referToReferentAsNodeProperty(), "'"+regexConcept.getConcept().getReferent().orElse("*")+"'"));
         }
     }
 }

@@ -1,0 +1,2092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 18, 2018 9:43:49 PM" modified="Apr 10, 2018 10:52:25 AM" user="grenon" wrapLabels="false" wrapColumns="30">
+<graph id="4899fd99:1623c24397f:-7fd9" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="0.00" y="0.00" width="3000.00" height="3000.00" depth="1.00"/>
+        <color foreground="0,94,192" background="0,94,192"/>
+        <font name="SansSerif" style="1" size="12" />
+    </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+    <graph id="4899fd99:1623c24397f:-7fcc" owner="4899fd99:1623c24397f:-7fd9">
+        <type>
+            <label>INTENT</label>
+        </type>
+        <referent>
+            <label>UniEnrollmentSpring2016</label>
+        </referent>
+        <layout>
+            <rectangle x="40.00" y="39.00" width="1301.33" height="597.94" depth="1.00"/>
+            <color foreground="0,94,192" background="0,94,192"/>
+            <font name="SansSerif" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 10, 2018 10:52:02 AM" type="USER">
+        <description>User modified object. Label INTENT: UniEnrollmentSpring2016</description>
+        <id>no id</id>
+        <user>grenon</user>
+    </event>
+</history>
+        <concept id="4899fd99:1623c24397f:-7fd6" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Value3</label>
+            </referent>
+            <layout>
+                <rectangle x="529.00" y="555.64" width="85.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7fd7" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Value2</label>
+            </referent>
+            <layout>
+                <rectangle x="65.53" y="164.66" width="85.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7fd8" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Value1</label>
+            </referent>
+            <layout>
+                <rectangle x="448.97" y="68.00" width="85.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="4899fd99:1623c24397f:-7fca" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value1</label>
+            </type>
+            <layout>
+                <rectangle x="447.54" y="174.27" width="47.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7f76" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>matches</label>
+            </type>
+            <layout>
+                <rectangle x="656.89" y="337.49" width="58.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:45:09 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:45:13 PM" type="USER">
+        <description>User modified object. Label matches</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="4899fd99:1623c24397f:-7d35" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Course</label>
+            </type>
+            <referent>
+                <label>Value11</label>
+            </referent>
+            <layout>
+                <rectangle x="1227.33" y="335.42" width="101.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:55:41 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:55:46 PM" type="USER">
+        <description>User modified object. Label Course: Value8</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:56:38 PM" type="USER">
+        <description>User modified object. Label Course: Value11</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7fcd" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Record</label>
+            </type>
+            <layout>
+                <rectangle x="408.72" y="323.28" width="49.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7f74" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Student</label>
+            </type>
+            <layout>
+                <rectangle x="910.63" y="345.26" width="52.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:45:29 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:45:46 PM" type="USER">
+        <description>User modified object. Label Student</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="4899fd99:1623c24397f:-7fbe" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value5</label>
+            </type>
+            <layout>
+                <rectangle x="338.62" y="180.91" width="47.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="4899fd99:1623c24397f:-7fd2" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Value7</label>
+            </referent>
+            <layout>
+                <rectangle x="646.03" y="171.88" width="85.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7fd3" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Value6</label>
+            </referent>
+            <layout>
+                <rectangle x="131.33" y="428.14" width="85.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7fd4" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Value5</label>
+            </referent>
+            <layout>
+                <rectangle x="267.66" y="82.89" width="85.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7fd5" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Value4</label>
+            </referent>
+            <layout>
+                <rectangle x="53.00" y="320.63" width="85.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="4899fd99:1623c24397f:-7d9f" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>enroll</label>
+            </type>
+            <layout>
+                <rectangle x="853.61" y="492.99" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:07 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:10 PM" type="USER">
+        <description>User modified object. Label enroll</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="4899fd99:1623c24397f:-7fd0" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Value9</label>
+            </referent>
+            <layout>
+                <rectangle x="607.23" y="425.26" width="85.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7fd1" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Value8</label>
+            </referent>
+            <layout>
+                <rectangle x="205.10" y="542.25" width="85.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7da9" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Course</label>
+            </type>
+            <referent>
+                <label>Value5</label>
+            </referent>
+            <layout>
+                <rectangle x="1173.84" y="215.38" width="94.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:52:15 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:52:21 PM" type="USER">
+        <description>User modified object. Label Course: Value5</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="4899fd99:1623c24397f:-7da5" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>enroll</label>
+            </type>
+            <layout>
+                <rectangle x="991.55" y="220.06" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:07 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:10 PM" type="USER">
+        <description>User modified object. Label enroll</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7da6" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>enroll</label>
+            </type>
+            <layout>
+                <rectangle x="904.62" y="252.60" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:07 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:10 PM" type="USER">
+        <description>User modified object. Label enroll</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="4899fd99:1623c24397f:-7da7" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Course</label>
+            </type>
+            <referent>
+                <label>Value7</label>
+            </referent>
+            <layout>
+                <rectangle x="779.00" y="592.94" width="94.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:52:32 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:52:38 PM" type="USER">
+        <description>User modified object. Label Course: Value7</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7da8" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Course</label>
+            </type>
+            <referent>
+                <label>Value6</label>
+            </referent>
+            <layout>
+                <rectangle x="1148.68" y="433.96" width="94.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:52:25 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:52:29 PM" type="USER">
+        <description>User modified object. Label Course: Value6</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="4899fd99:1623c24397f:-7e22" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>enroll</label>
+            </type>
+            <layout>
+                <rectangle x="801.56" y="317.40" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:49:33 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:49:38 PM" type="USER">
+        <description>User modified object. Label enroll</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7d40" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>enroll</label>
+            </type>
+            <layout>
+                <rectangle x="796.28" y="417.41" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:07 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:10 PM" type="USER">
+        <description>User modified object. Label enroll</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7d42" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>enroll</label>
+            </type>
+            <layout>
+                <rectangle x="1038.97" y="472.38" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:07 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:10 PM" type="USER">
+        <description>User modified object. Label enroll</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="4899fd99:1623c24397f:-7fce" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Value11</label>
+            </referent>
+            <layout>
+                <rectangle x="544.30" y="142.46" width="92.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7d37" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Course</label>
+            </type>
+            <referent>
+                <label>Value10</label>
+            </referent>
+            <layout>
+                <rectangle x="942.83" y="563.00" width="101.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:55:41 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:55:46 PM" type="USER">
+        <description>User modified object. Label Course: Value8</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:56:34 PM" type="USER">
+        <description>User modified object. Label Course: Value10</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7fcf" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Value10</label>
+            </referent>
+            <layout>
+                <rectangle x="369.29" y="532.10" width="92.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7d39" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Course</label>
+            </type>
+            <referent>
+                <label>Value9</label>
+            </referent>
+            <layout>
+                <rectangle x="695.87" y="500.32" width="94.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:55:41 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:55:46 PM" type="USER">
+        <description>User modified object. Label Course: Value8</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:56:29 PM" type="USER">
+        <description>User modified object. Label Course: Value9</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7de5" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Course</label>
+            </type>
+            <referent>
+                <label>Value3</label>
+            </referent>
+            <layout>
+                <rectangle x="896.00" y="136.86" width="94.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:51:33 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:51:39 PM" type="USER">
+        <description>User modified object. Label Course: Value3</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="4899fd99:1623c24397f:-7da1" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>enroll</label>
+            </type>
+            <layout>
+                <rectangle x="1023.82" y="387.58" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:07 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:10 PM" type="USER">
+        <description>User modified object. Label enroll</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7de6" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>enroll</label>
+            </type>
+            <layout>
+                <rectangle x="817.86" y="199.86" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:51:17 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:51:23 PM" type="USER">
+        <description>User modified object. Label enroll</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="4899fd99:1623c24397f:-7de7" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Course</label>
+            </type>
+            <referent>
+                <label>Value2</label>
+            </referent>
+            <layout>
+                <rectangle x="740.06" y="91.90" width="94.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:50:54 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:51:02 PM" type="USER">
+        <description>User modified object. Label Course: Value2</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="4899fd99:1623c24397f:-7da3" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>enroll</label>
+            </type>
+            <layout>
+                <rectangle x="1066.74" y="275.84" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:07 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:10 PM" type="USER">
+        <description>User modified object. Label enroll</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7fb8" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value7</label>
+            </type>
+            <layout>
+                <rectangle x="558.57" y="247.02" width="47.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7fb5" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value8</label>
+            </type>
+            <layout>
+                <rectangle x="299.20" y="457.43" width="47.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="4899fd99:1623c24397f:-7daa" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Course</label>
+            </type>
+            <referent>
+                <label>Value4</label>
+            </referent>
+            <layout>
+                <rectangle x="1054.98" y="134.50" width="94.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:52:07 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:52:12 PM" type="USER">
+        <description>User modified object. Label Course: Value4</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <concept id="4899fd99:1623c24397f:-7e25" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Course</label>
+            </type>
+            <referent>
+                <label>Value1</label>
+            </referent>
+            <layout>
+                <rectangle x="679.42" y="245.10" width="94.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:48:53 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:49:07 PM" type="USER">
+        <description>User modified object. Label Course: Value1</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="4899fd99:1623c24397f:-7d3c" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>enroll</label>
+            </type>
+            <layout>
+                <rectangle x="1109.45" y="345.79" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:07 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:10 PM" type="USER">
+        <description>User modified object. Label enroll</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7fb2" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value9</label>
+            </type>
+            <layout>
+                <rectangle x="527.48" y="360.08" width="47.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7d3e" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>enroll</label>
+            </type>
+            <layout>
+                <rectangle x="941.40" y="458.56" width="40.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:07 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:53:10 PM" type="USER">
+        <description>User modified object. Label enroll</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <concept id="4899fd99:1623c24397f:-7d3a" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Course</label>
+            </type>
+            <referent>
+                <label>Value8</label>
+            </referent>
+            <layout>
+                <rectangle x="1117.50" y="550.10" width="94.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:55:41 PM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 18, 2018 9:55:46 PM" type="USER">
+        <description>User modified object. Label Course: Value8</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </concept>
+        <relation id="4899fd99:1623c24397f:-7fc7" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value2</label>
+            </type>
+            <layout>
+                <rectangle x="217.05" y="222.81" width="47.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7fbb" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value6</label>
+            </type>
+            <layout>
+                <rectangle x="292.39" y="375.01" width="47.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7fac" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value11</label>
+            </type>
+            <layout>
+                <rectangle x="495.48" y="218.13" width="54.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7faf" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value10</label>
+            </type>
+            <layout>
+                <rectangle x="400.39" y="428.35" width="54.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7fc1" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value4</label>
+            </type>
+            <layout>
+                <rectangle x="214.19" y="318.02" width="47.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <relation id="4899fd99:1623c24397f:-7fc4" owner="4899fd99:1623c24397f:-7fcc">
+            <type>
+                <label>Value3</label>
+            </type>
+            <layout>
+                <rectangle x="501.83" y="459.22" width="47.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </relation>
+        <arrow id="4899fd99:1623c24397f:-7f75" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fcd" to="4899fd99:1623c24397f:-7f76">
+            <layout>
+                <rectangle x="554.75" y="339.85" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d33" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7f74" to="4899fd99:1623c24397f:-7d42">
+            <layout>
+                <rectangle x="997.66" y="422.24" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d30" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7d40" to="4899fd99:1623c24397f:-7d39">
+            <layout>
+                <rectangle x="778.89" y="464.48" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7f73" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7f76" to="4899fd99:1623c24397f:-7f74">
+            <layout>
+                <rectangle x="807.20" y="350.87" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d31" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7f74" to="4899fd99:1623c24397f:-7d40">
+            <layout>
+                <rectangle x="865.23" y="394.99" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d32" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7d42" to="4899fd99:1623c24397f:-7d3a">
+            <layout>
+                <rectangle x="1101.83" y="516.22" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d9a" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7da6" to="4899fd99:1623c24397f:-7de5">
+            <layout>
+                <rectangle x="929.31" y="207.31" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d9b" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7f74" to="4899fd99:1623c24397f:-7da6">
+            <layout>
+                <rectangle x="926.26" y="305.53" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d9c" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7de6" to="4899fd99:1623c24397f:-7de7">
+            <layout>
+                <rectangle x="809.96" y="158.48" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d9d" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7f74" to="4899fd99:1623c24397f:-7de6">
+            <layout>
+                <rectangle x="880.95" y="278.61" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fbd" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fcd" to="4899fd99:1623c24397f:-7fbe">
+            <layout>
+                <rectangle x="392.20" y="258.59" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fbf" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fc1" to="4899fd99:1623c24397f:-7fd5">
+            <layout>
+                <rectangle x="173.38" y="328.40" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d2f" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7f74" to="4899fd99:1623c24397f:-7d3e">
+            <layout>
+                <rectangle x="945.74" y="414.63" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7e21" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7f74" to="4899fd99:1623c24397f:-7e22">
+            <layout>
+                <rectangle x="869.78" y="339.41" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7e20" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7e22" to="4899fd99:1623c24397f:-7e25">
+            <layout>
+                <rectangle x="776.00" y="295.13" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d2c" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7d3c" to="4899fd99:1623c24397f:-7d35">
+            <layout>
+                <rectangle x="1183.07" y="350.93" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d2d" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7f74" to="4899fd99:1623c24397f:-7d3c">
+            <layout>
+                <rectangle x="1033.62" y="354.97" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d2e" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7d3e" to="4899fd99:1623c24397f:-7d37">
+            <layout>
+                <rectangle x="972.49" y="517.33" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fb9" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fbb" to="4899fd99:1623c24397f:-7fd3">
+            <layout>
+                <rectangle x="254.43" y="405.71" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d92" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7d9f" to="4899fd99:1623c24397f:-7da7">
+            <layout>
+                <rectangle x="847.29" y="549.25" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d93" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7f74" to="4899fd99:1623c24397f:-7d9f">
+            <layout>
+                <rectangle x="899.80" y="431.66" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d94" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7da1" to="4899fd99:1623c24397f:-7da8">
+            <layout>
+                <rectangle x="1099.40" y="414.95" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fb4" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fcd" to="4899fd99:1623c24397f:-7fb5">
+            <layout>
+                <rectangle x="370.91" y="403.47" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fb6" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fb8" to="4899fd99:1623c24397f:-7fd2">
+            <layout>
+                <rectangle x="625.13" y="223.13" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fb7" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fcd" to="4899fd99:1623c24397f:-7fb8">
+            <layout>
+                <rectangle x="509.50" y="291.53" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d99" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7f74" to="4899fd99:1623c24397f:-7da5">
+            <layout>
+                <rectangle x="971.98" y="288.92" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7faa" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fac" to="4899fd99:1623c24397f:-7fce">
+            <layout>
+                <rectangle x="549.06" y="193.37" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fab" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fcd" to="4899fd99:1623c24397f:-7fac">
+            <layout>
+                <rectangle x="476.60" y="276.87" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d95" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7f74" to="4899fd99:1623c24397f:-7da1">
+            <layout>
+                <rectangle x="992.18" y="378.11" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d96" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7da3" to="4899fd99:1623c24397f:-7da9">
+            <layout>
+                <rectangle x="1136.58" y="260.77" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d97" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7f74" to="4899fd99:1623c24397f:-7da3">
+            <layout>
+                <rectangle x="1014.23" y="316.89" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7d98" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7da5" to="4899fd99:1623c24397f:-7daa">
+            <layout>
+                <rectangle x="1048.29" y="190.87" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fb0" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fb2" to="4899fd99:1623c24397f:-7fd0">
+            <layout>
+                <rectangle x="590.29" y="397.98" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fb1" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fcd" to="4899fd99:1623c24397f:-7fb2">
+            <layout>
+                <rectangle x="491.52" y="352.16" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fb3" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fb5" to="4899fd99:1623c24397f:-7fd1">
+            <layout>
+                <rectangle x="284.07" y="505.92" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fc9" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fcd" to="4899fd99:1623c24397f:-7fca">
+            <layout>
+                <rectangle x="448.81" y="255.56" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fc5" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fc7" to="4899fd99:1623c24397f:-7fd7">
+            <layout>
+                <rectangle x="183.20" y="208.61" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fc6" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fcd" to="4899fd99:1623c24397f:-7fc7">
+            <layout>
+                <rectangle x="327.16" y="279.47" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fc8" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fca" to="4899fd99:1623c24397f:-7fd8">
+            <layout>
+                <rectangle x="476.62" y="133.83" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fba" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fcd" to="4899fd99:1623c24397f:-7fbb">
+            <layout>
+                <rectangle x="365.72" y="360.65" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fbc" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fbe" to="4899fd99:1623c24397f:-7fd4">
+            <layout>
+                <rectangle x="333.95" y="144.71" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fad" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7faf" to="4899fd99:1623c24397f:-7fcf">
+            <layout>
+                <rectangle x="417.68" y="486.73" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fae" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fcd" to="4899fd99:1623c24397f:-7faf">
+            <layout>
+                <rectangle x="426.14" y="388.19" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fc2" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fc4" to="4899fd99:1623c24397f:-7fd6">
+            <layout>
+                <rectangle x="543.00" y="513.89" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fc3" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fcd" to="4899fd99:1623c24397f:-7fc4">
+            <layout>
+                <rectangle x="477.73" y="404.29" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+        <arrow id="4899fd99:1623c24397f:-7fc0" owner="4899fd99:1623c24397f:-7fcc" label="-" from="4899fd99:1623c24397f:-7fcd" to="4899fd99:1623c24397f:-7fc1">
+            <layout>
+                <rectangle x="329.29" y="330.06" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
+<history>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 18, 2018 9:44:14 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\enrollmentSpring2016Intent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 10, 2018 10:38:05 AM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>D:\Source\github\chargerks\src\test\resources\EnrollmentSpring2016Intent.cgx</file>
+    </event>
+</history>
+        </arrow>
+    </graph>
+</graph>
+
+</conceptualgraph>
+
