@@ -2,7 +2,6 @@ package com.michaelgrenon.chargerks;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.Set;
 
 public class NeoActor implements Comparable<NeoActor> {
     private List<NeoConceptBinding> outputs;

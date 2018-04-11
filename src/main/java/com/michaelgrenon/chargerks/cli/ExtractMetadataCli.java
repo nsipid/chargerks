@@ -10,15 +10,16 @@ import java.util.Arrays;
 
 import javax.swing.JFrame;
 
+import com.michaelgrenon.chargerks.NeoGraph;
+import com.michaelgrenon.chargerks.cg.CgConverter;
+import com.michaelgrenon.chargerks.dataspace.CsvMetadataExtractor;
+import com.michaelgrenon.chargerks.dataspace.DistanceMatrixMetadataExtractor;
+import com.michaelgrenon.chargerks.dataspace.UahClassListMetadataExtractor;
+
 import charger.IOManager;
 import charger.exception.CGFileException;
 import charger.obj.Graph;
 import chargerlib.FileFormat;
-import com.michaelgrenon.chargerks.cg.CgConverter;
-import com.michaelgrenon.chargerks.NeoGraph;
-import com.michaelgrenon.chargerks.dataspace.CsvMetadataExtractor;
-import com.michaelgrenon.chargerks.dataspace.DistanceMatrixMetadataExtractor;
-import com.michaelgrenon.chargerks.dataspace.UahClassListMetadataExtractor;
 
 public class ExtractMetadataCli implements Runnable {
 

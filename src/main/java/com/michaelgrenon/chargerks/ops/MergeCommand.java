@@ -3,7 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.michaelgrenon.chargerks;
+package com.michaelgrenon.chargerks.ops;
+
+import com.michaelgrenon.chargerks.NeoConceptBinding;
+import com.michaelgrenon.chargerks.NeoGraph;
+import com.michaelgrenon.chargerks.NeoRelation;
+import com.michaelgrenon.chargerks.NeoRelationBinding;
 
 /**
  *

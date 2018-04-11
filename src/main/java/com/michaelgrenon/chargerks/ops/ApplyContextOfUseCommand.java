@@ -1,12 +1,19 @@
-package com.michaelgrenon.chargerks;
+package com.michaelgrenon.chargerks.ops;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
+
+import com.michaelgrenon.chargerks.ContextInfo;
+import com.michaelgrenon.chargerks.ContextType;
+import com.michaelgrenon.chargerks.NeoConcept;
+import com.michaelgrenon.chargerks.NeoConceptBinding;
+import com.michaelgrenon.chargerks.NeoGraph;
+import com.michaelgrenon.chargerks.NeoRelation;
+import com.michaelgrenon.chargerks.NeoRelationBinding;
 
 public class ApplyContextOfUseCommand implements MultiCommand {
     private static final String NEW_LINE = System.getProperty("line.separator");

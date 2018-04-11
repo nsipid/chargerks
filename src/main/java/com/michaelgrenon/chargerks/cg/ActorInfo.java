@@ -1,24 +1,11 @@
 package com.michaelgrenon.chargerks.cg;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import com.michaelgrenon.chargerks.ContextInfo;
-import com.michaelgrenon.chargerks.NeoActor;
-import com.michaelgrenon.chargerks.NeoConcept;
 
 import charger.obj.Actor;
 import charger.obj.Concept;
 import charger.obj.GEdge;
-import charger.obj.GNode;
-import charger.obj.Graph;
-import charger.obj.GEdge.Direction;
 
 public class ActorInfo {
     private ArrayList<Concept> inputs = new ArrayList<Concept>();

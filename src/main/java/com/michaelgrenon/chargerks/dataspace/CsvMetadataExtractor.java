@@ -5,26 +5,26 @@
  */
 package com.michaelgrenon.chargerks.dataspace;
 
-import cgif.generate.NameGenerator;
+import java.io.IOException;
+import java.io.Reader;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
-import com.michaelgrenon.chargerks.NeoActorDag;
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
+import com.michaelgrenon.chargerks.NeoActorDag;
 import com.michaelgrenon.chargerks.NeoConcept;
 import com.michaelgrenon.chargerks.NeoConceptBinding;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
 import com.michaelgrenon.chargerks.NeoRelationBinding;
 
-import java.io.IOException;
-import java.io.Reader;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
+
+import cgif.generate.NameGenerator;
 
 /**
  *

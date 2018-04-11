@@ -7,6 +7,7 @@ package com.michaelgrenon.chargerks.dataspace;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
+
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.junit.After;
@@ -48,5 +49,6 @@ public class UahClassIterableIT {
         CSVPrinter printer = new CSVPrinter(writer, format);
         printer.printRecords(iterable);
         printer.flush();
+        printer.close();
     }
 }

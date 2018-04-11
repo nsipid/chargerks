@@ -5,16 +5,10 @@
  */
 package com.michaelgrenon.chargerks;
 
-import cgif.generate.NameGenerator;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
-import org.neo4j.driver.v1.Value;
-import org.neo4j.driver.v1.types.Node;
-import org.neo4j.driver.v1.types.Relationship;
 
 /**
  *

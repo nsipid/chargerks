@@ -1,4 +1,4 @@
-package com.michaelgrenon.chargerks;
+package com.michaelgrenon.chargerks.ops;
 
 public interface Command {
     public String toCypher();

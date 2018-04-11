@@ -1,15 +1,13 @@
 package com.michaelgrenon.chargerks.cli;
 
-import java.util.Collection;
-
-import com.michaelgrenon.chargerks.ApplyContextOfUseCommand;
 import com.michaelgrenon.chargerks.ContextInfo;
-import com.michaelgrenon.chargerks.ContextQuestion;
 import com.michaelgrenon.chargerks.ContextType;
 import com.michaelgrenon.chargerks.KnowledgeSpace;
-import com.michaelgrenon.chargerks.MultiCommand;
 import com.michaelgrenon.chargerks.NeoGraph;
-import com.michaelgrenon.chargerks.Question;
+import com.michaelgrenon.chargerks.ops.ApplyContextOfUseCommand;
+import com.michaelgrenon.chargerks.ops.ContextQuestion;
+import com.michaelgrenon.chargerks.ops.MultiCommand;
+import com.michaelgrenon.chargerks.ops.Question;
 
 public class ApplyContextOfUseCli implements Runnable {
 

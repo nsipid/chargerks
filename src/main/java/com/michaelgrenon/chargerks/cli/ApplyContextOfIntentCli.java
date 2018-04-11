@@ -1,17 +1,17 @@
 package com.michaelgrenon.chargerks.cli;
 
-import com.michaelgrenon.chargerks.ApplyContextOfIntentCommand;
-import com.michaelgrenon.chargerks.Command;
+import java.io.IOException;
+
 import com.michaelgrenon.chargerks.ContextInfo;
-import com.michaelgrenon.chargerks.ContextQuestion;
 import com.michaelgrenon.chargerks.ContextType;
-import com.michaelgrenon.chargerks.IndexIntentCommand;
 import com.michaelgrenon.chargerks.KnowledgeSpace;
 import com.michaelgrenon.chargerks.NeoGraph;
-import com.michaelgrenon.chargerks.Question;
 import com.michaelgrenon.chargerks.dataspace.DistanceMatrixTransformer;
 import com.michaelgrenon.chargerks.dataspace.UahClassListTransformer;
-import java.io.IOException;
+import com.michaelgrenon.chargerks.ops.ApplyContextOfIntentCommand;
+import com.michaelgrenon.chargerks.ops.Command;
+import com.michaelgrenon.chargerks.ops.ContextQuestion;
+import com.michaelgrenon.chargerks.ops.IndexIntentCommand;
 
 public class ApplyContextOfIntentCli implements Runnable {
 
@@ -19,7 +19,7 @@ public class ApplyContextOfIntentCli implements Runnable {
 	private String contextOfIntent;
 	private KnowledgeSpace ks;
 	private String format;
-	private Command apply;
+	private com.michaelgrenon.chargerks.ops.Command apply;
 	private String apiKey;
 
 	public ApplyContextOfIntentCli(KnowledgeSpace ks, String contextOfIntent, String format, String importDataUri, String apikeyArg) throws IOException {
@@ -32,7 +32,7 @@ public class ApplyContextOfIntentCli implements Runnable {
     }
 
     private Command buildCommand() throws IOException {
-        Question getContext = new ContextQuestion(new ContextInfo(ContextType.INTENT, contextOfIntent));
+        com.michaelgrenon.chargerks.ops.Question getContext = new ContextQuestion(new ContextInfo(ContextType.INTENT, contextOfIntent));
         NeoGraph contextGraph = ks.Ask(getContext).iterator().next();
         boolean withHeaders = false;
         if (this.format.equals("csv")) {

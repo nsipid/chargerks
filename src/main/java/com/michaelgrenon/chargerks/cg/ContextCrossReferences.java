@@ -5,34 +5,24 @@
  */
 package com.michaelgrenon.chargerks.cg;
 
-import static charger.EditToolbar.Mode.Concept;
-
-import cgif.generate.NameGenerator;
-import charger.obj.Concept;
-import charger.obj.Coref;
-import charger.obj.DeepIterator;
-import charger.obj.GEdge;
-import charger.obj.GEdge.Direction;
-import charger.obj.GNode;
-import charger.obj.Graph;
-import charger.obj.GraphObject;
-import charger.obj.GraphObjectIterator;
-import charger.obj.Relation;
-import charger.obj.ShallowIterator;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Locale;
-import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
 import com.michaelgrenon.chargerks.NeoConcept;
+
+import cgif.generate.NameGenerator;
+import charger.obj.Concept;
+import charger.obj.DeepIterator;
+import charger.obj.GEdge;
+import charger.obj.Graph;
+import charger.obj.GraphObjectIterator;
+import charger.obj.Relation;
 
 /**
  *

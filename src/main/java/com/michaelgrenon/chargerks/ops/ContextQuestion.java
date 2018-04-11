@@ -1,5 +1,6 @@
-package com.michaelgrenon.chargerks;
+package com.michaelgrenon.chargerks.ops;
 
+import com.michaelgrenon.chargerks.ContextInfo;
 
 public class ContextQuestion implements Question {
     ContextInfo info;

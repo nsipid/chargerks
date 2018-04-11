@@ -5,26 +5,18 @@
  */
 package com.michaelgrenon.chargerks.cg;
 
-import cgif.generate.NameGenerator;
-import charger.obj.Actor;
-import charger.obj.Arrow;
-import charger.obj.Concept;
-import charger.obj.DeepIterator;
-import charger.obj.GEdge;
-import charger.obj.Graph;
-import charger.obj.GraphObject;
-import charger.obj.GraphObject.Kind;
-import charger.obj.Relation;
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
 import com.michaelgrenon.chargerks.NeoActor;
@@ -35,7 +27,17 @@ import com.michaelgrenon.chargerks.NeoConceptBinding;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
 import com.michaelgrenon.chargerks.NeoRelationBinding;
-import java.util.stream.Stream;
+
+import cgif.generate.NameGenerator;
+import charger.obj.Actor;
+import charger.obj.Arrow;
+import charger.obj.Concept;
+import charger.obj.DeepIterator;
+import charger.obj.GEdge;
+import charger.obj.Graph;
+import charger.obj.GraphObject;
+import charger.obj.GraphObject.Kind;
+import charger.obj.Relation;
 
 /**
  *

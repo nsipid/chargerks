@@ -5,26 +5,16 @@
  */
 package com.michaelgrenon.chargerks.cg;
 
-import charger.IOManager;
-import charger.exception.CGFileException;
-import charger.obj.Coref;
-import charger.obj.DeepIterator;
-import charger.obj.Graph;
-import charger.obj.GraphObject;
-import charger.obj.GraphObjectIterator;
-import charger.obj.ShallowIterator;
-import charger.xml.CGXParser;
-import chargerlib.FileFormat;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.awt.Frame;
 import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import javax.swing.JFrame;
 
@@ -39,12 +29,15 @@ import com.michaelgrenon.chargerks.NeoRelationBinding;
 
 import org.junit.After;
 import org.junit.AfterClass;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import charger.IOManager;
+import charger.exception.CGFileException;
+import charger.obj.Graph;
+import charger.xml.CGXParser;
+import chargerlib.FileFormat;
 
 /**
  *

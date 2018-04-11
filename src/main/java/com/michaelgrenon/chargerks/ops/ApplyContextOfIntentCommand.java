@@ -1,4 +1,4 @@
-package com.michaelgrenon.chargerks;
+package com.michaelgrenon.chargerks.ops;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -7,8 +7,11 @@ import java.util.stream.Collectors;
 
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
+import com.michaelgrenon.chargerks.NeoConcept;
+import com.michaelgrenon.chargerks.NeoConceptBinding;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
+import com.michaelgrenon.chargerks.NeoRelationBinding;
 
 public class ApplyContextOfIntentCommand implements Command {
     private static final String NEW_LINE = System.getProperty("line.separator");

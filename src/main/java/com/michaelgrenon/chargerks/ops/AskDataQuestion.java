@@ -1,13 +1,19 @@
-package com.michaelgrenon.chargerks;
+package com.michaelgrenon.chargerks.ops;
 
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
+
+import com.michaelgrenon.chargerks.ActorLambda;
+import com.michaelgrenon.chargerks.ContextType;
+import com.michaelgrenon.chargerks.NeoActorBinding;
+import com.michaelgrenon.chargerks.NeoActorDag;
+import com.michaelgrenon.chargerks.NeoConceptBinding;
+import com.michaelgrenon.chargerks.NeoGraph;
+import com.michaelgrenon.chargerks.NeoRelation;
+import com.michaelgrenon.chargerks.NeoRelationBinding;
 
 public class AskDataQuestion implements Question {
     private static final String NEW_LINE = System.getProperty("line.separator");

@@ -2,11 +2,15 @@ package com.michaelgrenon.chargerks;
 
 import java.util.Collection;
 import java.util.Optional;
+
+import com.michaelgrenon.chargerks.ops.Command;
+import com.michaelgrenon.chargerks.ops.MultiCommand;
+import com.michaelgrenon.chargerks.ops.Question;
+
 import org.neo4j.driver.v1.AuthToken;
 import org.neo4j.driver.v1.AuthTokens;
 import org.neo4j.driver.v1.Driver;
 import org.neo4j.driver.v1.GraphDatabase;
-import org.neo4j.driver.v1.Record;
 import org.neo4j.driver.v1.Session;
 import org.neo4j.driver.v1.StatementResult;
 

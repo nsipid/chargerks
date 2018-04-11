@@ -1,22 +1,22 @@
 package com.michaelgrenon.chargerks.cli;
 
-import java.io.InputStream;
 import java.awt.Frame;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
 import javax.swing.JFrame;
 
-import com.michaelgrenon.chargerks.AskDataQuestion;
-import com.michaelgrenon.chargerks.cg.CgConverter;
 import com.michaelgrenon.chargerks.KnowledgeSpace;
 import com.michaelgrenon.chargerks.NeoGraph;
-import com.michaelgrenon.chargerks.Question;
+import com.michaelgrenon.chargerks.cg.CgConverter;
+import com.michaelgrenon.chargerks.ops.AskDataQuestion;
+import com.michaelgrenon.chargerks.ops.Question;
 
 import charger.IOManager;
 import charger.exception.CGFileException;

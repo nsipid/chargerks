@@ -1,30 +1,23 @@
 package com.michaelgrenon.chargerks.cli;
 
 import java.awt.Frame;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import javax.swing.JFrame;
 
-import charger.IOManager;
-import charger.exception.CGFileException;
+import com.michaelgrenon.chargerks.KnowledgeSpace;
+import com.michaelgrenon.chargerks.NeoGraph;
+import com.michaelgrenon.chargerks.cg.CgConverter;
+import com.michaelgrenon.chargerks.ops.Command;
+import com.michaelgrenon.chargerks.ops.MergeCommand;
+
 import charger.obj.Graph;
 import charger.xml.CGXParser;
-import chargerlib.FileFormat;
-import com.michaelgrenon.chargerks.cg.CgConverter;
-import com.michaelgrenon.chargerks.Command;
-import com.michaelgrenon.chargerks.KnowledgeSpace;
-import com.michaelgrenon.chargerks.MergeCommand;
-import com.michaelgrenon.chargerks.NeoGraph;
-import com.michaelgrenon.chargerks.dataspace.CsvMetadataExtractor;
-import com.michaelgrenon.chargerks.dataspace.UahClassListMetadataExtractor;
 
 public class MergeMetadataCli implements Runnable {
 	private String inputFile;

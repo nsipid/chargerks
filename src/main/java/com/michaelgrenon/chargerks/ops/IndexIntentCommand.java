@@ -1,6 +1,9 @@
-package com.michaelgrenon.chargerks;
+package com.michaelgrenon.chargerks.ops;
 
 import java.util.LinkedHashSet;
+
+import com.michaelgrenon.chargerks.NeoConceptBinding;
+import com.michaelgrenon.chargerks.NeoGraph;
 
 public class IndexIntentCommand implements MultiCommand {
     private static final String NEW_LINE = System.getProperty("line.separator");

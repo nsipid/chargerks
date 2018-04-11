@@ -1,6 +1,5 @@
 package com.michaelgrenon.chargerks.dataspace;
 
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.function.Supplier;
@@ -9,7 +8,6 @@ import com.google.maps.DistanceMatrixApi;
 import com.google.maps.DistanceMatrixApiRequest;
 import com.google.maps.GeoApiContext;
 import com.google.maps.model.DistanceMatrix;
-import com.google.maps.model.DistanceMatrixRow;
 import com.google.maps.model.TravelMode;
 
 public class DistanceMatrixIterable implements Iterable<String[]> {

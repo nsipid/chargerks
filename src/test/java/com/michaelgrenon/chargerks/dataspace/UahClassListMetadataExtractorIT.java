@@ -5,16 +5,17 @@
  */
 package com.michaelgrenon.chargerks.dataspace;
 
+import static org.junit.Assert.assertTrue;
+
+import java.util.List;
+
 import com.michaelgrenon.chargerks.NeoConceptBinding;
 import com.michaelgrenon.chargerks.NeoGraph;
-import java.util.List;
-import static org.hamcrest.CoreMatchers.is;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *

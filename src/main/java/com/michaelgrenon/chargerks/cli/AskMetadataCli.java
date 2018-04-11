@@ -1,24 +1,25 @@
 package com.michaelgrenon.chargerks.cli;
 
-import charger.IOManager;
-import charger.exception.CGFileException;
-import charger.obj.Graph;
-import chargerlib.FileFormat;
-import com.michaelgrenon.chargerks.cg.CgConverter;
-import com.michaelgrenon.chargerks.ContextInfo;
-import com.michaelgrenon.chargerks.ContextQuestion;
-import com.michaelgrenon.chargerks.ContextType;
-import com.michaelgrenon.chargerks.FullKsQuestion;
-import com.michaelgrenon.chargerks.KnowledgeSpace;
-import com.michaelgrenon.chargerks.NeoGraph;
-import com.michaelgrenon.chargerks.Question;
-
 import java.awt.Frame;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import javax.swing.JFrame;
+
+import com.michaelgrenon.chargerks.ContextInfo;
+import com.michaelgrenon.chargerks.ContextType;
+import com.michaelgrenon.chargerks.KnowledgeSpace;
+import com.michaelgrenon.chargerks.NeoGraph;
+import com.michaelgrenon.chargerks.cg.CgConverter;
+import com.michaelgrenon.chargerks.ops.ContextQuestion;
+import com.michaelgrenon.chargerks.ops.FullKsQuestion;
+import com.michaelgrenon.chargerks.ops.Question;
+
+import charger.IOManager;
+import charger.exception.CGFileException;
+import charger.obj.Graph;
+import chargerlib.FileFormat;
 
 public class AskMetadataCli implements Runnable {
     private ContextInfo contextInfo;

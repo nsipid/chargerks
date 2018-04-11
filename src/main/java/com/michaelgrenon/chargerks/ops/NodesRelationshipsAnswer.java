@@ -1,16 +1,19 @@
-package com.michaelgrenon.chargerks;
-
-import charger.obj.Arrow;
-import charger.obj.Concept;
-import charger.obj.GEdge;
-import charger.obj.Graph;
-import charger.obj.Relation;
+package com.michaelgrenon.chargerks.ops;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+
+import com.michaelgrenon.chargerks.ContextInfo;
+import com.michaelgrenon.chargerks.ContextType;
+import com.michaelgrenon.chargerks.NeoActorDag;
+import com.michaelgrenon.chargerks.NeoConcept;
+import com.michaelgrenon.chargerks.NeoConceptBinding;
+import com.michaelgrenon.chargerks.NeoGraph;
+import com.michaelgrenon.chargerks.NeoRelation;
+import com.michaelgrenon.chargerks.NeoRelationBinding;
 
 import org.neo4j.driver.v1.Record;
 import org.neo4j.driver.v1.StatementResult;

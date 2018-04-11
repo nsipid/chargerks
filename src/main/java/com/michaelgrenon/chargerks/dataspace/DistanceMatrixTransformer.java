@@ -8,14 +8,10 @@ import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.google.maps.DistanceMatrixApi;
-import com.google.maps.DistanceMatrixApiRequest;
-import com.google.maps.GeoApiContext;
-import com.google.maps.model.DistanceMatrix;
-import com.google.maps.model.DistanceMatrixRow;
-import com.google.maps.model.TravelMode;
-
-import org.apache.commons.csv.*;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVPrinter;
+import org.apache.commons.csv.CSVRecord;
 
 public class DistanceMatrixTransformer {
     public static void toCsv(String apiKey, String inputFileName, String keyColumn, String addressColumn, String outputFileName) throws IOException {
