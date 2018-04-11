@@ -79,6 +79,6 @@ public class NodesRelationshipsAnswer implements Answer {
             }
         }
 
-        return new NeoGraph(neoConcepts.values(), neoRelations.values(), Collections.emptyList());
+        return new NeoGraph(neoConcepts.values(), neoRelations.values(), new NeoActorDag());
     }
 }

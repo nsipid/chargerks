@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.michaelgrenon.chargerks.NeoActorDag;
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
 import com.michaelgrenon.chargerks.NeoConcept;
@@ -39,7 +40,7 @@ public class DistanceMatrixMetadataExtractor implements MetadataExtractor {
                 
                 concepts.add(recordConcept);
 
-                return new NeoGraph(concepts, relations, Collections.emptyList());
+                return new NeoGraph(concepts, relations, new NeoActorDag());
 	}
 
 	@Override

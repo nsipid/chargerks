@@ -32,7 +32,7 @@ public class AskDataQuestion implements Question {
 
 	@Override
 	public String toCypher() {
-        List<NeoActorBinding> actors = query.getActors();
+        NeoActorDag actorDag = query.getActors();
 
         Set<NeoConceptBinding> visitedConcepts = new HashSet<NeoConceptBinding>();
         Set<NeoRelationBinding> visitedRelations = new HashSet<NeoRelationBinding>();
@@ -151,7 +151,7 @@ public class AskDataQuestion implements Question {
 
         //sort actors by input and output dependencies, cycles not supported
         //actors output cannot be used for anything other than input to other actors
-        Collections.sort(actors);
+        List<NeoActorBinding> actors = actorDag.topoSort();
 
         //WITH *, actorOneExpression AS actorOneVariable
         //WITH *, actorTwoExpression(may use actorOneVariable) AS actorTwoVariable

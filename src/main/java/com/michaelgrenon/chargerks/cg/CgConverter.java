@@ -25,17 +25,16 @@ import java.util.Set;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
 import com.michaelgrenon.chargerks.NeoActor;
 import com.michaelgrenon.chargerks.NeoActorBinding;
+import com.michaelgrenon.chargerks.NeoActorDag;
 import com.michaelgrenon.chargerks.NeoConcept;
 import com.michaelgrenon.chargerks.NeoConceptBinding;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
 import com.michaelgrenon.chargerks.NeoRelationBinding;
-import java.util.Collection;
 import java.util.stream.Stream;
 
 /**
@@ -55,7 +54,7 @@ public class CgConverter {
         Map<String, NeoConceptBinding> chargerIdToBound = new HashMap<String, NeoConceptBinding>();
 
         HashMap<String, NeoRelationBinding> relations = new HashMap<String, NeoRelationBinding>();
-        ArrayList<NeoActorBinding> actors = new ArrayList<NeoActorBinding>();
+        NeoActorDag actors = new NeoActorDag();
 
         Function<GraphObject, NeoConceptBinding> visitConcept = obj -> {
             NeoConcept unbound = null;
@@ -116,7 +115,9 @@ public class CgConverter {
                 ActorInfo info = new ActorInfo(actor);
                 List<NeoConceptBinding> inputs = info.getInputs().stream().map(visitConcept).collect(Collectors.toList());
                 List<NeoConceptBinding> outputs = info.getOutputs().stream().map(visitConcept).collect(Collectors.toList());
-                actors.add(new NeoActorBinding(generator.generateName(), new NeoActor(info.getLabel(), inputs, outputs)));
+                NeoActorBinding neoActorBinding = new NeoActorBinding(generator.generateName(), new NeoActor(info.getLabel(), inputs, outputs));
+                inputs.forEach(c -> actors.addEdge(c, neoActorBinding));
+                outputs.forEach(c -> actors.addEdge(neoActorBinding, c));
             }
         };
                        

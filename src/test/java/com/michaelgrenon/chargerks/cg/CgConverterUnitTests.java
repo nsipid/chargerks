@@ -30,6 +30,7 @@ import javax.swing.JFrame;
 
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
+import com.michaelgrenon.chargerks.NeoActorDag;
 import com.michaelgrenon.chargerks.NeoConcept;
 import com.michaelgrenon.chargerks.NeoConceptBinding;
 import com.michaelgrenon.chargerks.NeoGraph;
@@ -105,7 +106,7 @@ public class CgConverterUnitTests {
         CGXParser.parseForNewGraph(chargerStream, origGraph);
 
         NeoGraph neoGraph = CgConverter.chargerToNeo(origGraph); 
-        assertTrue(neoGraph.getActors().size() == 2);
+        assertTrue(neoGraph.getActors().topoSort().size() == 2);
         assertTrue(neoGraph.getConcepts().size() == 12);
         assertTrue(neoGraph.getRelations().size() == 11);
     }
@@ -128,6 +129,6 @@ public class CgConverterUnitTests {
         
         relations.add(new NeoRelationBinding("var", relAMatches));
         
-        return new NeoGraph(concepts, relations, Collections.emptyList());
+        return new NeoGraph(concepts, relations, new NeoActorDag());
     }
 }

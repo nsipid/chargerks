@@ -45,26 +45,26 @@ public class ActorLambda {
             case "MINUS":
             case "SUBTRACT":
             case "-":
-                cypher = String.format("%s - %s", ref(0), ref(1));
+                cypher = String.format("toInteger(%s) - toInteger(%s)", ref(0), ref(1));
                 break;
             case "ADD":
             case "PLUS":
             case "+":
-                cypher = String.format("%s + %s", ref(0), ref(1));
+                cypher = String.format("toInteger(%s) + toInteger(%s)", ref(0), ref(1));
                 break;
             case "gt":
             case ">":
-            case "greater_than":
-                cypher = String.format("%s > %s", ref(0), ref(1));
+            case "GREATER_THAN":
+                cypher = String.format("toInteger(%s) > toInteger(%s)", ref(0), ref(1));
                 break;
             case "lt":
             case "<":
-            case "less_than":
-                cypher = String.format("%s < %s", ref(0), ref(1));
+            case "LESS_THAN":
+                cypher = String.format("toInteger(%s) < toInteger(%s)", ref(0), ref(1));
                 break;
-            case "regexp":
-            case "regex":
-            case "regular_expression":
+            case "REGEXP":
+            case "REGEX":
+            case "REGULAR_EXPRESSION":
                 cypher = String.format("%s =~ %s", ref(0), ref(1));
             default:
                 //assume stored-function then, CALL/YIELD not supported yet

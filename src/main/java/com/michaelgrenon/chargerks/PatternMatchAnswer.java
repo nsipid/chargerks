@@ -35,7 +35,7 @@ public class PatternMatchAnswer implements Answer {
         
         List<NeoRelationBinding> relations = template.getRelations().stream().map(rel -> getRelation(record, rel, conceptMap)).collect(Collectors.toList());
 
-        return new NeoGraph(conceptMap.values(), relations, Collections.emptyList());
+        return new NeoGraph(conceptMap.values(), relations, new NeoActorDag());
     }
 
     private NeoConceptBinding getConcept(Record record, NeoConceptBinding template) {

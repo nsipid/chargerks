@@ -6,6 +6,8 @@
 package com.michaelgrenon.chargerks.dataspace;
 
 import cgif.generate.NameGenerator;
+
+import com.michaelgrenon.chargerks.NeoActorDag;
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
 import com.michaelgrenon.chargerks.NeoConcept;
@@ -68,7 +70,7 @@ public class CsvMetadataExtractor implements MetadataExtractor {
                 .collect(Collectors.toList());
         
         concepts.add(recordConcept);
-        return new NeoGraph(concepts, relations, Collections.emptyList());
+        return new NeoGraph(concepts, relations, new NeoActorDag());
     }
 
     @Override
