@@ -1,10 +1,9 @@
 package com.michaelgrenon.chargerks.ops;
 
-import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
@@ -18,6 +17,7 @@ import com.michaelgrenon.chargerks.NeoRelationBinding;
 import org.neo4j.driver.v1.Record;
 import org.neo4j.driver.v1.StatementResult;
 import org.neo4j.driver.v1.Value;
+import org.neo4j.driver.v1.summary.ResultSummary;
 import org.neo4j.driver.v1.types.Node;
 import org.neo4j.driver.v1.types.Relationship;
 
@@ -25,18 +25,7 @@ import cgif.generate.NameGenerator;
 
 public class NodesRelationshipsAnswer implements Answer {
 
-    @Override
-    public Collection<NeoGraph> fromResult(StatementResult result) {
-        Record record = result.single();
-
-        Value nodesValue = record.get("nodes");
-        Value relationshipsValue = record.get("relationships");
-
-        List<Node> nodes = nodesValue.asList(n -> n.asNode());
-        List<Relationship> relationships = relationshipsValue.asList(r -> r.asRelationship());
-
-        return Collections.singletonList(fromNodesRels(nodes, relationships));
-    }
+    private StatementResult result;
 
     private NeoGraph fromNodesRels(List<Node> nodes, List<Relationship> relationships) {
         HashMap<Long, NeoConceptBinding> neoConcepts = new HashMap<Long, NeoConceptBinding>();
@@ -84,4 +73,35 @@ public class NodesRelationshipsAnswer implements Answer {
 
         return new NeoGraph(neoConcepts.values(), neoRelations.values(), new NeoActorDag());
     }
+
+	@Override
+	public boolean hasNext() {
+		return result != null && result.hasNext();
+	}
+
+	@Override
+	public NeoGraph next() {
+		Record record = result.next();
+
+        Value nodesValue = record.get("nodes");
+        Value relationshipsValue = record.get("relationships");
+
+        List<Node> nodes = nodesValue.asList(n -> n.asNode());
+        List<Relationship> relationships = relationshipsValue.asList(r -> r.asRelationship());
+
+        return fromNodesRels(nodes, relationships);
+	}
+
+	@Override
+	public String getSummary() {
+        ResultSummary summary = result.summary();
+        return String.format("Completed query in %d ms", summary.resultConsumedAfter(TimeUnit.MILLISECONDS));
+        
+	}
+
+    @Override
+	public Answer setResult(StatementResult result) {
+        this.result = result;
+        return this;
+	}
 }

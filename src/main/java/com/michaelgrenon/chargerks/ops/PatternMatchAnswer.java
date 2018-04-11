@@ -1,9 +1,8 @@
 package com.michaelgrenon.chargerks.ops;
 
-import java.util.Collection;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import com.michaelgrenon.chargerks.NeoActorDag;
@@ -16,20 +15,16 @@ import com.michaelgrenon.chargerks.NeoRelationBinding;
 import org.neo4j.driver.v1.Record;
 import org.neo4j.driver.v1.StatementResult;
 import org.neo4j.driver.v1.Value;
+import org.neo4j.driver.v1.summary.ResultSummary;
 
 public class PatternMatchAnswer implements Answer {
 
-    NeoGraph template;
+    private NeoGraph template;
+    private StatementResult result;
+    private int counter = 0;
 
     public PatternMatchAnswer(NeoGraph template) {
         this.template = template;
-    }
-
-    @Override
-    public Collection<NeoGraph> fromResult(StatementResult result) {
-        List<NeoGraph> graphs = new LinkedList<NeoGraph>();
-        result.forEachRemaining(r -> graphs.add(recordToGraph(r)));
-        return graphs;
     }
 
     private NeoGraph recordToGraph(Record record) {
@@ -57,4 +52,26 @@ public class PatternMatchAnswer implements Answer {
 
         return new NeoRelationBinding(template.getVariable(), new NeoRelation(startNode, endNode, template.getRelation().getContext(), template.getRelation().getLabel()));
     }
+
+	@Override
+	public boolean hasNext() {
+		return result != null && result.hasNext();
+	}
+
+	@Override
+	public NeoGraph next() {
+		return recordToGraph(result.next());
+	}
+
+	@Override
+	public String getSummary() {
+        ResultSummary summary = result.summary();
+		return String.format("%d rows available after %d ms, consumed after another %d ms", counter, summary.resultAvailableAfter(TimeUnit.MILLISECONDS), summary.resultConsumedAfter(TimeUnit.MILLISECONDS));
+	}
+
+    @Override
+	public Answer setResult(StatementResult result) {
+        this.result = result;
+        return this;
+	}
 }

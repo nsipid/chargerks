@@ -1,6 +1,8 @@
 package com.michaelgrenon.chargerks.cli;
 
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
@@ -19,7 +21,7 @@ public class ApplyContextOfIntentCli implements Runnable {
 	private String contextOfIntent;
 	private KnowledgeSpace ks;
 	private String format;
-	private com.michaelgrenon.chargerks.ops.Command apply;
+	private Command apply;
 	private String apiKey;
 
 	public ApplyContextOfIntentCli(KnowledgeSpace ks, String contextOfIntent, String format, String importDataUri, String apikeyArg) throws IOException {
@@ -33,28 +35,32 @@ public class ApplyContextOfIntentCli implements Runnable {
 
     private Command buildCommand() throws IOException {
         com.michaelgrenon.chargerks.ops.Question getContext = new ContextQuestion(new ContextInfo(ContextType.INTENT, contextOfIntent));
-        NeoGraph contextGraph = ks.Ask(getContext).iterator().next();
-        boolean withHeaders = false;
-        if (this.format.equals("csv")) {
-            withHeaders = false;
-        } else if (this.format.equals("csv-header")) {
-            withHeaders = true;
-        } else if (this.format.equals("uah-classes")) {
-            UahClassListTransformer.toCsv(this.importDataUri, "D:\\Source\\neo4j\\import\\scheduleSpring2016.csv");
-            importDataUri = "file:///scheduleSpring2016.csv";
-            withHeaders = true;
-        } else if (this.format.equals("distance-matrix")) {
-            DistanceMatrixTransformer.toCsv(apiKey, importDataUri, "Code", "Address", "D:\\Source\\neo4j\\import\\distanceMatrix.csv");
-            importDataUri = "file:///distanceMatrix.csv";
-            withHeaders = true;
-        } else {
-            throw new IllegalArgumentException("Bad format");
-        }
+        Iterator<NeoGraph> iterator = ks.Ask(getContext);
+        if (iterator.hasNext()) {
+            NeoGraph contextGraph = iterator.next();
+            boolean withHeaders = false;
+            if (this.format.equals("csv")) {
+                withHeaders = false;
+            } else if (this.format.equals("csv-header")) {
+                withHeaders = true;
+            } else if (this.format.equals("uah-classes")) {
+                UahClassListTransformer.toCsv(this.importDataUri, "D:\\Source\\neo4j\\import\\scheduleSpring2016.csv");
+                importDataUri = "file:///scheduleSpring2016.csv";
+                withHeaders = true;
+            } else if (this.format.equals("distance-matrix")) {
+                DistanceMatrixTransformer.toCsv(apiKey, importDataUri, "Code", "Address", "D:\\Source\\neo4j\\import\\distanceMatrix.csv");
+                importDataUri = "file:///distanceMatrix.csv";
+                withHeaders = true;
+            } else {
+                throw new IllegalArgumentException("Bad format");
+            }
 
-        IndexIntentCommand indexing = new IndexIntentCommand(contextGraph);
-        ks.Execute(indexing);
-        
-        return new ApplyContextOfIntentCommand(contextGraph, importDataUri, withHeaders);
+            IndexIntentCommand indexing = new IndexIntentCommand(contextGraph);
+            ks.Execute(indexing);
+            return new ApplyContextOfIntentCommand(contextGraph, importDataUri, withHeaders);
+        } else {
+            throw new NoSuchElementException("Could not find context of intent.");
+        }       
     }
     
 	@Override

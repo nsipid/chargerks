@@ -1,5 +1,8 @@
 package com.michaelgrenon.chargerks.cli;
 
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
 import com.michaelgrenon.chargerks.ContextInfo;
 import com.michaelgrenon.chargerks.ContextType;
 import com.michaelgrenon.chargerks.KnowledgeSpace;
@@ -21,10 +24,15 @@ public class ApplyContextOfUseCli implements Runnable {
     
 	@Override
 	public void run() {
-                Question getContext = new ContextQuestion(new ContextInfo(ContextType.USE, contextOfUse));
-                NeoGraph contextGraph = ks.Ask(getContext).iterator().next();
+        Question getContext = new ContextQuestion(new ContextInfo(ContextType.USE, contextOfUse));
+        Iterator<NeoGraph> iterator = ks.Ask(getContext);
+        if (iterator.hasNext()) {
+            NeoGraph contextGraph = iterator.next();
 
-                MultiCommand apply = new ApplyContextOfUseCommand(contextGraph, contextOfUse);
-                ks.Execute(apply);
+            MultiCommand apply = new ApplyContextOfUseCommand(contextGraph, contextOfUse);
+            ks.Execute(apply);
+        } else {
+            throw new NoSuchElementException("Could not find context of use.");
+        }       
 	}
 }

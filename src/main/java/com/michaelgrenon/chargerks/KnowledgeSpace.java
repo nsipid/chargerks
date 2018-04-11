@@ -1,6 +1,6 @@
 package com.michaelgrenon.chargerks;
 
-import java.util.Collection;
+import java.util.Iterator;
 import java.util.Optional;
 
 import com.michaelgrenon.chargerks.ops.Command;
@@ -40,12 +40,12 @@ public class KnowledgeSpace {
         }
     }
     
-    public Collection<NeoGraph> Ask(Question question) {
+    public Iterator<NeoGraph> Ask(Question question) {
         try (Session session = driver.session()) {
             String query = question.toCypher();
             System.out.println(query);
             StatementResult result = session.run(query);
-            return question.getAnswer().fromResult(result);
+            return question.getAnswer().setResult(result);
         }
     }
     

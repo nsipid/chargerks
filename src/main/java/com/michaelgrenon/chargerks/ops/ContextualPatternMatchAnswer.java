@@ -1,10 +1,9 @@
 package com.michaelgrenon.chargerks.ops;
 
-import java.util.Collection;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import com.michaelgrenon.chargerks.ContextInfo;
@@ -19,24 +18,31 @@ import com.michaelgrenon.chargerks.NeoRelationBinding;
 import org.neo4j.driver.v1.Record;
 import org.neo4j.driver.v1.StatementResult;
 import org.neo4j.driver.v1.Value;
+import org.neo4j.driver.v1.summary.ResultSummary;
 import org.neo4j.driver.v1.types.Node;
 import org.neo4j.driver.v1.types.Relationship;
 
 public class ContextualPatternMatchAnswer implements Answer {
 
     NeoGraph template;
+    private StatementResult result;
+    private int counter = 0;
 
     public ContextualPatternMatchAnswer(NeoGraph template) {
         this.template = template;
     }
-
+    
     @Override
-    public Collection<NeoGraph> fromResult(StatementResult result) {
-        List<NeoGraph> graphs = new LinkedList<NeoGraph>();
-        result.forEachRemaining(r -> graphs.add(recordToGraph(r)));
-        return graphs;
+    public boolean hasNext() {
+        return result != null && result.hasNext();
     }
 
+    @Override
+    public NeoGraph next() {
+        counter++;
+        return recordToGraph(result.next());
+    }
+    
     private NeoGraph recordToGraph(Record record) {
         Map<String, NeoConceptBinding> conceptMap = 
             template.getConcepts().stream().map(c -> getConcept(record, c)).collect(Collectors.toMap(b -> b.getVariable(), b -> b));
@@ -80,4 +86,16 @@ public class ContextualPatternMatchAnswer implements Answer {
 
         return new NeoRelationBinding(template.getVariable(), new NeoRelation(startNode, endNode, new ContextInfo(contextType, contextName), relationship.type()));
     }
+
+	@Override
+	public String getSummary() {
+        ResultSummary summary = result.summary();
+		return String.format("%d rows available after %d ms, consumed after another %d ms", counter, summary.resultAvailableAfter(TimeUnit.MILLISECONDS), summary.resultConsumedAfter(TimeUnit.MILLISECONDS));
+	}
+
+	@Override
+	public Answer setResult(StatementResult result) {
+        this.result = result;
+        return this;
+	}
 }

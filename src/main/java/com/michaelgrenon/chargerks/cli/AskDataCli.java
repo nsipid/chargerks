@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
+import java.util.Iterator;
 
 import javax.swing.JFrame;
 
@@ -61,9 +61,10 @@ public class AskDataCli implements Runnable {
 	public void run() {
         try {
             Question question = buildQuestion();
-            Collection<NeoGraph> results = ks.Ask(question);
+            Iterator<NeoGraph> results = ks.Ask(question);
             int i = 0;
-            for (NeoGraph result : results) {
+            while (results.hasNext()) {
+                NeoGraph result = results.next();
                 Graph outGraph = CgConverter.neoToCharger(result);
                 
                 int extension = outputFile.lastIndexOf(".");

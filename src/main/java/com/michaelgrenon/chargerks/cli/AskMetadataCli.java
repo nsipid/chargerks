@@ -4,6 +4,7 @@ import java.awt.Frame;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 import javax.swing.JFrame;
 
@@ -42,17 +43,20 @@ public class AskMetadataCli implements Runnable {
 	@Override
 	public void run() {
         charger.Global.setup( null, new ArrayList<String>(), false );
-        
-        NeoGraph neoGraph = ks.Ask(this.question).iterator().next();
-        
-        Graph outGraph = CgConverter.neoToCharger(neoGraph);
-        try {
-			IOManager.saveGraphAsTextFormat(outGraph, FileFormat.CHARGER4, new File(this.outputFile));
-		} catch (CGFileException e) {
-			throw new IllegalArgumentException("Could not write to output file.", e);
-		} finally {
-			Arrays.stream(JFrame.getFrames()).forEach(Frame::dispose);
-		}
+		
+		Iterator<NeoGraph> iterator = ks.Ask(this.question);
+		while (iterator.hasNext()) {
+			NeoGraph neoGraph = iterator.next();
+			
+			Graph outGraph = CgConverter.neoToCharger(neoGraph);
+			try {
+				IOManager.saveGraphAsTextFormat(outGraph, FileFormat.CHARGER4, new File(this.outputFile));
+			} catch (CGFileException e) {
+				throw new IllegalArgumentException("Could not write to output file.", e);
+			} finally {
+				Arrays.stream(JFrame.getFrames()).forEach(Frame::dispose);
+			}
+		}      
 	}
 
 
