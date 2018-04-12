@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import com.michaelgrenon.chargerks.ContextInfo;
@@ -14,6 +15,10 @@ import com.michaelgrenon.chargerks.NeoConceptBinding;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
 import com.michaelgrenon.chargerks.NeoRelationBinding;
+
+import org.neo4j.driver.v1.StatementResult;
+import org.neo4j.driver.v1.summary.ResultSummary;
+import org.neo4j.driver.v1.summary.SummaryCounters;
 
 public class ApplyContextOfUseCommand implements MultiCommand {
     private static final String NEW_LINE = System.getProperty("line.separator");
@@ -28,10 +33,10 @@ public class ApplyContextOfUseCommand implements MultiCommand {
     }
 
     @Override
-    public String[] toCypher() {
+    public List<Command> toList() {
         List<Criteria> criteriaList = new ArrayList<Criteria>();
 
-        List<String> allCommands = new ArrayList<String>();
+        List<Command> allCommands = new ArrayList<Command>();
         for (NeoRelationBinding neoRelationBinding : contextOfUse.getRelations()) {
             NeoRelation neoRelation = neoRelationBinding.getRelation();
             String label = neoRelation.getLabel().toUpperCase().trim();
@@ -69,13 +74,26 @@ public class ApplyContextOfUseCommand implements MultiCommand {
                 critBuilder.append("false");
             }
 
-            allCommands.add(critBuilder.toString());
+            Command critCommand = new Command() {
+                public String toCypher() {
+                    return critBuilder.toString();
+                }
+    
+                @Override
+                public String getSummary(StatementResult result) {
+                    ResultSummary summary = result.consume();
+                    SummaryCounters counts = summary.counters();
+                    return String.format("Marked %d nodes with criteria results in %d ms.", counts.propertiesSet(), summary.resultAvailableAfter(TimeUnit.MILLISECONDS));
+                }
+            };
+
+            allCommands.add(critCommand);
         }
 
-        return allCommands.stream().toArray(String[]::new);
+        return allCommands;
     }
 
-    private String buildMatchCommand(NeoRelation neoRelation) {
+    private Command buildMatchCommand(NeoRelation neoRelation) {
         StringBuilder builder = new StringBuilder();
         //MATCH (x1:c1Type {contextType: "STORE", contextName: "c1ContextName"}), (x2:c2Type {contextType: "STORE", contextName: "c2ContextName"})
         //WHERE x1.referent = x2.referent
@@ -105,7 +123,19 @@ public class ApplyContextOfUseCommand implements MultiCommand {
         builder.append(instanceRelation.toCypherExplicit());
         builder.append(NEW_LINE);
 
-        return builder.toString();
+        return new Command() {
+            public String toCypher() {
+                return builder.toString();
+            }
+
+			@Override
+			public String getSummary(StatementResult result) {
+				ResultSummary summary = result.consume();
+                SummaryCounters counts = summary.counters();
+                return String.format("Created %d nodes and %d relationships in %d ms.", counts.nodesCreated(), counts.relationshipsCreated(), summary.resultAvailableAfter(TimeUnit.MILLISECONDS));
+			}
+        };
+        
     }
 
     private class Criteria {

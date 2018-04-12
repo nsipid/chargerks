@@ -95,7 +95,7 @@ public class NodesRelationshipsAnswer implements Answer {
 	@Override
 	public String getSummary() {
         ResultSummary summary = result.summary();
-        return String.format("Completed query in %d ms", summary.resultConsumedAfter(TimeUnit.MILLISECONDS));
+        return String.format("Completed query in %d ms.", summary.resultConsumedAfter(TimeUnit.MILLISECONDS));
         
 	}
 

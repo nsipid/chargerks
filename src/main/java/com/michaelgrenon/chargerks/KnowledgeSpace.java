@@ -3,6 +3,7 @@ package com.michaelgrenon.chargerks;
 import java.util.Iterator;
 import java.util.Optional;
 
+import com.michaelgrenon.chargerks.ops.Answer;
 import com.michaelgrenon.chargerks.ops.Command;
 import com.michaelgrenon.chargerks.ops.MultiCommand;
 import com.michaelgrenon.chargerks.ops.Question;
@@ -45,24 +46,28 @@ public class KnowledgeSpace {
             String query = question.toCypher();
             System.out.println(query);
             StatementResult result = session.run(query);
-            return question.getAnswer().setResult(result);
+            Answer ans = question.getAnswer().setResult(result);
+            //System.out.println(ans.getSummary());
+            return ans;
         }
     }
     
     public void Execute(Command command) {
         try (Session session = driver.session()) {
             String cypher = command.toCypher();
-            System.out.println(cypher);
-            session.run(cypher);
+            System.out.println(cypher);           
+            StatementResult result = session.run(cypher);
+            System.out.println(command.getSummary(result));
         }
     }
 
-    public void Execute(MultiCommand command) {
+    public void Execute(MultiCommand commands) {
         try (Session session = driver.session()) {
-            String[] cyphers = command.toCypher();
-            for (String cypher : cyphers) {
-                System.out.println(cypher);
-                session.run(cypher);
+            for (Command command : commands.toList()) {
+                String cypher = command.toCypher();
+                System.out.println(cypher);           
+                StatementResult result = session.run(cypher);
+                System.out.println(command.getSummary(result));
             }
         }
     }

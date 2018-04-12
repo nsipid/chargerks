@@ -69,11 +69,13 @@ public class CgConverter {
                     unbound = chargerConceptToNeo((Concept) obj);
                 }
 
-                //we maintain duplicate concepts only when the referent is the existential quantifier
+                //we maintain duplicate concepts only when the referent is the existential quantifier or the type is a constraint
                 //(and not a cross referenced concept)
                 if (unbound != null) {
                     if (unboundToBound.containsKey(unbound)) {
-                        if (!unbound.getReferent().orElse("").equals("")) {
+                        String ref = unbound.getReferent().orElse("");
+                        String type = unbound.getType().toUpperCase().trim();
+                        if (!ref.equals("") && !type.equals("BOOL") && !type.equals("BOOLEAN") ) {
                             bound = unboundToBound.get(unbound);
                         } else if (chargerIdToBound.containsKey(objId)) {
                             bound = chargerIdToBound.get(objId);

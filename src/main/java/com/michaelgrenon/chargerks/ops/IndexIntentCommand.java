@@ -1,9 +1,16 @@
 package com.michaelgrenon.chargerks.ops;
 
 import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 import com.michaelgrenon.chargerks.NeoConceptBinding;
 import com.michaelgrenon.chargerks.NeoGraph;
+
+import org.neo4j.driver.v1.StatementResult;
+import org.neo4j.driver.v1.summary.ResultSummary;
+import org.neo4j.driver.v1.summary.SummaryCounters;
 
 public class IndexIntentCommand implements MultiCommand {
     private static final String NEW_LINE = System.getProperty("line.separator");
@@ -22,9 +29,22 @@ public class IndexIntentCommand implements MultiCommand {
         }
     }
 	@Override
-	public String[] toCypher() {
-        String[] ret = new String[commands.size()];
-        return commands.toArray(ret);
+	public List<Command> toList() {
+        return commands.stream().map(comStr -> new Command() {
+
+			@Override
+			public String toCypher() {
+				return comStr;
+			}
+
+			@Override
+            public String getSummary(StatementResult result) {
+                ResultSummary summary = result.consume();
+                SummaryCounters counts = summary.counters();
+                return String.format("Added %d indexes in %d ms.", counts.indexesAdded(), summary.resultAvailableAfter(TimeUnit.MILLISECONDS));
+            }
+
+        }).collect(Collectors.toList());
 	}
 
 }
