@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 31, 2018 9:28:21 AM" modified="Mar 31, 2018 11:23:30 AM" user="grenon" wrapLabels="false" wrapColumns="30">
-<graph id="-ae15ced:1627c758ea6:-7fd9" owner="0">
+<conceptualgraph editor="CharGer" version="4.1.2" created="Apr 12, 2018 1:29:52 PM" modified="Apr 12, 2018 1:29:52 PM" user="grenon" wrapLabels="false" wrapColumns="30">
+<graph id="7193c4c0:162bb1efa6e:-7fd9" owner="0">
     <type>
         <label>Proposition</label>
     </type>
@@ -9,14 +9,7 @@
         <color foreground="0,94,192" background="0,94,192"/>
         <font name="SansSerif" style="1" size="12" />
     </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
-    <graph id="-ae15ced:1627c758ea6:-7fd4" owner="-ae15ced:1627c758ea6:-7fd9">
+    <graph id="7193c4c0:162bb1efa6e:-7fd4" owner="7193c4c0:162bb1efa6e:-7fd9">
         <type>
             <label>INTENT</label>
         </type>
@@ -24,18 +17,31 @@
             <label>bldgs</label>
         </referent>
         <layout>
-            <rectangle x="40.00" y="40.00" width="568.00" height="454.92" depth="1.00"/>
+            <rectangle x="640.00" y="480.00" width="640.00" height="480.00" depth="1.00"/>
             <color foreground="0,94,192" background="0,94,192"/>
             <font name="SansSerif" style="1" size="12" />
         </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
-        <concept id="-ae15ced:1627c758ea6:-7fd7" owner="-ae15ced:1627c758ea6:-7fd4">
+        <relation id="7193c4c0:162bb1efa6e:-7fcf" owner="7193c4c0:162bb1efa6e:-7fd4">
+            <type>
+                <label>Name</label>
+            </type>
+            <layout>
+                <rectangle x="939.50" y="708.00" width="41.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+        </relation>
+        <relation id="7193c4c0:162bb1efa6e:-7fcc" owner="7193c4c0:162bb1efa6e:-7fd4">
+            <type>
+                <label>Address</label>
+            </type>
+            <layout>
+                <rectangle x="932.00" y="708.00" width="56.00" height="24.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,231,100"/>
+                <font name="SansSerif" style="1" size="12" />
+            </layout>
+        </relation>
+        <concept id="7193c4c0:162bb1efa6e:-7fd7" owner="7193c4c0:162bb1efa6e:-7fd4">
             <type>
                 <label>Value</label>
             </type>
@@ -43,39 +49,12 @@
                 <label>Name</label>
             </referent>
             <layout>
-                <rectangle x="284.41" y="73.00" width="79.00" height="30.00" depth="1.00"/>
+                <rectangle x="920.50" y="705.00" width="79.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
         </concept>
-        <concept id="-ae15ced:1627c758ea6:-7fd6" owner="-ae15ced:1627c758ea6:-7fd4">
-            <type>
-                <label>Value</label>
-            </type>
-            <referent>
-                <label>Address</label>
-            </referent>
-            <layout>
-                <rectangle x="54.00" y="262.54" width="94.00" height="30.00" depth="1.00"/>
-                <color foreground="255,255,255" background="0,94,192"/>
-                <font name="SansSerif" style="1" size="12" />
-            </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
-        </concept>
-        <concept id="-ae15ced:1627c758ea6:-7fd8" owner="-ae15ced:1627c758ea6:-7fd4">
+        <concept id="7193c4c0:162bb1efa6e:-7fd8" owner="7193c4c0:162bb1efa6e:-7fd4">
             <type>
                 <label>Value</label>
             </type>
@@ -83,246 +62,91 @@
                 <label>Code</label>
             </referent>
             <layout>
-                <rectangle x="279.61" y="424.92" width="75.00" height="30.00" depth="1.00"/>
+                <rectangle x="922.50" y="705.00" width="75.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
         </concept>
-        <relation id="-7016a8f8:1627c6ec10a:-7fb3" owner="-ae15ced:1627c758ea6:-7fd4">
-            <type>
-                <label>matches</label>
-            </type>
-            <layout>
-                <rectangle x="395.00" y="263.00" width="58.00" height="24.00" depth="1.00"/>
-                <color foreground="0,0,0" background="255,231,100"/>
-                <font name="SansSerif" style="1" size="12" />
-            </layout>
-<history>
-    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:22:02 AM" type="USER">
-        <description>User created object.</description>
-        <id>no id</id>
-        <user>grenon</user>
-    </event>
-    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:22:30 AM" type="USER">
-        <description>User modified object. Label matches</description>
-        <id>no id</id>
-        <user>grenon</user>
-    </event>
-</history>
-        </relation>
-        <concept id="-7016a8f8:1627c6ec10a:-7fb4" owner="-ae15ced:1627c758ea6:-7fd4">
-            <type>
-                <label>Building</label>
-            </type>
-            <referent>
-                <label>Code</label>
-            </referent>
-            <layout>
-                <rectangle x="507.00" y="264.00" width="88.00" height="30.00" depth="1.00"/>
-                <color foreground="255,255,255" background="0,94,192"/>
-                <font name="SansSerif" style="1" size="12" />
-            </layout>
-<history>
-    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:20:05 AM" type="USER">
-        <description>User created object.</description>
-        <id>no id</id>
-        <user>grenon</user>
-    </event>
-    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:20:28 AM" type="USER">
-        <description>User modified object. Label Building: Code</description>
-        <id>no id</id>
-        <user>grenon</user>
-    </event>
-</history>
-        </concept>
-        <relation id="-ae15ced:1627c758ea6:-7fcc" owner="-ae15ced:1627c758ea6:-7fd4">
-            <type>
-                <label>Address</label>
-            </type>
-            <layout>
-                <rectangle x="183.23" y="264.81" width="56.00" height="24.00" depth="1.00"/>
-                <color foreground="0,0,0" background="255,231,100"/>
-                <font name="SansSerif" style="1" size="12" />
-            </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
-        </relation>
-        <relation id="-ae15ced:1627c758ea6:-7fcf" owner="-ae15ced:1627c758ea6:-7fd4">
-            <type>
-                <label>Name</label>
-            </type>
-            <layout>
-                <rectangle x="302.76" y="153.59" width="41.00" height="24.00" depth="1.00"/>
-                <color foreground="0,0,0" background="255,231,100"/>
-                <font name="SansSerif" style="1" size="12" />
-            </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
-        </relation>
-        <relation id="-ae15ced:1627c758ea6:-7fd2" owner="-ae15ced:1627c758ea6:-7fd4">
+        <relation id="7193c4c0:162bb1efa6e:-7fd2" owner="7193c4c0:162bb1efa6e:-7fd4">
             <type>
                 <label>Code</label>
             </type>
             <layout>
-                <rectangle x="296.39" y="346.73" width="40.00" height="24.00" depth="1.00"/>
+                <rectangle x="940.00" y="708.00" width="40.00" height="24.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,231,100"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
         </relation>
-        <concept id="-ae15ced:1627c758ea6:-7fd5" owner="-ae15ced:1627c758ea6:-7fd4">
+        <concept id="7193c4c0:162bb1efa6e:-7fd5" owner="7193c4c0:162bb1efa6e:-7fd4">
             <type>
                 <label>Record</label>
             </type>
-            <referent>
-                <label>row</label>
-            </referent>
             <layout>
-                <rectangle x="278.16" y="264.01" width="77.00" height="30.00" depth="1.00"/>
+                <rectangle x="935.50" y="705.00" width="49.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-    <event class="chargerlib.history.UserHistoryRecord" timestamp="Mar 31, 2018 11:21:37 AM" type="USER">
-        <description>User modified object. Label Record: row</description>
-        <id>no id</id>
-        <user>grenon</user>
-    </event>
-</history>
         </concept>
-        <arrow id="-ae15ced:1627c758ea6:-7fcb" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-ae15ced:1627c758ea6:-7fd5" to="-ae15ced:1627c758ea6:-7fcc">
+        <concept id="7193c4c0:162bb1efa6e:-7fd6" owner="7193c4c0:162bb1efa6e:-7fd4">
+            <type>
+                <label>Value</label>
+            </type>
+            <referent>
+                <label>Address</label>
+            </referent>
             <layout>
-                <rectangle x="252.95" y="273.76" width="8.00" height="8.00" depth="1.00"/>
-                <color foreground="0,0,0" background="255,255,255"/>
+                <rectangle x="913.00" y="705.00" width="94.00" height="30.00" depth="1.00"/>
+                <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
-                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
-        </arrow>
-        <arrow id="-ae15ced:1627c758ea6:-7fca" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-ae15ced:1627c758ea6:-7fcc" to="-ae15ced:1627c758ea6:-7fd6">
+        </concept>
+        <arrow id="7193c4c0:162bb1efa6e:-7fca" owner="7193c4c0:162bb1efa6e:-7fd4" label="-" from="7193c4c0:162bb1efa6e:-7fcc" to="7193c4c0:162bb1efa6e:-7fd6">
             <layout>
-                <rectangle x="163.16" y="273.10" width="8.00" height="8.00" depth="1.00"/>
-                <color foreground="0,0,0" background="255,255,255"/>
-                <font name="SansSerif" style="1" size="12" />
-                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
-            </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
-        </arrow>
-        <arrow id="-ae15ced:1627c758ea6:-7fcd" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-ae15ced:1627c758ea6:-7fcf" to="-ae15ced:1627c758ea6:-7fd7">
-            <layout>
-                <rectangle x="319.56" y="125.98" width="8.00" height="8.00" depth="1.00"/>
-                <color foreground="0,0,0" background="255,255,255"/>
-                <font name="SansSerif" style="1" size="12" />
-                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
-            </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
-        </arrow>
-        <arrow id="-7016a8f8:1627c6ec10a:-7fb1" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-7016a8f8:1627c6ec10a:-7fb3" to="-7016a8f8:1627c6ec10a:-7fb4">
-            <layout>
-                <rectangle x="474.63" y="272.72" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
         </arrow>
-        <arrow id="-7016a8f8:1627c6ec10a:-7fb2" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-ae15ced:1627c758ea6:-7fd5" to="-7016a8f8:1627c6ec10a:-7fb3">
+        <arrow id="7193c4c0:162bb1efa6e:-7fcd" owner="7193c4c0:162bb1efa6e:-7fd4" label="-" from="7193c4c0:162bb1efa6e:-7fcf" to="7193c4c0:162bb1efa6e:-7fd7">
             <layout>
-                <rectangle x="372.65" y="272.77" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
         </arrow>
-        <arrow id="-ae15ced:1627c758ea6:-7fce" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-ae15ced:1627c758ea6:-7fd5" to="-ae15ced:1627c758ea6:-7fcf">
+        <arrow id="7193c4c0:162bb1efa6e:-7fce" owner="7193c4c0:162bb1efa6e:-7fd4" label="-" from="7193c4c0:162bb1efa6e:-7fd5" to="7193c4c0:162bb1efa6e:-7fcf">
             <layout>
-                <rectangle x="316.14" y="215.25" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
         </arrow>
-        <arrow id="-ae15ced:1627c758ea6:-7fd1" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-ae15ced:1627c758ea6:-7fd5" to="-ae15ced:1627c758ea6:-7fd2">
+        <arrow id="7193c4c0:162bb1efa6e:-7fcb" owner="7193c4c0:162bb1efa6e:-7fd4" label="-" from="7193c4c0:162bb1efa6e:-7fd5" to="7193c4c0:162bb1efa6e:-7fcc">
             <layout>
-                <rectangle x="312.51" y="317.89" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
         </arrow>
-        <arrow id="-ae15ced:1627c758ea6:-7fd0" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-ae15ced:1627c758ea6:-7fd2" to="-ae15ced:1627c758ea6:-7fd8">
+        <arrow id="7193c4c0:162bb1efa6e:-7fd1" owner="7193c4c0:162bb1efa6e:-7fd4" label="-" from="7193c4c0:162bb1efa6e:-7fd5" to="7193c4c0:162bb1efa6e:-7fd2">
             <layout>
-                <rectangle x="312.72" y="392.42" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
             </layout>
-<history>
-    <event class="chargerlib.history.FileHistoryRecord" timestamp="Mar 31, 2018 11:17:53 AM" type="FILE">
-        <description>Read from CGX file by Charger 4.1.2</description>
-        <id>no id</id>
-        <file>D:\Source\github\chargerks\bldgs.cgx</file>
-    </event>
-</history>
+        </arrow>
+        <arrow id="7193c4c0:162bb1efa6e:-7fd0" owner="7193c4c0:162bb1efa6e:-7fd4" label="-" from="7193c4c0:162bb1efa6e:-7fd2" to="7193c4c0:162bb1efa6e:-7fd8">
+            <layout>
+                <rectangle x="956.00" y="725.25" width="8.00" height="8.00" depth="1.00"/>
+                <color foreground="0,0,0" background="255,255,255"/>
+                <font name="SansSerif" style="1" size="12" />
+                <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+            </layout>
         </arrow>
     </graph>
 </graph>

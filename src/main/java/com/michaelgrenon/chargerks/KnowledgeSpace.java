@@ -47,7 +47,6 @@ public class KnowledgeSpace {
             System.out.println(query);
             StatementResult result = session.run(query);
             Answer ans = question.getAnswer().setResult(result);
-            //System.out.println(ans.getSummary());
             return ans;
         }
     }
