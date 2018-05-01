@@ -73,6 +73,7 @@ public class AskDataCli implements Runnable {
                 IOManager.saveGraphAsTextFormat(outGraph, FileFormat.CHARGER4, new File(currentFile));
                 i++;
             }
+            System.out.println(ans.getSummary());
         } catch (IOException e) {
             throw new IllegalArgumentException("Could not read to input data.", e);
         } catch (CGFileException e) {

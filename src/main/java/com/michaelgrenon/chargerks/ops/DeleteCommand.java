@@ -5,6 +5,12 @@
  */
 package com.michaelgrenon.chargerks.ops;
 
+import java.util.concurrent.TimeUnit;
+
+import org.neo4j.driver.v1.StatementResult;
+import org.neo4j.driver.v1.summary.ResultSummary;
+import org.neo4j.driver.v1.summary.SummaryCounters;
+
 /**
  *
  * @author Michael Grenon <grenonm@uah.edu>
@@ -30,5 +36,12 @@ public class DeleteCommand implements Command {
 
         builder.append("DETACH DELETE n");
         return builder.toString();
-	}
+    }
+    
+    @Override
+    public String getSummary(StatementResult result) {
+        ResultSummary summary = result.consume();
+        SummaryCounters counts = summary.counters();
+        return String.format("Deleted %d nodes and %d relationships in %d ms.", counts.nodesDeleted(), counts.relationshipsDeleted(), summary.resultAvailableAfter(TimeUnit.MILLISECONDS));
+    }
 }

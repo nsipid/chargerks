@@ -5,10 +5,16 @@
  */
 package com.michaelgrenon.chargerks.ops;
 
+import java.util.concurrent.TimeUnit;
+
 import com.michaelgrenon.chargerks.NeoConceptBinding;
 import com.michaelgrenon.chargerks.NeoGraph;
 import com.michaelgrenon.chargerks.NeoRelation;
 import com.michaelgrenon.chargerks.NeoRelationBinding;
+
+import org.neo4j.driver.v1.StatementResult;
+import org.neo4j.driver.v1.summary.ResultSummary;
+import org.neo4j.driver.v1.summary.SummaryCounters;
 
 /**
  *
@@ -38,5 +44,12 @@ public class MergeCommand implements Command {
             builder.append(NEW_LINE);
         }
         return builder.toString();
+    }
+
+    @Override
+	public String getSummary(StatementResult result) {
+        ResultSummary summary = result.consume();
+        SummaryCounters counts = summary.counters();
+        return String.format("Created %d nodes and %d relationships in %d ms.", counts.nodesCreated(), counts.relationshipsCreated(), summary.resultAvailableAfter(TimeUnit.MILLISECONDS));
     }
 }

@@ -64,7 +64,7 @@ public class ApplyContextOfUseUnitTests {
 
         NeoGraph neoGraph = CgConverter.chargerToNeo(origGraph);
         MultiCommand command = new ApplyContextOfUseCommand(neoGraph, "schedulingOffice");
-        String[] cypher = command.toCypher();
+        String[] cypher = command.toList().stream().map(c -> c.toCypher()).toArray(String[]::new);
         assertNotNull(cypher);
     }
 }

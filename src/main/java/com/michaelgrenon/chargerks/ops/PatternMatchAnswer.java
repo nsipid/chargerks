@@ -66,7 +66,7 @@ public class PatternMatchAnswer implements Answer {
 	@Override
 	public String getSummary() {
         ResultSummary summary = result.summary();
-		return String.format("%d rows available after %d ms, consumed after another %d ms", counter, summary.resultAvailableAfter(TimeUnit.MILLISECONDS), summary.resultConsumedAfter(TimeUnit.MILLISECONDS));
+		return String.format("%d graphs available after %d ms, consumed after another %d ms", counter, summary.resultAvailableAfter(TimeUnit.MILLISECONDS), summary.resultConsumedAfter(TimeUnit.MILLISECONDS));
 	}
 
     @Override

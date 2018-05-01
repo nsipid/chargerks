@@ -4,6 +4,8 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class ActorLambda {
+    final static int constraintCounter = 0;
+    
     private NeoActorBinding actorBinding;
     private Set<NeoConceptBinding> conceptsLinkedByRelation;
 	private boolean referentIsRecord;
@@ -72,6 +74,7 @@ public class ActorLambda {
             case "REGEX":
             case "REGULAR_EXPRESSION":
                 cypher = String.format("%s =~ %s", ref(0), ref(1));
+                break;
             default:
                 //assume stored-function then, CALL/YIELD not supported yet
                 StringBuilder functionBuilder = new StringBuilder();
