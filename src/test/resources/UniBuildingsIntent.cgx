@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 31, 2018 9:28:21 AM" modified="Apr 10, 2018 10:51:50 AM" user="grenon" wrapLabels="false" wrapColumns="30">
+<conceptualgraph editor="CharGer" version="4.1.2" created="Mar 31, 2018 9:28:21 AM" modified="Apr 30, 2018 11:59:53 PM" user="nsipi" wrapLabels="false" wrapColumns="30">
 <graph id="-ae15ced:1627c758ea6:-7fd9" owner="0">
     <type>
         <label>Proposition</label>
@@ -19,6 +19,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
     </event>
 </history>
     <graph id="-ae15ced:1627c758ea6:-7fd4" owner="-ae15ced:1627c758ea6:-7fd9">
@@ -49,6 +54,11 @@
         <id>no id</id>
         <user>grenon</user>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
+    </event>
 </history>
         <concept id="-ae15ced:1627c758ea6:-7fd7" owner="-ae15ced:1627c758ea6:-7fd4">
             <type>
@@ -72,6 +82,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
     </event>
 </history>
         </concept>
@@ -98,6 +113,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
+    </event>
 </history>
         </concept>
         <concept id="-ae15ced:1627c758ea6:-7fd8" owner="-ae15ced:1627c758ea6:-7fd4">
@@ -122,6 +142,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
     </event>
 </history>
         </concept>
@@ -149,6 +174,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
     </event>
 </history>
         </relation>
@@ -180,6 +210,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
+    </event>
 </history>
         </concept>
         <relation id="-ae15ced:1627c758ea6:-7fcc" owner="-ae15ced:1627c758ea6:-7fd4">
@@ -201,6 +236,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
     </event>
 </history>
         </relation>
@@ -224,6 +264,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
+    </event>
 </history>
         </relation>
         <relation id="-ae15ced:1627c758ea6:-7fd2" owner="-ae15ced:1627c758ea6:-7fd4">
@@ -246,6 +291,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
+    </event>
 </history>
         </relation>
         <concept id="-ae15ced:1627c758ea6:-7fd5" owner="-ae15ced:1627c758ea6:-7fd4">
@@ -253,10 +303,10 @@
                 <label>Record</label>
             </type>
             <referent>
-                <label>row</label>
+                <label>Code</label>
             </referent>
             <layout>
-                <rectangle x="278.16" y="264.01" width="77.00" height="30.00" depth="1.00"/>
+                <rectangle x="274.66" y="264.01" width="84.00" height="30.00" depth="1.00"/>
                 <color foreground="255,255,255" background="0,94,192"/>
                 <font name="SansSerif" style="1" size="12" />
             </layout>
@@ -276,11 +326,21 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="Apr 30, 2018 11:59:51 PM" type="USER">
+        <description>User modified object. Label Record: Code</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
 </history>
         </concept>
         <arrow id="-ae15ced:1627c758ea6:-7fcb" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-ae15ced:1627c758ea6:-7fd5" to="-ae15ced:1627c758ea6:-7fcc">
             <layout>
-                <rectangle x="252.95" y="273.76" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="251.20" y="273.73" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -295,6 +355,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
     </event>
 </history>
         </arrow>
@@ -316,6 +381,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
+    </event>
 </history>
         </arrow>
         <arrow id="-ae15ced:1627c758ea6:-7fcd" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-ae15ced:1627c758ea6:-7fcf" to="-ae15ced:1627c758ea6:-7fd7">
@@ -336,6 +406,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
+    </event>
 </history>
         </arrow>
         <arrow id="-7016a8f8:1627c6ec10a:-7fb1" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-7016a8f8:1627c6ec10a:-7fb3" to="-7016a8f8:1627c6ec10a:-7fb4">
@@ -351,11 +426,16 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
+    </event>
 </history>
         </arrow>
         <arrow id="-7016a8f8:1627c6ec10a:-7fb2" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-ae15ced:1627c758ea6:-7fd5" to="-7016a8f8:1627c6ec10a:-7fb3">
             <layout>
-                <rectangle x="372.65" y="272.77" width="8.00" height="8.00" depth="1.00"/>
+                <rectangle x="374.40" y="272.70" width="8.00" height="8.00" depth="1.00"/>
                 <color foreground="0,0,0" background="255,255,255"/>
                 <font name="SansSerif" style="1" size="12" />
                 <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
@@ -365,6 +445,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
     </event>
 </history>
         </arrow>
@@ -386,6 +471,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
+    </event>
 </history>
         </arrow>
         <arrow id="-ae15ced:1627c758ea6:-7fd1" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-ae15ced:1627c758ea6:-7fd5" to="-ae15ced:1627c758ea6:-7fd2">
@@ -406,6 +496,11 @@
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
     </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
+    </event>
 </history>
         </arrow>
         <arrow id="-ae15ced:1627c758ea6:-7fd0" owner="-ae15ced:1627c758ea6:-7fd4" label="-" from="-ae15ced:1627c758ea6:-7fd2" to="-ae15ced:1627c758ea6:-7fd8">
@@ -425,6 +520,11 @@
         <description>Read from CGX file by Charger 4.1.2</description>
         <id>no id</id>
         <file>D:\Source\github\chargerks\src\test\resources\BldgsIntent.cgx</file>
+    </event>
+    <event class="chargerlib.history.FileHistoryRecord" timestamp="Apr 30, 2018 11:59:25 PM" type="FILE">
+        <description>Read from CGX file by Charger 4.1.2</description>
+        <id>no id</id>
+        <file>C:\Users\nsipi\GitHub\chargerks\src\test\resources\UniBuildingsIntent.cgx</file>
     </event>
 </history>
         </arrow>

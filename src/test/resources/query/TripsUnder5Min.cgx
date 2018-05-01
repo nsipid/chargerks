@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="4.1.2" created="May 1, 2018 3:12:34 AM" modified="May 1, 2018 3:54:57 AM" user="nsipi" wrapLabels="false" wrapColumns="30">
+<graph id="537b09f7:16318cfff30:-7dd0" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.00" y="5.00" width="1200.00" height="900.00" depth="1.00"/>
+        <color foreground="0,0,0" background="0,0,0"/>
+        <font name="SansSerif.bold" style="1" size="12" />
+    </layout>
+    <actor id="537b09f7:16318cfff30:-7d83" owner="537b09f7:16318cfff30:-7dd0">
+        <type>
+            <label>divided_by</label>
+        </type>
+        <layout>
+            <rectangle x="284.60" y="82.25" width="98.80" height="47.30" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:26:25 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:26:29 AM" type="USER">
+        <description>User modified object. Label times</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:50:16 AM" type="USER">
+        <description>User modified object. Label divided_by</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </actor>
+    <concept id="537b09f7:16318cfff30:-7d81" owner="537b09f7:16318cfff30:-7dd0">
+        <type>
+            <label>Literal</label>
+        </type>
+        <referent>
+            <label>60</label>
+        </referent>
+        <layout>
+            <rectangle x="397.00" y="41.00" width="66.00" height="24.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:27:19 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:27:29 AM" type="USER">
+        <description>User modified object. Label Value: 5</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:28:34 AM" type="USER">
+        <description>User modified object. Label Number: 5</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:44:57 AM" type="USER">
+        <description>User modified object. Label Literal: 5</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:48:10 AM" type="USER">
+        <description>User modified object. Label Literal: 60</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </concept>
+    <relation id="537b09f7:16318cfff30:-7da8" owner="537b09f7:16318cfff30:-7dd0">
+        <type>
+            <label>duration</label>
+        </type>
+        <layout>
+            <rectangle x="95.50" y="46.00" width="71.00" height="24.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:15:03 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:15:09 AM" type="USER">
+        <description>User modified object. Label destination</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:15:15 AM" type="USER">
+        <description>User modified object. Label duration</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </relation>
+    <concept id="537b09f7:16318cfff30:-7da5" owner="537b09f7:16318cfff30:-7dd0">
+        <type>
+            <label>Seconds</label>
+        </type>
+        <layout>
+            <rectangle x="201.00" y="44.00" width="58.00" height="24.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:16:20 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:16:23 AM" type="USER">
+        <description>User modified object. Label Seconds</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </concept>
+    <actor id="537b09f7:16318cfff30:-7da6" owner="537b09f7:16318cfff30:-7dd0">
+        <type>
+            <label>less_than</label>
+        </type>
+        <layout>
+            <rectangle x="291.20" y="210.40" width="93.60" height="35.20" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:15:44 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:15:51 AM" type="USER">
+        <description>User modified object. Label less_than</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </actor>
+    <concept id="537b09f7:16318cfff30:-7da2" owner="537b09f7:16318cfff30:-7dd0">
+        <type>
+            <label>Literal</label>
+        </type>
+        <referent>
+            <label>5</label>
+        </referent>
+        <layout>
+            <rectangle x="181.50" y="145.00" width="85.00" height="24.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:17:37 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:18:01 AM" type="USER">
+        <description>User modified object. Label Seconds: 200</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:29:30 AM" type="USER">
+        <description>User modified object. Label Minutes: 5</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:45:06 AM" type="USER">
+        <description>User modified object. Label Literal: 5</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </concept>
+    <concept id="537b09f7:16318cfff30:-7d7e" owner="537b09f7:16318cfff30:-7dd0">
+        <type>
+            <label>Number</label>
+        </type>
+        <layout>
+            <rectangle x="402.50" y="145.00" width="53.00" height="24.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:28:49 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:28:56 AM" type="USER">
+        <description>User modified object. Label Number</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </concept>
+    <concept id="537b09f7:16318cfff30:-7da0" owner="537b09f7:16318cfff30:-7dd0">
+        <type>
+            <label>Bool</label>
+        </type>
+        <referent>
+            <label>True</label>
+        </referent>
+        <layout>
+            <rectangle x="307.50" y="296.00" width="65.00" height="24.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:18:50 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:18:58 AM" type="USER">
+        <description>User modified object. Label Bool: True</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </concept>
+    <concept id="537b09f7:16318cfff30:-7dcf" owner="537b09f7:16318cfff30:-7dd0">
+        <type>
+            <label>Trip</label>
+        </type>
+        <layout>
+            <rectangle x="17.00" y="46.00" width="40.00" height="24.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:12:56 AM" type="USER">
+        <description>User created object.</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:13:14 AM" type="USER">
+        <description>User modified object. Label Trip</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </concept>
+    <arrow id="537b09f7:16318cfff30:-7d82" owner="537b09f7:16318cfff30:-7dd0" label="1" from="537b09f7:16318cfff30:-7da5" to="537b09f7:16318cfff30:-7d83">
+        <layout>
+            <rectangle x="281.56" y="78.66" width="8.00" height="8.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+            <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:30:44 AM" type="USER">
+        <description>User modified object. Label 1</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </arrow>
+    <arrow id="537b09f7:16318cfff30:-7da7" owner="537b09f7:16318cfff30:-7dd0" label="-" from="537b09f7:16318cfff30:-7dcf" to="537b09f7:16318cfff30:-7da8">
+        <layout>
+            <rectangle x="73.39" y="54.00" width="8.00" height="8.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+            <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+        </layout>
+    </arrow>
+    <arrow id="537b09f7:16318cfff30:-7da4" owner="537b09f7:16318cfff30:-7dd0" label="-" from="537b09f7:16318cfff30:-7da8" to="537b09f7:16318cfff30:-7da5">
+        <layout>
+            <rectangle x="178.04" y="52.97" width="8.00" height="8.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+            <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+        </layout>
+    </arrow>
+    <arrow id="537b09f7:16318cfff30:-7da1" owner="537b09f7:16318cfff30:-7dd0" label="2" from="537b09f7:16318cfff30:-7da2" to="537b09f7:16318cfff30:-7da6">
+        <layout>
+            <rectangle x="280.54" y="190.70" width="8.00" height="8.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+            <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:18:29 AM" type="USER">
+        <description>User modified object. Label 2</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </arrow>
+    <arrow id="537b09f7:16318cfff30:-7d7f" owner="537b09f7:16318cfff30:-7dd0" label="2" from="537b09f7:16318cfff30:-7d81" to="537b09f7:16318cfff30:-7d83">
+        <layout>
+            <rectangle x="375.56" y="76.79" width="8.00" height="8.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+            <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:30:47 AM" type="USER">
+        <description>User modified object. Label 2</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </arrow>
+    <arrow id="537b09f7:16318cfff30:-7d7c" owner="537b09f7:16318cfff30:-7dd0" label="1" from="537b09f7:16318cfff30:-7d7e" to="537b09f7:16318cfff30:-7da6">
+        <layout>
+            <rectangle x="377.39" y="190.15" width="8.00" height="8.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+            <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:30:31 AM" type="USER">
+        <description>User modified object. Label 1</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </arrow>
+    <arrow id="537b09f7:16318cfff30:-7d9f" owner="537b09f7:16318cfff30:-7dd0" label="3" from="537b09f7:16318cfff30:-7da6" to="537b09f7:16318cfff30:-7da0">
+        <layout>
+            <rectangle x="335.02" y="265.00" width="8.00" height="8.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+            <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:19:21 AM" type="USER">
+        <description>User modified object. Label 3</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </arrow>
+    <arrow id="537b09f7:16318cfff30:-7d7d" owner="537b09f7:16318cfff30:-7dd0" label="3" from="537b09f7:16318cfff30:-7d83" to="537b09f7:16318cfff30:-7d7e">
+        <layout>
+            <rectangle x="374.97" y="126.09" width="8.00" height="8.00" depth="1.00"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+            <font name="SansSerif.bold" style="1" size="12" />
+            <edge arrowHeadWidth="5" arrowHeadHeight="5" edgeThickness="1.5" />
+        </layout>
+<history>
+    <event class="chargerlib.history.UserHistoryRecord" timestamp="May 1, 2018 3:30:51 AM" type="USER">
+        <description>User modified object. Label 3</description>
+        <id>no id</id>
+        <user>nsipi</user>
+    </event>
+</history>
+    </arrow>
+</graph>
+
+</conceptualgraph>
+

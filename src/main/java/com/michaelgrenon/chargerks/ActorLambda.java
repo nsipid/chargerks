@@ -48,6 +48,16 @@ public class ActorLambda {
             case "+":
                 cypher = String.format("toInteger(%s) + toInteger(%s)", ref(0), ref(1));
                 break;
+            case "*":
+            case "TIMES":
+            case "MULTIPLY":
+                cypher = String.format("toInteger(%s) * toInteger(%s)", ref(0), ref(1));
+                break;
+            case "/":
+            case "DIVIDED_BY":
+            case "DIVIDE":
+                cypher = String.format("toInteger(%s) / toInteger(%s)", ref(0), ref(1));
+                break;
             case "gt":
             case ">":
             case "GREATER_THAN":
