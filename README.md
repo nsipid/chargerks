@@ -1,6 +1,7 @@
 # chargerks
 Knowledge Space for CharGer
 
+```
 PS C:\chargerks> java -jar .\chargerks-1.0-SNAPSHOT.jar help
 usage: java -jar chargerks [options] [extract-metadata | merge-metadata |
             delete-context | apply-intent | apply-use | ask-metadata | ask-data]
@@ -46,3 +47,4 @@ usage: java -jar chargerks [options] [extract-metadata | merge-metadata |
     --uri <uri>                                 bolt uri to the neo4j
                                                 instance
     --user <user>                               neo4j user name
+```
